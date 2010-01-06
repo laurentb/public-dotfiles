@@ -1,0 +1,16 @@
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = auto
+[user]
+	name = Laurent Bachelier
+	email = laurent@bachelier.name
+[alias]
+	st = status
+	ci = commit
+	lg = log -M --decorate --graph
+	pur = pull --rebase
+[core]
+	pager = cat
