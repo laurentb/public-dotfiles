@@ -1,0 +1,48 @@
+#!/bin/sh
+
+[ -x /usr/bin/keychain ] && /usr/bin/keychain -q ~/.ssh/id_dsa && . ~/.keychain/$HOSTNAME-sh
+
+# disable flow control
+if tty -s ; then
+stty -ixon
+stty -ixoff
+fi
+
+# safety/verbosity aliases
+alias rm='rm -vi'
+alias mv='mv -vi'
+alias cp='cp -vi'
+alias ln='ln -vi'
+alias tar='tar -vk'
+alias rmdir='rmdir -v'
+alias mkdir='mkdir -p'
+
+# colors
+if [ -x /usr/bin/dircolors ]; then
+    #eval `dircolors -b /etc/DIR_COLORS`
+    alias ls='ls --color=auto'
+    export GREP_OPTIONS="--color=auto"
+fi
+
+alias ll='ls -lh'
+alias la='ls -A'
+alias lla='ls -lAh'
+
+alias scpresume='rsync --partial --progress --rsh=ssh'
+
+#export OOO_FORCE_DESKTOP=gnome
+
+[ -x '/usr/bin/most' ] && export PAGER='/usr/bin/most'
+
+if [ -x '/usr/bin/vim' ]; then
+    # for systems where vi is not vim
+    alias vi=vim
+    export EDITOR='/usr/bin/vim'
+fi
+
+[ -x '/usr/bin/firefox' ] && export BROWSER="/usr/bin/firefox '%s' &"
+
+# pulseaudio for sdl 1.2.12 or later:
+export SDL_AUDIODRIVER=pulse
+
+[ -f ~/.sh_common.local ] && . ~/.sh_common.local
