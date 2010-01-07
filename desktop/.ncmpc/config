@@ -1,0 +1,6 @@
+list-format = "[[%artist% :: ]&[%album% ]&[{%track%} ]&[%title%]]|[%file%]"
+status-format = "[[%artist% :: ]&[%album% ]&[{%track%} ]&[%title%]]|[%file%]"
+color background = none
+set-xterm-title = no
+enable-colors = yes
+
