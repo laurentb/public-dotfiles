@@ -30,19 +30,23 @@ alias lla='ls -lAh'
 
 alias scpresume='rsync --partial --progress --rsh=ssh'
 
-#export OOO_FORCE_DESKTOP=gnome
+trap 'echo [0m[31mexited with $? ' ERR
 
 [ -x '/usr/bin/most' ] && export PAGER='/usr/bin/most'
 
 if [ -x '/usr/bin/vim' ]; then
+    export EDITOR='/usr/bin/vim'
     # for systems where vi is not vim
     alias vi=vim
-    export EDITOR='/usr/bin/vim'
 fi
 
-[ -x '/usr/bin/firefox' ] && export BROWSER="/usr/bin/firefox '%s' &"
+if [ -n "$DISPLAY" ]; then
+    export OOO_FORCE_DESKTOP=gnome
 
-# pulseaudio for sdl 1.2.12 or later:
-export SDL_AUDIODRIVER=pulse
+    [ -x '/usr/bin/firefox' ] && export BROWSER="/usr/bin/firefox '%s' &"
+
+    # pulseaudio for sdl 1.2.12 or later:
+    export SDL_AUDIODRIVER=pulse
+fi
 
 [ -f ~/.sh_common.local ] && . ~/.sh_common.local
