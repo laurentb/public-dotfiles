@@ -1,0 +1,70 @@
+! XFT
+Xft.dpi: 96
+Xft.antialias: 1
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.rgba: rgb
+
+
+URxvt*font: xft:Droid Sans Mono Dotted:pixelsize=18:antialias=true,xft:Droid Sans Mono:pixelsize=18:antialias=true,xft:Monospace:pixelsize=18,antialias=true,xft:DejaVu Sans Mono:pixelsize=18:antialias=true
+
+URxvt*scrollBar: false
+URxvt*scrollstyle: plain
+
+! Color codes:
+! 0: black, 1: red, 2: green, 3: yellow,
+! 4: blue, 5: magenta, 6: cyan, 7: white
+! n + 8 = bold n
+
+! Zenburn
+URxvt*color0:  #1E2320
+URxvt*color1:  #705050
+URxvt*color2:  #60b48a
+URxvt*color3:  #dfaf8f
+URxvt*color4:  #506070
+URxvt*color5:  #dc8cc3
+URxvt*color6:  #8cd0d3
+URxvt*color7:  #dcdccc
+URxvt*color8:  #709080
+URxvt*color9:  #dca3a3
+URxvt*color10: #c3bf9f
+URxvt*color11: #f0dfaf
+URxvt*color12: #94bff3
+URxvt*color13: #ec93d3
+URxvt*color14: #93e0e3
+URxvt*color15: #ffffff
+
+!URxvt*depth: 32
+URxvt*buffered: true
+URxvt*foreground: #dcdccc
+URxvt*background: #3a3a3a
+
+! change the default color of bold
+URxvt*colorBD: #94bff3
+
+URxvt*geometry: 80x24
+
+URxvt*title: terminal
+
+URxvt*visualBell: false
+URxvt*urgentOnBell: true
+
+URxvt*pointerBlank: true
+URxvt*pointerBlankDelay: 10
+
+! I use screen instead
+URxvt*saveLines: 0
+
+URxvt*internalBorder: 0
+URxvt*externalBorder: 0
+
+URxvt*loginShell: true
+
+! alt+arrow keys fix (irssi...)
+! URxvt*meta8: true
+
+! fix for emacs
+! URxvt*backArrowKey: false
+
+Xcursor.size: 24
+
