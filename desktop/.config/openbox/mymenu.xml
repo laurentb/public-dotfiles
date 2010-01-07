@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="apps-menu" label="Base">
+  <item label="urxvt">
+    <action name="Execute"><execute>urxvtc</execute></action>
+  </item>
+  <item label="Kate">
+    <action name="Execute"><execute>kate</execute></action>
+  </item>
+  <item label="Krusader">
+    <action name="Execute"><execute>krusader</execute></action>
+  </item>
+  <item label="Konqueror">
+    <action name="Execute"><execute>konqueror</execute></action>
+  </item>
+</menu>
+
+<menu id="net-menu" label="Network">
+  <item label="Firefox">
+    <action name="Execute"><execute>firefox</execute></action>
+  </item>
+  <item label="Opera">
+    <action name="Execute"><execute>opera -notrayicon</execute></action>
+  </item>
+  <item label="Arora">
+    <action name="Execute"><execute>arora</execute></action>
+  </item>
+</menu>
+
+<menu id="media-menu" label="Media">
+  <item label="GQview">
+    <action name="Execute"><execute>gqview</execute></action>
+  </item>
+  <item label="The GIMP">
+    <action name="Execute"><execute>gimp</execute></action>
+  </item>
+  <item label="Picard">
+    <action name="Execute"><execute>picard</execute></action>
+  </item>
+</menu>
+
+<menu id="ooo-menu" label="OOo">
+  <item label="Base">
+    <action name="Execute"><execute>oobase</execute></action>
+  </item>
+  <item label="Calc">
+    <action name="Execute"><execute>oocalc</execute></action>
+  </item>
+  <item label="Draw">
+    <action name="Execute"><execute>oodraw</execute></action>
+  </item>
+  <item label="Impress">
+    <action name="Execute"><execute>ooimpress</execute></action>
+  </item>
+  <item label="Math">
+    <action name="Execute"><execute>oomath</execute></action>
+  </item>
+  <item label="Writer">
+    <action name="Execute"><execute>oowriter</execute></action>
+  </item>
+</menu>
+
+
+
+<menu id="root-menu" label="menu">
+  <separator label="Openbox" />
+  <menu id="apps-menu" />
+  <menu id="net-menu" />
+  <menu id="media-menu" />
+  <menu id="ooo-menu" />
+
+  <separator />
+  <!--
+  <item label="ObConf">
+    <action name="Execute"><execute>obconf</execute></action>
+  </item>
+  -->
+  <item label="Reconfigure">
+    <action name="Reconfigure" />
+  </item>
+  <!--
+   <item label="Restart">
+    <action name="Restart" />
+  </item>
+  -->
+  <item label="Exit">
+    <action name="Exit" />
+  </item>
+
+  <separator />
+  <menu id="client-list-combined-menu" />
+  <item label="Run...">
+    <action name="Execute"><execute>gmrun</execute></action>
+  </item>
+
+</menu>
+
+
+</openbox_menu>
