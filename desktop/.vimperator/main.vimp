@@ -1,0 +1,48 @@
+" menu, toolbar, tab numbers
+set guioptions=mTn
+
+" AwesomeBar + search engines
+set complete=ls
+set wildoptions=auto
+
+" :autocmd LocationChange .* :js modes.passAllKeys = /mail\.google\.com|www\.google\.com\/reader\/view/.test(buffer.URL)
+
+" bépo mappings
+source! ~/.vimperator/bepo.vimp
+
+" scroll 8 times as much
+noremap s 8k
+noremap t 8j
+
+noremap <BS> <C-u>
+noremap <Space> <C-d>
+noremap <Return> zz
+
+set novisualbell
+
+set ignorecase
+set smartcase
+
+" prevent the page from focusing an element
+set focuscontent
+
+" can't use urxvtc as it returns immediately
+set editor="urxvt -geometry 90x40 -e vim -f"
+
+" add French next/prevpatterns
+set nextpattern+=^\s*suivant\s*$
+set previouspattern+=^\s*pr(é|e)c(é|e)d(a|e)nt\s*$
+
+" always show tab line
+set showtabline=2
+
+set showmode
+set showstatuslinks
+
+" switch css use or not
+map ! :set invum<CR>
+
+color zenburn
+
+set! browser.tabs.autoHide=false
+
