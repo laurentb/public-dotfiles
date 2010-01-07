@@ -1,0 +1,19 @@
+! Original:
+! keycode 112 = Prior NoSymbol Prior NoSymbol Prior
+! keycode 117 = Next NoSymbol Next NoSymbol Next
+! keycode 108 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift NoSymbol ISO_Level3_Shift
+! keycode 105 = Control_R NoSymbol Control_R NoSymbol Control_R
+
+! swap pageup/down with to altgr/ctrl on the TypeMatrix 2030 PS/2
+keycode 108 = Prior NoSymbol Prior NoSymbol Prior
+keycode 105 = Next NoSymbol Next NoSymbol Next
+keycode 112 = ISO_Level3_Shift NoSymbol ISO_Level3_Shift NoSymbol ISO_Level3_Shift
+keycode 117 = Control_R NoSymbol Control_R NoSymbol Control_R
+
+! reassign useless Power/Sleep/Wake keys
+keycode 124 = XF86AudioMute
+keycode 150 = XF86AudioLowerVolume
+keycode 151 = XF86AudioRaiseVolume
+
+! set Compose key to keypad enter
+keycode 104 = Multi_key

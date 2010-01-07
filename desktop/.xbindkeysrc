@@ -1,0 +1,18 @@
+# By defaults, xbindkeys does not pay attention with the modifiers
+# NumLock, CapsLock and ScrollLock.
+# Uncomment the lines above if you want to pay attention to them.
+
+#keystate_numlock = enable
+#keystate_capslock = enable
+#keystate_scrolllock= enable
+
+"amixer -c 0 sset Master,0 toggle"
+    m:0x0 + c:124
+    XF86AudioMute
+"amixer set Master 3%- unmute"
+    m:0x0 + c:150
+    XF86AudioLowerVolume
+"amixer set Master 3%+ unmute"
+    m:0x0 + c:151
+    XF86AudioRaiseVolume
+
