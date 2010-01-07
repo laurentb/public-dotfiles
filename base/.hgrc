@@ -1,0 +1,6 @@
+[ui]
+username = Laurent Bachelier <laurent@bachelier.name>
+ssh = ssh -C
+
+[extensions]
+color=
