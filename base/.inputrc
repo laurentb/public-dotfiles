@@ -1,0 +1,13 @@
+# no annoying bell
+set bell-style none
+
+# show everything at first tab keypress, not second
+set show-all-if-ambiguous on
+
+# do not page when there is too much to show
+set page-completions off
+set completion-query-items 350
+
+# mappings for "page up" and "page down" to search the history
+"\e[5~": history-search-backward
+"\e[6~": history-search-forward
