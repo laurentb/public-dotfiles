@@ -1,6 +1,8 @@
 #!/bin/sh
 
-[ -x /usr/bin/keychain ] && /usr/bin/keychain -q ~/.ssh/id_dsa && . ~/.keychain/$HOSTNAME-sh
+if [ -x /usr/bin/keychain -a -f ~/.ssh/id_dsa ]; then
+    /usr/bin/keychain -q ~/.ssh/id_dsa && . ~/.keychain/$HOSTNAME-sh
+fi
 
 # disable flow control
 if tty -s ; then
