@@ -1,7 +1,7 @@
 #!/bin/sh
 
-if [ -x /usr/bin/keychain -a -f ~/.ssh/id_dsa ]; then
-    /usr/bin/keychain -q ~/.ssh/id_dsa && . ~/.keychain/$HOSTNAME-sh
+if [ -x /usr/bin/keychain ]; then
+    eval `/usr/bin/keychain --eval -q --ignore-missing id_dsa id_rsa`
 fi
 
 # disable flow control
