@@ -127,11 +127,11 @@
     <floatingX>69</floatingX>
     <floatingY>0</floatingY>
     <noStrut>yes</noStrut>
-    <stacking>Below</stacking>
+    <stacking>Above</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
     <direction>Horizontal</direction>
     <!-- 'Vertical' or 'Horizontal' -->
-    <autoHide>no</autoHide>
+    <autoHide>yes</autoHide>
     <hideDelay>300</hideDelay>
     <!-- in milliseconds (1000 = 1 second) -->
     <showDelay>300</showDelay>
