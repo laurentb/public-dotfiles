@@ -68,3 +68,10 @@ URxvt*loginShell: true
 
 Xcursor.size: 24
 
+lal*font: Droid Sans Mono Dotted
+lal*bold: false
+lal*fontsize: 16
+lal*color: #3a3a3a
+lal*width: 42
+lal*format: %H%M
+
