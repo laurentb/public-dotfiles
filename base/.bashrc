@@ -33,6 +33,12 @@ HISTFILESIZE=3000
 
 export HISTTIMEFORMAT='%F %T '
 
+if [[ ${EUID} == 0 ]]; then
+    PS1='\[\033[01;31m\]\h\[\033[01;34m\] \w \$\[\033[00m\] '
+else
+    PS1='\[\033[01;30m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
+fi
+
 # disallow redirections (>) to an existing file − use >| to bypass
 set -C
 
