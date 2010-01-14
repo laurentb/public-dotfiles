@@ -6,6 +6,7 @@ Font=Droid Sans Mono Dotted,14,-1,5,50,0,0,0,0,0
 CursorShape=0
 
 [General]
+Environment=TERM=xterm,IN_KRUSADER=1
 Icon=utilities-terminal
 LocalTabTitleFormat=%d : %n
 MenuIndex=1

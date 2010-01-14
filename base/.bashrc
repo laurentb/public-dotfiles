@@ -25,7 +25,7 @@ PROMPT_COMMAND='history -n;history -a'
 shopt -s cmdhist
 
 # ignore dangerous commands and duplicates/whitespace
-export HISTIGNORE='&:[bf]g:exit:*>|*:history*:svn revert*:*rm*-rf*:*rm*-f*'
+HISTIGNORE='&:[bf]g:exit:*>|*:history*:svn revert*:*rm*-rf*:*rm*-f*'
 HISTCONTROL=ignoreboth
 
 HISTSIZE=3000
@@ -44,4 +44,5 @@ fi
 # disallow redirections (>) to an existing file − use >| to bypass
 set -C
 
-# TODO when not in screen, disable history *writing*
+[[ ${IN_KRUSADER} ]] && HISTIGNORE="${HISTIGNORE}:cd '*'"
+
