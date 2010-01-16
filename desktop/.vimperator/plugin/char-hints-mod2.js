@@ -4,9 +4,9 @@ var PLUGIN_INFO =
     <name>{NAME}</name>
     <description>character hint mode.</description>
     <author mail="konbu.komuro@gmail.com" homepage="http://d.hatena.ne.jp/hogelog/">hogelog</author>
-    <version>0.2.7</version>
+    <version>0.3.0</version>
     <minVersion>2.0pre 2008/12/12</minVersion>
-    <maxVersion>2.0pre</maxVersion>
+    <maxVersion>2.1pre</maxVersion>
     <updateURL>http://svn.coderepos.org/share/lang/javascript/vimperator-plugins/trunk/char-hints-mod2.js</updateURL>
     <detail><![CDATA[
 == Usage ==
@@ -27,7 +27,7 @@ let g:hintsio:
     - "O" setting char-hint show uppercase.
     Default setting is "IO".
     e.g.)
-      let g:histsio="i"
+      let g:hintsio="i"
 let g:hintlabeling:
     - "s" setting simple n-base decimal hint labeling (n = hintchars.length)
     - "a" setting adjust no overlap labeling
@@ -36,7 +36,6 @@ let g:hintlabeling:
       let g:hintlabeling="a"
 
 == TODO ==
-- fix bug that hinttimeout don't run
 
      ]]></detail>
     <detail lang="ja"><![CDATA[
@@ -57,7 +56,7 @@ let g:hintsio:
     - "O" setting char-hint show uppercase.
     Default setting is "IO".
     e.g.)
-      let g:histsio="i"
+      let g:hintsio="i"
 let g:hintlabeling:
     - "s" setting simple n-base decimal hint labeling (n = hintchars.length)
     - "a" setting adjust no overlap labeling
@@ -66,7 +65,6 @@ let g:hintlabeling:
       let g:hintlabeling="a"
 
 == TODO ==
-- fix bug that hinttimeout don't run
 
      ]]></detail>
 </VimperatorPlugin>;
@@ -82,6 +80,8 @@ let g:hintlabeling:
     let inputRegex = /[A-Z]/;
     let showCase = function(str) str.toUpperCase();
     let getStartCount = function() 0;
+
+    let timer = null;
 
     function chars2num(chars) //{{{
     {
@@ -167,8 +167,16 @@ let g:hintlabeling:
                 break;
         }
     } //}}}
+    function clearOriginalTimeout() //{{{
+    {
+        liberator.eval('if(activeTimeout) clearTimeout(activeTimeout);activeTimeout = null;', hintContext);
+    } //}}}
     function processHintInput(hintInput, hints) //{{{
     {
+        if (timer) {
+            clearTimeout(timer);
+            timer = null;
+        }
         let start = getStartCount(hintchars.length, hints.length);
         let num = chars2num(hintInput)-start;
         if(num < 0) return;
@@ -183,6 +191,7 @@ let g:hintlabeling:
             alt.liberatorString = num;
             charhints.original.onEvent(alt);
         }
+        clearOriginalTimeout();
         statusline.updateInputBuffer(hintInput);
 
         let validHints = hints.filter(function(hint) isValidHint(hintInput, hint));
@@ -190,6 +199,14 @@ let g:hintlabeling:
             charhints.original.processHints(true);
             return true;
         }
+
+        let timeout = options["hinttimeout"];
+        if (timeout > 0) {
+            timer = setTimeout(function () {
+                charhints.original.processHints(true);
+            }, timeout);
+        }
+
     } //}}}
 
     var hintInput = "";
@@ -227,6 +244,7 @@ let g:hintlabeling:
                 charhints.onInput(event);
             } else {
                 charhints.original.onEvent(event);
+                clearOriginalTimeout();
                 statusline.updateInputBuffer(hintInput);
             }
         }, //}}}
