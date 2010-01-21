@@ -88,7 +88,9 @@
   <item label="Exit">
     <action name="Exit" />
   </item>
-
+  <item label="Lock">
+    <action name="Execute"><execute>xscreensaver-command -lock</execute></action>
+  </item>
   <separator />
   <menu id="client-list-combined-menu" />
   <item label="Run...">
