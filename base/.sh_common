@@ -1,5 +1,7 @@
 #!/bin/sh
 
+[ -f ~/.sh_vars ] && . ~/.sh_vars
+
 if [ -x /usr/bin/keychain ]; then
     eval `/usr/bin/keychain --eval -q --ignore-missing id_dsa id_rsa`
 fi
