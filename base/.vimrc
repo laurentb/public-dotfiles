@@ -109,6 +109,20 @@ set directory=~/.vim/swp
 
 let g:localvimrc_ask = 0
 
+" keyboard shortcuts
+set pastetoggle=<F11>
+
+function ToggleSpell()
+    if (&spell && &spelllang=="en")
+        set spelllang=fr
+    elseif (&spell)
+        set nospell
+    else
+        set spell spelllang=en
+    endif
+endfunction
+nmap <silent> <F2> <Esc>:call ToggleSpell()<CR>
+
 " bépo keyboard layout
 source ~/.vim/bepo.vim
 
