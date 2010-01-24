@@ -39,8 +39,6 @@ set showtabline=2
 set showmode
 set showstatuslinks
 
-set mainecoon=ac
-
 " switch css use or not
 map ! :set invum<CR>
 
