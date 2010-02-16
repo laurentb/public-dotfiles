@@ -7,12 +7,12 @@
 #keystate_scrolllock= enable
 
 "amixer -c 0 sset Master,0 toggle"
-    m:0x0 + c:124
+    m:0x0 + c:121
     XF86AudioMute
 "amixer set Master 3%- unmute"
-    m:0x0 + c:150
+    m:0x0 + c:122
     XF86AudioLowerVolume
 "amixer set Master 3%+ unmute"
-    m:0x0 + c:151
+    m:0x0 + c:123
     XF86AudioRaiseVolume
 
