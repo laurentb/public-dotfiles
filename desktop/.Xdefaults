@@ -63,12 +63,6 @@ URxvt*loginShell: true
 ! C-z
 URxvt.keysym.XF86HomePage: \032
 
-! alt+arrow keys fix (irssi...)
-! URxvt*meta8: true
-
-! fix for emacs
-! URxvt*backArrowKey: false
-
 Xcursor.size: 24
 
 lal*font: Droid Sans Mono Dotted
