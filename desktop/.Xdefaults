@@ -60,6 +60,9 @@ URxvt*externalBorder: 0
 
 URxvt*loginShell: true
 
+! C-z
+URxvt.keysym.XF86HomePage: \032
+
 ! alt+arrow keys fix (irssi...)
 ! URxvt*meta8: true
 
