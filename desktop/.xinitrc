@@ -32,30 +32,19 @@ xset mouse 3 3
 xset r on
 xset r rate 600 40
 
-# in case it isn’t automatically loaded
-#if [ -f $HOME/.Xdefaults ]; then
-#    xrdb -merge $HOME/.Xdefaults
-#fi
-
-# Make KDE system tray apps work
-#kdetrayproxy &
-
-# Change the KDE window manager
-###export KDEWM=openbox
-
-# Start the KDE environment
-###startkde
-
 xsetroot -solid "#3A3A3A"
 
 xset s off
 xset dpms 10800 10800 10800
+xscreensaver &
 
-stalonetray -w -p &
+(sleep 1 && stalonetray -w -p) &
 
-kmix --keepvisibility &
-rsibreak &
-klipper &
+(sleep 2 && kmix --keepvisibility) &
+(sleep 2 && klipper) &
+(sleep 3 && rsibreak) &
+
+(sleep 4 && lal) &
 
 exec openbox
 
