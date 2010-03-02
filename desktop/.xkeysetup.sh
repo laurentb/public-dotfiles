@@ -15,3 +15,5 @@ xmodmap ~/.Xmodmap
 
 # reload xbindkeys or start it
 killall -HUP xbindkeys||xbindkeys
+
+xinput set-button-map "Kingsis Peripherals  Evoluent VerticalMouse 3" 1 2 2 4 5 6 7 3 8
