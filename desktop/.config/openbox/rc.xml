@@ -122,7 +122,7 @@
     </popupFixedPosition>
   </resize>
   <dock>
-    <position>BottomRight</position>
+    <position>Bottom</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>69</floatingX>
     <floatingY>0</floatingY>
