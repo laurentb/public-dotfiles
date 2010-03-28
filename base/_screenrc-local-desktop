@@ -1,0 +1,18 @@
+# escape ^Aa  # default
+escape "^Zz"
+
+# if focus === %?%F...%?
+# left windows: %-Lw - right windows (truncated if needed): %+Lw%< (L: window flags)
+caption string "%{= d.}%?%F%{= .c}%?%-Lw%{+b}%50>%n%f %t%{-b}%+Lw%<"
+caption always
+
+# change command line color
+sorendition "=r dR"
+
+# urxvt bindings
+bindkey "^[[c" next
+bindkey "^[[d" prev
+# xterm?
+#bindkey "^[Oc" next
+#bindkey "^[Od" prev
+

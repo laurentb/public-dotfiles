@@ -1,0 +1,50 @@
+defutf8 on
+
+# 256 colors in urxvt
+term screen-256color
+terminfo rxvt-unicode 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'
+
+autodetach on
+deflogin on
+defnonblock on
+
+# default 100
+defscrollback 16384
+
+# don't display the copyright page
+startup_message off
+
+activity "%c activity -> %n%f %t"
+# ^G to forward the bell to the terminal
+bell_msg "%c bell -> %n%f %t^G"
+
+vbell_msg "B^G"
+vbell on
+vbellwait 0.2
+# disable terminals vbell (annoying flashing)
+# and force screen's internal one
+termcapinfo * vb@
+
+# don't display messages on hardstatus
+hardstatus off
+# don't use the terminal hardware status (most of the time: xwindow title)
+hardstatus alwaysignore
+
+# Defines the time screen delays a new message when one message
+# is currently displayed. The default is 1 second.
+msgminwait 2
+
+# Time a message is displayed if screen is not disturbed by
+# other activity. The default is 5 seconds.
+msgwait 10
+
+silencewait 15  # default: 30
+
+# disable Ctrl-S/Ctrl-Q "flow control"
+defflow off
+
+# change command line color
+sorendition "=r dG"
+
+source .screenrc-local
+
