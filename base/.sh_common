@@ -44,13 +44,6 @@ if [ -x '/usr/bin/vim' ]; then
     alias vi=vim
 fi
 
-if [ -n "$DISPLAY" ]; then
-    export OOO_FORCE_DESKTOP=gnome
-
-    [ -x '/usr/bin/firefox' ] && export BROWSER="/usr/bin/firefox '%s' &"
-
-    # pulseaudio for sdl 1.2.12 or later:
-    export SDL_AUDIODRIVER=pulse
-fi
+[ -f ~/.sh_common.desktop ] && . ~/.sh_common.desktop
 
 [ -f ~/.sh_common.local ] && . ~/.sh_common.local

@@ -1,0 +1,10 @@
+if [ -n "$DISPLAY" ]; then
+    export OOO_FORCE_DESKTOP=gnome
+
+    [ -x '/usr/bin/firefox' ] && export BROWSER="/usr/bin/firefox '%s' &"
+
+    # pulseaudio for sdl 1.2.12 or later:
+    export SDL_AUDIODRIVER=pulse
+fi
+
+alias startx="exec startx -- -nolisten tcp -verbose 5 -logverbose 5 -br"
