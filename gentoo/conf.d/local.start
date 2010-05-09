@@ -1,0 +1,28 @@
+# /etc/conf.d/local.start
+
+# This is a good place to load any misc programs
+# on startup (use &>/dev/null to hide output)
+
+for OPTION in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
+do
+    echo ondemand > ${OPTION}
+done
+
+for OPTION in /sys/devices/system/cpu/cpu*/cpufreq/ondemand/ignore_nice_load
+do
+    echo 0 > ${OPTION}
+done
+
+# Centiseconds (1sec = 100), default=500
+echo 3000 > /proc/sys/vm/dirty_writeback_centisecs
+
+for OPTION in /sys/class/scsi_host/host*/link_power_management_policy
+do
+    echo min_power > ${OPTION}
+done
+
+for OPTION in /sys/devices/virtual/block/md*/md/stripe_cache_size
+do
+    echo 512 > ${OPTION}
+done
+
