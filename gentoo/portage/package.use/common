@@ -1,0 +1,26 @@
+# avoid depencies
+app-portage/cfg-update -gnome -kde
+
+app-editors/vim vim-pager cscope
+
+sys-apps/util-linux loop-aes
+
+net-dns/avahi mdnsresponder-compat
+
+sys-fs/udev -devfs-compat extras
+
+dev-vcs/mercurial gpg
+dev-util/subversion -dso
+app-portage/layman git
+
+# needed for elinks
+dev-scheme/guile deprecated discouraged networking
+
+net-proxy/tsocks tordns
+
+app-text/enchant hunspell aspell
+app-text/aspell linguas_fr linguas_en
+
+app-arch/dtrx 7z zip cpio tar gzip bzip2 rar
+
+net-analyzer/vnstat -gd

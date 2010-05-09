@@ -1,0 +1,20 @@
+# v2
+app-arch/unace
+
+net-fs/curlftpfs
+
+net-misc/esniper
+
+app-portage/findcruft
+
+dev-util/scanmem
+
+net-misc/bti
+
+app-arch/dtrx
+
+dev-vcs/git-wtf
+dev-vcs/git-publish-branch
+
+sys-apps/fr-bepo-keymap
+

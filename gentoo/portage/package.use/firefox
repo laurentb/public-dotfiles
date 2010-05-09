@@ -1,0 +1,3 @@
+dev-db/sqlite secure-delete
+net-libs/xulrunner system-sqlite
+www-client/mozilla-firefox system-sqlite

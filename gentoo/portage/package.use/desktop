@@ -1,0 +1,37 @@
+net-p2p/amule daemon remote stats
+
+# avoid some issues; also unneeded dependency
+dev-python/wxpython -opengl
+
+app-admin/conky mpd
+
+media-sound/mpd lame -mikmod -ffmpeg -aac
+media-sound/sox encode
+media-video/vlc matroska rtsp stream vlm kate libass
+
+media-libs/libdvdread css
+
+app-editors/vim vim-with-x
+
+kde-base/ksysguard lm_sensors
+
+media-sound/ncmpc help-screen artist-screen colors key-screen lyrics-screen search-screen song-screen
+media-sound/ncmpcpp outputs
+
+x11-terms/rxvt-unicode xterm-color wcwidth
+
+kde-base/okular ebook
+
+# avoid evolution-data-server
+net-voip/ekiga -gnome
+
+net-im/gajim -gnome srv trayicon
+
+app-office/akonadi-server -mysql
+
+media-sound/audacity vamp soundtouch
+
+x11-libs/cairo glitz
+
+games-board/xscrabble linguas_fr
+net-print/gutenprint foomaticdb

@@ -1,0 +1,17 @@
+# also USE="-arts"
+kde-base/arts
+
+# Break if some packages pulls it as a dependency
+www-plugins/mplayerplug-in
+
+app-editors/xemacs
+app-editors/emacs
+
+www-client/seamonkey
+
+www-servers/apache
+
+gnome-extra/evolution-data-server
+
+x11-themes/sound-theme-freedesktop
+

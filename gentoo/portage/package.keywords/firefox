@@ -1,0 +1,9 @@
+<www-client/mozilla-firefox-3.7
+<net-libs/xulrunner-1.10
+<dev-libs/nss-3.13
+<dev-libs/nspr-4.8.4
+<dev-db/sqlite-3.6.23
+
+www-plugins/adobe-flash
+www-plugins/nspluginwrapper
+
