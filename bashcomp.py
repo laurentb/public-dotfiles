@@ -16,5 +16,6 @@ with open(config_file, "r") as file:
 
 completions = set(wanted_completions) - set(active_completions)
 for completion in completions:
+  print "+"+completion
   system("eselect bashcomp enable "+completion)
 
