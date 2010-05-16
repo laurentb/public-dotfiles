@@ -1,9 +1,11 @@
 if [[ ${EBUILD_PHASE} == "postinst" ]]; then
-   einfo "Running localepurge..."
-   PATH="/bin:/usr/bin" localepurge
+    einfo "Running localepurge..."
+    PATH="/bin:/usr/bin" localepurge
 fi
-
 
 # This hook is neccesary for automatic updating of the cfg-update index, please do not modify it!
 if [ "$EBUILD_PHASE" = "setup" ] && [ -e "/usr/bin/cfg-update" ]; then cfg-update --index; fi
 
+post_src_install() {
+    lafilefixer "${D}"
+}
