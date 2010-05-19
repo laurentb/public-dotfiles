@@ -137,6 +137,9 @@ function! Cleanup()
 endfunction
 comm! Cleanup call Cleanup()
 
+let $PAGER=''
+let $MANPAGER=''
+
 if filereadable($HOME."/.vim/local.vim")
     source ~/.vim/local.vim
 endif
