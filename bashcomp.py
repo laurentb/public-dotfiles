@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+from __future__ import with_statement
 from os import path, popen, system
 
 config_file = path.join(path.dirname(__file__), "bashcomp.wanted")
