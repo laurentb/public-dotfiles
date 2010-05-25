@@ -474,3 +474,7 @@ include "%L"
 <dead_ogonek> <dead_macron> <o> : U01ED
 <dead_tilde> <dead_macron> <O> : U022C
 <dead_tilde> <dead_macron> <o> : U022D
+<Multi_key> <8> <8> : "∞"
+<Multi_key> <8> <KP_8> : "∞"
+<Multi_key> <KP_8> <8> : "∞"
+<Multi_key> <KP_8> <KP_8> : "∞"
