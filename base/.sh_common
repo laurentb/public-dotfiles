@@ -35,8 +35,6 @@ alias lla='ls -lAh'
 
 alias scpresume='rsync --partial --progress --rsh=ssh'
 
-trap 'echo [0m[31mexited with $? ' ERR
-
 # not using vimpager by default since it doesn't handle streaming input
 [ -x '/usr/bin/most' ] && export PAGER='/usr/bin/most'
 [ -x '/usr/bin/vimmanpager' ] && export MANPAGER='/usr/bin/vimmanpager'

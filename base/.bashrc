@@ -50,3 +50,5 @@ set -C
 
 [[ ${IN_KRUSADER} ]] && HISTIGNORE="${HISTIGNORE}:cd '*'"
 
+trap 'echo [0m[31mexited with $? ' ERR
+
