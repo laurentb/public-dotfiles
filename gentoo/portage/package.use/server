@@ -5,6 +5,3 @@ www-servers/lighttpd fastcgi -ldap -webdav
 
 dev-db/mysql extraengine -berkdb
 
-
-dev-python/pylons mako
-
