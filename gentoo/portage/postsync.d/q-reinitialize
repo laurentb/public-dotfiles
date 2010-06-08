@@ -1,1 +1,3 @@
-[ -x /usr/bin/q ] && /usr/bin/q -qr
+#!/bin/sh
+[ -x /usr/bin/q ] && /usr/bin/q -r ${PORTAGE_QUIET:+-q}
+:
