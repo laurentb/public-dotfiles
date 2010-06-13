@@ -474,7 +474,99 @@ include "%L"
 <dead_ogonek> <dead_macron> <o> : U01ED
 <dead_tilde> <dead_macron> <O> : U022C
 <dead_tilde> <dead_macron> <o> : U022D
+
 <Multi_key> <8> <8> : "∞"
 <Multi_key> <8> <KP_8> : "∞"
 <Multi_key> <KP_8> <8> : "∞"
 <Multi_key> <KP_8> <KP_8> : "∞"
+
+<Multi_key> <f> <f>                 : "ﬀ"   UFB00 # LATIN SMALL LIGATURE FF &#64256;
+<Multi_key> <f> <i>                 : "ﬁ"   UFB01 # LATIN SMALL LIGATURE FI &#64257;
+<Multi_key> <f> <l>                 : "ﬂ"   UFB02 # LATIN SMALL LIGATURE FL &#64258;
+<Multi_key> <Multi_key> <f> <f> <i> : "ﬃ"   UFB03 # LATIN SMALL LIGATURE FFI &#64259;
+<Multi_key> <f> <Multi_key> <f> <i> : "ﬃ"   UFB03 # LATIN SMALL LIGATURE FFI &#64259;
+<Multi_key> <Multi_key> <f> <f> <l> : "ﬄ"   UFB04 # LATIN SMALL LIGATURE FFL &#64260;
+<Multi_key> <f> <Multi_key> <f> <l> : "ﬄ"   UFB04 # LATIN SMALL LIGATURE FFL &#64260;
+<Multi_key> <f> <s>                    : "ſ"   U017F # LATIN SMALL LIGATURE
+<Multi_key> <Multi_key> <f> <s> <t> : "ﬅ"   UFB05 # LATIN SMALL LIGATURE LONG S T &#64261;
+<Multi_key> <f> <Multi_key> <s> <t> : "ﬅ"   UFB05 # LATIN SMALL LIGATURE LONG S T &#64261;
+<Multi_key> <s> <t>                 : "ﬆ"   UFB06 # LATIN SMALL LIGATURE ST &#64262;
+
+<dead_stroke> <0>                     : "∅"   U2205               # EMPTY SET
+
+<Multi_key> <d>                       : "∂"   partialderivative   # PARTIAL DIFFERENTIAL
+<Multi_key> <D>                       : "∇"   nabla               # NABLA
+
+<Multi_key> <j>                       : "∫"   integral            # INTEGRAL
+
+<Multi_key> <r> <A>                   : "∀"   U2200               # FORALL
+<Multi_key> <r> <E>                   : "∃"   U2203               # THERE EXISTS
+<Multi_key> <r> <dead_stroke> <E>     : "∄"   U2204               # THERE DOES NOT EXIST 
+<Multi_key> <EuroSign>                : "∈"   U2208               # ELEMENT OF
+<Multi_key> <dead_stroke> <EuroSign>  : "∉"   U2209               # NOT AN ELEMENT OF
+<Multi_key> <r> <EuroSign>            : "∋"   U220B               # CONTAINS AS MEMBER
+<Multi_key> <r> <dead_stroke> <EuroSign> : "∌"   U220C               # DOES NOT CONTAIN AS MEMBER
+
+<Multi_key> <r> <T>                   : "⊥"   downtack            # UP TACK   (U27C2 PERPENDICULAR ?)
+<Multi_key> <r> <8>                   : "∞"   infinity            # INFINITY
+<Multi_key> <U>                       : "∪"   union               # UNION
+<Multi_key> <r> <U>                   : "∩"   intersection        # INTERSECTION
+<Multi_key> <C>                       : "⊂"   includedin          # SUBSET OF
+<Multi_key> <r> <C>                   : "⊃"   includes            # SUPERSET OF
+
+<Multi_key> <b> <c>                   : "ℂ"   U2102               # DOUBLE-STRUCK CAPITAL C
+<Multi_key> <b> <h>                   : "ℍ"   U210D               # DOUBLE-STRUCK CAPITAL H
+<Multi_key> <b> <n>                   : "ℕ"   U2115               # DOUBLE-STRUCK CAPITAL N
+<Multi_key> <b> <p>                   : "ℙ"   U2119               # DOUBLE-STRUCK CAPITAL P
+<Multi_key> <b> <q>                   : "ℚ"   U211A               # DOUBLE-STRUCK CAPITAL Q
+<Multi_key> <b> <r>                   : "ℝ"   U211D               # DOUBLE-STRUCK CAPITAL R
+<Multi_key> <b> <z>                   : "ℤ"   U2124               # DOUBLE-STRUCK CAPITAL Z
+
+<Multi_key> <greater> <equal>         : "⩾"   U2A7E               # GREATER-THAN OR SLANTED EQUAL TO
+<Multi_key> <less> <equal>            : "⩽"   U2A7D               # LESS-THAN OR SLANTED EQUAL TO
+<Multi_key> <equal>  <greater>        : "⇒"   implies             # RIGHTWARDS DOUBLE ARROW
+<Multi_key> <less> <minus>            : "←"   leftarrow           # LEFTWARDS ARROW 
+<dead_circumflex> <bar>               : "↑"   uparrow             # UPWARDS ARROW 
+<Multi_key> <minus>  <greater>        : "→"   rightarrow          # RIGHTWARDS ARROW
+<Multi_key> <bar> <minus> <greater>   : "↦"   U21A6               # RIGHTWARDS ARROW FROM BAR
+<dead_caron> <bar>                    : "↓"   downarrow           # DOWNWARDS ARROW 
+
+
+
+<Multi_key> <bracketleft> <bar>       : "⟦"   U27E6               # MATHEMATICAL LEFT WHITE SQUARE BRACKET
+<Multi_key> <bar> <bracketright>      : "⟧"   U27E7               # MATHEMATICAL RIGHT WHITE SQUARE BRACKET
+
+<Multi_key> <bar> <bar>               : "‖"   U2016               # DOUBLE VERTICAL LINE
+
+<Multi_key> <o> <plus>                : "⊕"   U2295               # CIRCLED PLUS
+<Multi_key> <o> <multiply>            : "⊗"   U2297               # CIRCLED TIMES
+<Multi_key> <O> <plus>                : "⨁"   U2A01               # N-ARY CIRCLED PLUS OPERATOR
+<Multi_key> <O> <multiply>            : "⨂"   U2A02               # N-ARY CIRCLED TIMES OPERATOR
+<Multi_key> <o> <asterisk>            : "⊛"   U229B               # CIRCLED ASTERISK OPERATOR
+
+<Multi_key> <periodcentered> <asterisk> : "∗"   U2217               # ASTERIK OPERATOR
+<Multi_key> <periodcentered> <o>      : "∘"   U2218               # RING OPERATOR
+
+<Multi_key>  <r> <v>                  : "∧"   logicaland          # LOGICAL AND
+<Multi_key> <v>                       : "∨"   logicalor           # LOGICAL OR
+
+<Multi_key> <bar> <ellipsis>          : "⋮"   U22EE               # VERTICAL ELLIPSIS
+<Multi_key> <periodcentered> <ellipsis> : "⋯"   U22EF               # MIDLINE HORIZONTAL ELLIPSIS
+<Multi_key> <slash> <ellipsis>        : "⋰"   U22F0               # UP RIGHT DIAGONAL ELLIPSIS
+<Multi_key> <backslash> <ellipsis>    : "⋱"   U22F1               # DOWN RIGHT DIAGONAL ELLIPSIS
+
+<Multi_key> <parenright> <greater>    : "〉"   rightanglebracket   # RIGHT-POINTING ANGLE BRACKET
+<Multi_key> <less> <parenleft>        : "〈"   leftanglebracket    # LEFT-POINTING ANGLE BRACKET
+<Multi_key> <less> <less>             : "≪"    U226A              # MUCH LESS-THAN
+<Multi_key> <greater> <greater>       : "≫"    U226B              # MUCH GREATER-THAN
+
+<Multi_key> <underscore> <equal>      : "≡"   identical           # IDENTICAL TO
+<dead_stroke> <underscore> <equal>    : "≢"   U2262               # NOT IDENTICAL TO
+<Multi_key> <atilde> <equal>          : "≅"   U2245               # APPROXIMATELY EQUAL TO
+
+<Multi_key> <UFDD2> <e>               : "ϵ"    U03F5              # GREEK LUNATE EPSILON SYMBOL
+<Multi_key> <UFDD2> <f>               : "ϕ"    U03D5              # GREEK PHI SYMBOL
+<Multi_key> <UFDD2> <j>               : "ϑ"    U03D1              # GREEK THETA SYMBOL
+<Multi_key> <UFDD2> <r>               : "ϱ"    U03F1              # GREEK RHO SYMBOL
+<Multi_key> <UFDD2> <s>               : "ς"    U03C2              # GREEK SMALL LETTER FINAL SIGMA
+
