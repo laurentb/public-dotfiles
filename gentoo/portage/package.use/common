@@ -11,7 +11,7 @@ sys-fs/udev -devfs-compat extras
 
 dev-vcs/mercurial gpg
 dev-util/subversion -dso
-app-portage/layman git
+app-portage/layman git mercurial
 
 # needed for elinks
 dev-scheme/guile deprecated discouraged networking
