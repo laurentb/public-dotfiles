@@ -63,6 +63,9 @@ URxvt*loginShell: true
 ! C-z
 URxvt.keysym.XF86HomePage: \032
 
+! Meta key
+URxvt*modifier: mod4
+
 Xcursor.size: 24
 
 lal*font: Droid Sans Mono Dotted
