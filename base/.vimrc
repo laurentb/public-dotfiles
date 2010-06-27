@@ -144,3 +144,5 @@ if filereadable($HOME."/.vim/local.vim")
     source ~/.vim/local.vim
 endif
 
+let python_highlight_all = 1
+let python_slow_sync = 1
