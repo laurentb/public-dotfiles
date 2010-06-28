@@ -10,7 +10,7 @@ net-dns/avahi mdnsresponder-compat
 sys-fs/udev -devfs-compat extras
 
 dev-vcs/mercurial gpg
-dev-util/subversion -dso
+dev-vcs/subversion -dso
 app-portage/layman git mercurial
 
 # needed for elinks
