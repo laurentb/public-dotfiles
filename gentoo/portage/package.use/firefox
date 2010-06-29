@@ -1,3 +1,6 @@
 dev-db/sqlite secure-delete
 net-libs/xulrunner system-sqlite
 www-client/mozilla-firefox system-sqlite
+
+x11-plugins/enigmail system-sqlite
+mail-client/thunderbird system-sqlite
