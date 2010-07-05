@@ -27,6 +27,9 @@
   <item label="Arora">
     <action name="Execute"><execute>arora</execute></action>
   </item>
+  <item label="Thunderbird">
+    <action name="Execute"><execute>thunderbird</execute></action>
+  </item>
 </menu>
 
 <menu id="media-menu" label="Media">
