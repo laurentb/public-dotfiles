@@ -45,6 +45,8 @@ if [ -x '/usr/bin/vim' ]; then
     alias vi=vim
 fi
 
+export PYTHONWARNINGS="default"
+
 [ -f ~/.sh_common.desktop ] && . ~/.sh_common.desktop
 
 [ -f ~/.sh_common.local ] && . ~/.sh_common.local
