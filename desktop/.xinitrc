@@ -42,9 +42,14 @@ xscreensaver &
 
 (sleep 2 && kmix --keepvisibility) &
 (sleep 2 && klipper) &
-(sleep 3 && rsibreak) &
+(sleep 3 && nice rsibreak) &
 
-(sleep 4 && lal) &
+(sleep 4 && nice lal) &
+
+which wicd-gtk && (sleep 3 && nice wicd-gtk) &
+which gnome-power-manager && (sleep 4 && nice gnome-power-manager) &
+
+[ -f ~/.xinitrc.local ] && . ~/.xinitrc.local
 
 exec openbox
 
