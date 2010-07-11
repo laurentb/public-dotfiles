@@ -14,8 +14,6 @@ if "desktop" in options.tags and not options.is_root:
 
 for dir in dirs:
     base_dir = path.normpath(path.join(base_path, dir))
-    print base_dir + " => " + "~"
-
     ConfigSource(base_dir, "~", None, options).sync()
 
 # FIXME remove the "desktop" condition when possible
@@ -24,7 +22,5 @@ if options.is_root and options.is_gentoo and "desktop" in options.tags:
 
     for dir in dirs:
         base_dir = path.normpath(path.join(base_path, dir))
-        print base_dir + " => " + "/etc"
-
-        c = ConfigSource(base_dir, "/etc", None, options).sync()
+        ConfigSource(base_dir, "/etc", None, options).sync()
 
