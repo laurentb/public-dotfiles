@@ -1,0 +1,3 @@
+bind generic T view-tree
+bind generic t move-down
+bind generic s move-up
