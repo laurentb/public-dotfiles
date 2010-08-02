@@ -21,14 +21,11 @@
   <item label="Firefox">
     <action name="Execute"><execute>firefox</execute></action>
   </item>
-  <item label="Opera">
-    <action name="Execute"><execute>opera -notrayicon</execute></action>
+  <item label="Thunderbird">
+    <action name="Execute"><execute>thunderbird</execute></action>
   </item>
   <item label="Arora">
     <action name="Execute"><execute>arora</execute></action>
-  </item>
-  <item label="Thunderbird">
-    <action name="Execute"><execute>thunderbird</execute></action>
   </item>
 </menu>
 
@@ -80,6 +77,9 @@
     <action name="Execute"><execute>obconf</execute></action>
   </item>
   -->
+  <item label="Reset Input">
+    <action name="Execute"><execute>bash -c 'source ~/.xkeysetup.sh'</execute></action>
+  </item>
   <item label="Reconfigure">
     <action name="Reconfigure" />
   </item>
