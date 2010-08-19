@@ -4,3 +4,5 @@ www-client/firefox system-sqlite
 
 x11-plugins/enigmail system-sqlite
 mail-client/thunderbird system-sqlite
+
+www-plugins/adobe-flash nspluginwrapper
