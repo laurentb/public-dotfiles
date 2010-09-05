@@ -9,8 +9,6 @@ app-portage/findcruft
 
 dev-util/scanmem
 
-net-misc/bti
-
 app-arch/dtrx
 
 dev-vcs/git-wtf
