@@ -9,7 +9,7 @@ media-sound/mpd lame -mikmod -ffmpeg -aac
 media-sound/sox encode
 media-video/vlc matroska rtsp stream vlm kate libass
 
-media-video/ffmpeg threads
+media-video/ffmpeg threads rtmp
 
 media-libs/libdvdread css
 
