@@ -32,7 +32,7 @@ xset mouse 3 3
 xset r on
 xset r rate 600 40
 
-xsetroot -solid "#3A3A3A"
+xsetroot -solid "#323232"
 
 xset s off
 xset dpms 10800 10800 10800
