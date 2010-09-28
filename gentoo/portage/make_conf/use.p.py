@@ -18,4 +18,5 @@ INPUT_DEVICES="$inpdevs"
 VIDEO_CARDS="radeon vesa fbdev dummy none"
 NUT_DRIVERS="usbhid-ups"
 SANE_BACKENDS="epson"
+CAMERAS="ptp2"
 """).render(use=" ".join(use), inpdevs=" ".join(inpdevs))
