@@ -27,3 +27,5 @@ app-arch/dtrx 7z zip cpio tar gzip bzip2 rar
 net-analyzer/vnstat -gd
 
 dev-python/bpython urwid
+
+dev-db/sqlite secure-delete unlock-notify

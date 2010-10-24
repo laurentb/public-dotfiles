@@ -1,4 +1,3 @@
-dev-db/sqlite secure-delete
 net-libs/xulrunner system-sqlite
 www-client/firefox system-sqlite
 
