@@ -1,5 +1,4 @@
-# webdev
-dev-lang/php mysql mysqli mysqlnd bcmath cgi cli curl curlwrappers ctype calendar exif filter ftp fpm flatfile gd gmp json iconv posix mhash session simplexml soap sockets hash imap tidy tokenizer inifile pdo truetype xmlreader xmlrpc xmlwriter xsl zip pcntl posix sharedmem sysvipc wddx
+dev-lang/php bcmath calendar cgi curlwrappers flatfile fpm gmp imap inifile intl mysql mysqli mysqlnd pcntl pdo sharedmem soap sockets sysvipc tidy wddx xmlrpc xsl zip
 
 www-servers/lighttpd fastcgi -ldap -webdav
 
