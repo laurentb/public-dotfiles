@@ -39,3 +39,5 @@ games-board/xscrabble linguas_fr
 net-print/gutenprint foomaticdb
 
 media-libs/libcanberra -sound
+
+<x11-base/xorg-server-1.8 hal
