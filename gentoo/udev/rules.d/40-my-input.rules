@@ -1,3 +1,0 @@
-# 40- because it must run after /lib*/udev/rules.d/30-kernel-compat.rules
-KERNEL=="event*", ATTRS{name}=="TypeMatrix.com USB Keyboard", NAME="input/typematrix"
-KERNEL=="event*", ATTRS{name}=="Kingsis Peripherals  Evoluent VerticalMouse 3 ", NAME="input/verticalmouse"
