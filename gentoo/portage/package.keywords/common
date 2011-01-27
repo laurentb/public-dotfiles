@@ -14,6 +14,9 @@ app-arch/dtrx
 dev-vcs/git-wtf
 dev-vcs/git-publish-branch
 
+dev-vcs/git-goggles
+dev-python/termcolor
+
 sys-apps/fr-bepo-keymap
 
 dev-python/fabric
