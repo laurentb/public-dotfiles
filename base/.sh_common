@@ -19,7 +19,8 @@ alias cp='cp -vi'
 alias ln='ln -vi'
 alias tar='tar -vk'
 alias rmdir='rmdir -v'
-alias mkdir='mkdir -p'
+alias mkdir='mkdir -pv'
+alias chmod='chmod -c'
 [ -x '/usr/bin/dtrx' ] && alias dtrx='dtrx -v'
 
 # colors
