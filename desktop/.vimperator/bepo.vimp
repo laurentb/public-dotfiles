@@ -38,7 +38,7 @@ noremap gt gj
 " onglet précédant/suivant
 noremap gb gT
 noremap gé gt
-"Le mode visuel passe en I et i/e servent à passer à l'onglet suivant/précédent
+" le mode visuel passe en I et i/e servent à passer à l'onglet suivant/précédent
 noremap I i
 noremap i gT
 noremap e gt
@@ -47,3 +47,6 @@ noremap e gt
 noremap gi g^
 noremap ge g0
 
+" suivre liens précédent/suivant
+noremap « [[
+noremap » ]]
