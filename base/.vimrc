@@ -146,3 +146,5 @@ endif
 
 let python_highlight_all = 1
 let python_slow_sync = 1
+
+call pathogen#runtime_append_all_bundles()
