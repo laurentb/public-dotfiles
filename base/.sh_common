@@ -21,6 +21,7 @@ alias tar='tar -vk'
 alias rmdir='rmdir -v'
 alias mkdir='mkdir -pv'
 alias chmod='chmod -c'
+alias chown='chown -c'
 [ -x '/usr/bin/dtrx' ] && alias dtrx='dtrx -v'
 
 # colors
