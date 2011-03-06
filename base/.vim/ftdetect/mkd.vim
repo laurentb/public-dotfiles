@@ -1,1 +1,1 @@
-au BufNewFile,BufRead *.md,*.mkd,*.mdwn,*.markdown set filetype=mkd
+au BufNewFile,BufRead *.md,*.mkd,*.mdwn,*.markdown set filetype=markdown
