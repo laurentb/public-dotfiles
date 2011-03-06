@@ -13,7 +13,7 @@ dev-vcs/mercurial gpg
 dev-vcs/subversion -dso
 app-portage/layman git mercurial
 
-# needed for elinks
+# needed for elinks
 dev-scheme/guile deprecated discouraged networking
 
 net-proxy/tsocks tordns
@@ -31,3 +31,7 @@ dev-python/bpython urwid
 dev-db/sqlite secure-delete unlock-notify
 
 net-p2p/mktorrent threads
+
+# needed for cryptsetup
+dev-libs/libgcrypt static-libs
+dev-libs/libgpg-error static-libs
