@@ -1,11 +1,15 @@
 scriptencoding utf-8
 
+filetype off
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
 " usually these are already defaults in the global vimrc
 set nocompatible
 set ttyfast
 set termencoding=utf-8
 filetype on
-filetype plugin on
+filetype plugin indent on
 
 set background=dark
 
@@ -147,4 +151,3 @@ endif
 let python_highlight_all = 1
 let python_slow_sync = 1
 
-call pathogen#runtime_append_all_bundles()
