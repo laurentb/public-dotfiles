@@ -83,5 +83,5 @@ noremap <Space> <C-D>
 noremap <Return> zz
 
 " <Leader>, par défaut \
-let mapleader = "¡"
+let mapleader = "¿"
 
