@@ -33,6 +33,8 @@ set backspace=indent,eol,start
 " can be ignored with \c or \C in the pattern
 set ignorecase smartcase
 
+set hlsearch
+
 " autoinsert comment leader
 set formatoptions+=ro
 
