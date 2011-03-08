@@ -27,6 +27,11 @@ set autoindent
 set smartindent
 set softtabstop=4
 set smarttab
+set backspace=indent,eol,start
+
+" ignore case in searches, unless the pattern is not fully lowercase
+" can be ignored with \c or \C in the pattern
+set ignorecase smartcase
 
 " autoinsert comment leader
 set formatoptions+=ro
