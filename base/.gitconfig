@@ -13,5 +13,6 @@
 	lg = log -M --decorate --graph
 	pur = pull --rebase
 	arver = !sh -c 'git archive --format=tar --prefix=$(basename ${PWD})-${1}/ v${1}|bzip2 > $(basename ${PWD})-${1}.tar.bz2' -
+	root = !pwd
 [core]
 	pager = cat
