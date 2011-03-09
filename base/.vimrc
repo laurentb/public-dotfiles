@@ -165,6 +165,11 @@ let g:indent_guides_enable_on_vim_startup = 1
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=236
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=238
 
-" copy/paste from the X clipboard with F6 and F7
-vmap <F6> :!xclip -f -sel clip<CR>
-nmap <F7> mz:-1r !xclip -o -sel clip<CR>`z
+" copy/paste from the X clipboard
+:com -range Cb :silent :<line1>,<line2>w !xsel -i -b
+:com -range Cp :silent :<line1>,<line2>w !xsel -i -p
+:com -range Cs :silent :<line1>,<line2>w !xsel -i -s
+
+:com -range Pb :silent :r !xsel -o -b
+:com -range Pp :silent :r !xsel -o -p
+:com -range Ps :silent :r !xsel -o -s
