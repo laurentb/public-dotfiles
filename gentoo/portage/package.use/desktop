@@ -10,6 +10,7 @@ media-sound/sox encode
 media-video/vlc matroska rtsp stream vlm kate libass
 
 media-video/ffmpeg threads rtmp
+virtual/ffmpeg threads
 
 media-libs/libdvdread css
 
