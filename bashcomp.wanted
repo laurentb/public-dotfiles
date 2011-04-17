@@ -59,6 +59,7 @@ sysv-rc
 tar
 tig
 tree
+udisks
 unrar
 util-linux
 vim
