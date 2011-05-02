@@ -46,3 +46,5 @@ media-libs/libcanberra -sound
 x11-misc/shutter drawing
 
 media-libs/libtheora encode
+
+media-sound/pulseaudio realtime
