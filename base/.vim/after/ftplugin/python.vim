@@ -1,1 +1,1 @@
-setlocal makeprg=pyflakes\ %
+setlocal makeprg=~/.vim/pythonlint.py\ %
