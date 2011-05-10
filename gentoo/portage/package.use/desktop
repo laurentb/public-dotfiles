@@ -48,3 +48,5 @@ x11-misc/shutter drawing
 media-libs/libtheora encode
 
 media-sound/pulseaudio realtime
+
+dev-python/PyQt4 declarative multimedia xmlpatterns
