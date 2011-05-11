@@ -50,3 +50,4 @@ media-libs/libtheora encode
 media-sound/pulseaudio realtime
 
 dev-python/PyQt4 declarative multimedia xmlpatterns
+x11-libs/qt-gui gtkstyle
