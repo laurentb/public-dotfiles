@@ -1,0 +1,2 @@
+# required for suspend
+dev-libs/lzo static-libs

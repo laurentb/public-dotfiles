@@ -35,6 +35,3 @@ net-p2p/mktorrent threads
 # needed for cryptsetup
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
-
-# required for suspend
-dev-libs/lzo static-libs
