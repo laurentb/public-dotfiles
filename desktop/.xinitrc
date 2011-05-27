@@ -18,6 +18,8 @@ else
     fi
 fi
 
+source ~/.urxvt/xrdb.sh
+
 # urxvt daemon − use urxvtc instead of urxvt
 urxvtd -q -o -f
 
