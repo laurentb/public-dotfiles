@@ -51,5 +51,5 @@ which gnome-power-manager && (sleep 4 && nice gnome-power-manager) &
 
 [ -f ~/.xinitrc.local ] && . ~/.xinitrc.local
 
+which ck-launch-session && exec ck-launch-session openbox
 exec openbox
-
