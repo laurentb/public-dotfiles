@@ -1,6 +1,6 @@
-#! perl -w
+#!/usr/bin/perl -w
 # I don't know much about Perl, so this probably sucks.
-# Author: Laurent Bachelier
+# Author: Laurent Bachelier <laurent@bachelier.name>
 # Based on: urxvt-perls by Bert Muennich
 # License:  GPLv2
 
