@@ -1,0 +1,37 @@
+#! perl -w
+# I don't know much about Perl, so this probably sucks.
+# Author: Laurent Bachelier
+# Based on: urxvt-perls by Bert Muennich
+# License:  GPLv2
+
+use strict;
+
+my $matcher = qr{(\x{00A0})}x;
+my $replacement = "\x{00A4}";
+
+sub on_start {
+    my ($self) = @_;
+    $self->enable(line_update => \&line_update);
+
+    ()
+}
+
+sub line_update {
+    my ($self, $row) = @_;
+
+    my $line = $self->line($row);
+    my $text = $line->t;
+    my $rend = $line->r;
+
+    while ($text =~ s/$matcher/$replacement/g) {
+        my ($beg, $end) = ($-[1], $+[1] - 1);
+
+        for (@{$rend}[$beg .. $end]) {
+            $_ = urxvt::SET_FGCOLOR($_, 62);
+        }
+        $line->r($rend);
+    }
+    $line->t($text);
+
+    ()
+}
