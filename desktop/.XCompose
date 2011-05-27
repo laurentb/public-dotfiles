@@ -570,3 +570,4 @@ include "%L"
 <Multi_key> <UFDD2> <r>               : "ϱ"    U03F1              # GREEK RHO SYMBOL
 <Multi_key> <UFDD2> <s>               : "ς"    U03C2              # GREEK SMALL LETTER FINAL SIGMA
 
+<Multi_key> <b> <t> <c>               : "Ƀ"   U0243               # BITCOIN
