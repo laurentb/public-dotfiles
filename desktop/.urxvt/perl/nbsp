@@ -7,7 +7,6 @@
 use strict;
 
 my $matcher = qr{(\x{00A0})}x;
-my $replacement = "\x{00A4}";
 
 sub on_start {
     my ($self) = @_;
@@ -23,12 +22,10 @@ sub line_update {
     my $text = $line->t;
     my $rend = $line->r;
 
-    while ($text =~ s/$matcher/$replacement/g) {
-        my ($beg, $end) = ($-[1], $+[1] - 1);
+    while ($text =~ /$matcher/g) {
+        my $idx = $-[1];
 
-        for (@{$rend}[$beg .. $end]) {
-            $_ = urxvt::SET_FGCOLOR($_, 62);
-        }
+        @{$rend}[$idx] |= urxvt::SET_BGCOLOR($_, 240);
         $line->r($rend);
     }
     $line->t($text);
