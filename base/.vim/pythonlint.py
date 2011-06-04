@@ -8,6 +8,8 @@ try:
 except SystemExit, e:
     pass
 
+from sys import argv
+argv.insert(1, '--repeat')
 with warnings.catch_warnings():
     warnings.filterwarnings("ignore", category=ImportWarning)
     from pkg_resources import load_entry_point
