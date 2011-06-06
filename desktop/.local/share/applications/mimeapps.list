@@ -1,0 +1,4 @@
+[Added Associations]
+x-scheme-handler/http=mozilla-firefox-3.6.desktop;
+x-scheme-handler/https=mozilla-firefox-3.6.desktop;
+x-scheme-handler/mailto=thunderbird.desktop;
