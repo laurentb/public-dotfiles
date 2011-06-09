@@ -173,3 +173,5 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=238
 :com -range Pb :silent :r !xsel -o -b
 :com -range Pp :silent :r !xsel -o -p
 :com -range Ps :silent :r !xsel -o -s
+
+source ~/.vim/completion.vim
