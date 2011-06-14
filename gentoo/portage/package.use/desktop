@@ -41,7 +41,7 @@ net-print/gutenprint foomaticdb
 
 media-libs/libcanberra -sound
 
-<x11-base/xorg-server-1.8 hal
+x11-base/xorg-server xnest xvfb
 
 x11-misc/shutter drawing
 
