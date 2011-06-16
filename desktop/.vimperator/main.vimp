@@ -37,7 +37,7 @@ set previouspattern+=^\s*pr(é|e)c(é|e)d(a|e)nt\s*$
 set showtabline=2
 
 set showmode
-set showstatuslinks
+set showstatuslinks=2
 
 " switch css use or not
 map ! :set invum<CR>
