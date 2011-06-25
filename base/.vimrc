@@ -158,12 +158,14 @@ endif
 let python_highlight_all = 1
 let python_slow_sync = 1
 
-let g:indent_guides_auto_colors = 0
-let g:indent_guides_guide_size = 1
-let g:indent_guides_start_level = 2
-let g:indent_guides_enable_on_vim_startup = 1
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=236
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=238
+if (&t_Co > 255)
+    let g:indent_guides_auto_colors = 0
+    let g:indent_guides_guide_size = 1
+    let g:indent_guides_start_level = 2
+    let g:indent_guides_enable_on_vim_startup = 1
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=236
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=238
+endif
 
 " copy/paste from the X clipboard
 :com -range Cb :silent :<line1>,<line2>w !xsel -i -b
