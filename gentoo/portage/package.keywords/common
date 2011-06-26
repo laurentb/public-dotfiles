@@ -5,8 +5,6 @@ net-fs/curlftpfs
 
 net-misc/esniper
 
-app-portage/findcruft
-
 dev-util/scanmem
 
 app-arch/dtrx
