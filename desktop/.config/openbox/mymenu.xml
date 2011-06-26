@@ -27,52 +27,60 @@
   <item label="Chromium">
     <action name="Execute"><execute>chromium</execute></action>
   </item>
-  <item label="Arora">
-    <action name="Execute"><execute>arora</execute></action>
-  </item>
 </menu>
 
-<menu id="media-menu" label="Media">
+<menu id="images-menu" label="Images">
   <item label="GQview">
     <action name="Execute"><execute>gqview</execute></action>
   </item>
   <item label="The GIMP">
     <action name="Execute"><execute>gimp</execute></action>
   </item>
+  <item label="Inkscape">
+    <action name="Execute"><execute>inkscape</execute></action>
+  </item>
+  <item label="Shutter">
+    <action name="Execute"><execute>shutter</execute></action>
+  </item>
+</menu>
+
+<menu id="sound-menu" label="Sound">
+  <item label="Volume Control">
+    <action name="Execute"><execute>pavucontrol</execute></action>
+  </item>
   <item label="Picard">
     <action name="Execute"><execute>picard</execute></action>
   </item>
 </menu>
 
-<menu id="ooo-menu" label="OOo">
-  <item label="Base">
-    <action name="Execute"><execute>oobase</execute></action>
+<menu id="documents-menu" label="Documents">
+  <item label="KWord">
+    <action name="Execute"><execute>kword</execute></action>
   </item>
   <item label="Calc">
-    <action name="Execute"><execute>oocalc</execute></action>
+    <action name="Execute"><execute>localc</execute></action>
   </item>
   <item label="Draw">
-    <action name="Execute"><execute>oodraw</execute></action>
+    <action name="Execute"><execute>lodraw</execute></action>
   </item>
   <item label="Impress">
-    <action name="Execute"><execute>ooimpress</execute></action>
+    <action name="Execute"><execute>loimpress</execute></action>
   </item>
   <item label="Math">
-    <action name="Execute"><execute>oomath</execute></action>
+    <action name="Execute"><execute>lomath</execute></action>
   </item>
   <item label="Writer">
-    <action name="Execute"><execute>oowriter</execute></action>
+    <action name="Execute"><execute>lowriter</execute></action>
   </item>
 </menu>
-
-
 
 <menu id="root-menu" label="menu">
   <separator label="Openbox" />
   <menu id="apps-menu" />
   <menu id="net-menu" />
-  <menu id="media-menu" />
-  <menu id="ooo-menu" />
+  <menu id="images-menu" />
+  <menu id="sound-menu" />
+  <menu id="documents-menu" />
 
   <separator />
   <!--
