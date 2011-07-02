@@ -32,7 +32,7 @@ net-im/gajim -gnome srv trayicon
 
 app-office/akonadi-server -mysql
 
-media-sound/audacity vamp soundtouch
+media-sound/audacity vamp soundtouch midi
 
 x11-libs/cairo glitz
 
