@@ -36,3 +36,5 @@ net-p2p/mktorrent threads
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
 dev-libs/popt static-libs
+
+media-libs/libpng apng
