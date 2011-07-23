@@ -4,10 +4,7 @@ do
     echo ondemand > ${OPTION}
 done
 
-for OPTION in /sys/devices/system/cpu/cpu*/cpufreq/ondemand/ignore_nice_load
-do
-    echo 0 > ${OPTION}
-done
+echo 0 > /sys/devices/system/cpu/cpufreq/ondemand/ignore_nice_load
 
 # Centiseconds (1sec = 100), default=500
 echo 3000 > /proc/sys/vm/dirty_writeback_centisecs
