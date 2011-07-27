@@ -18,3 +18,5 @@ dev-python/termcolor
 sys-apps/fr-bepo-keymap
 
 dev-python/fabric
+
+dev-python/pep8
