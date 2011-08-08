@@ -571,3 +571,5 @@ include "%L"
 <Multi_key> <UFDD2> <s>               : "ς"    U03C2              # GREEK SMALL LETTER FINAL SIGMA
 
 <Multi_key> <b> <t> <c>               : "Ƀ"   U0243               # BITCOIN
+
+<Multi_key> <t> <f>                   : "▲"   U25B2               # BLACK UP-POINTING TRIANGLE
