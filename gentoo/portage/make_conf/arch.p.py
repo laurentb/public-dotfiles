@@ -15,7 +15,7 @@ available_use_flags = ( "avx", "mmx", "mmxext", "3dnow", "3dnowext", "sse", "sse
 use_flags = [ flag for flag in available_use_flags if flag in flags ]
 use_flags += [ "-"+flag for flag in available_use_flags if flag not in flags ]
 
-gcc = "gcc -march=native -E -v - </dev/null 2>&1 | sed -n 's/.* -v - //p'"
+gcc = "gcc -march=native -E -v - </dev/null 2>&1 | sed -n 's/.* -v - //p'|sed -r 's/ --param [^ ]+//g'"
 cflags = subprocess.Popen(gcc, shell=True, stdout=subprocess.PIPE).communicate()[0].strip()
 
 if __name__ == "__main__":
