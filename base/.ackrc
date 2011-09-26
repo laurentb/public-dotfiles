@@ -1,2 +1,3 @@
 --ignore-dir=cache
 --ignore-dir=log
+--type-set=twig=.twig
