@@ -1,2 +1,9 @@
-! set Compose key to "Calculator" key
-keycode 148 = Multi_key
+! TypeMatrix mappings
+!! set Compose key to "Calculator" key
+!keycode 148 = Multi_key
+
+! KBC Poker mappings
+! Right Windows key to Alt Gr
+keysym Super_R = ISO_Level3_Shift
+! "Web" key (needs fn) to Compose
+keysym XF86HomePage = Multi_key
