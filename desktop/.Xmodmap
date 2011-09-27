@@ -2,6 +2,13 @@
 !! set Compose key to "Calculator" key
 !keycode 148 = Multi_key
 
+! IBM Model M mappings (somewhat perfectible)
+!! scroll lock becomes Meta/Super/mod4
+!!keycode 78 = Super_L
+!!add mod4 = Super_L
+!! print screen becomes compose
+!!keycode 107 = Multi_key
+
 ! KBC Poker mappings
 ! Right Windows key to Alt Gr
 keysym Super_R = ISO_Level3_Shift
