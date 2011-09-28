@@ -11,6 +11,7 @@
 
 ! KBC Poker mappings
 ! Right Windows key to Alt Gr
-keysym Super_R = ISO_Level3_Shift
+remove Mod4 = Super_R
+add Mod5 = Super_R
 ! "Web" key (needs fn) to Compose
 keysym XF86HomePage = Multi_key
