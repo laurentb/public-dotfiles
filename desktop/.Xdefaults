@@ -60,6 +60,9 @@ URxvt*externalBorder: 0
 
 URxvt*loginShell: true
 
+! C-z
+URxvt.keysym.Menu: \032
+
 Xcursor.size: 24
 
 lal*font: Droid Sans Mono Dotted
