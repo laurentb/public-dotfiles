@@ -1,3 +1,4 @@
 --ignore-dir=cache
 --ignore-dir=log
 --type-set=twig=.twig
+--type-set=ebuild=.ebuild,.eclass
