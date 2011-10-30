@@ -1,5 +1,5 @@
 net-libs/xulrunner system-sqlite
-www-client/firefox system-sqlite
+www-client/firefox system-sqlite pgo
 
 x11-plugins/enigmail system-sqlite
 mail-client/thunderbird system-sqlite
