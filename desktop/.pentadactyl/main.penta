@@ -1,2 +1,27 @@
-" Pure Firefox configuration (about:config values)
+" pure Firefox configuration (about:config values)
 source ~/.pentadactyl/firefox.penta
+
+
+" bépo mappings
+source ~/.pentadactyl/bepo.penta
+
+" scroll 8 times as much
+noremap s 8k
+noremap t 8j
+
+" scroll pages
+noremap <BS> <C-u>
+noremap <Space> <C-d>
+
+" normal zoom
+noremap <Return> zz
+
+
+" hide right scrollbar
+set guioptions-=r
+
+" show tab number
+set guioptions+=n
+
+" can't use urxvtc as it returns immediately
+set editor='urxvt -geometry 90x40 -e vim -f +<line> +"sil! call cursor(0, <column>)" <file>'

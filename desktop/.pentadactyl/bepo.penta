@@ -20,7 +20,7 @@ noremap S <C-u>
 " j ouverture dans nouvel onglet
 noremap j t
 noremap J T
-"utilité ?
+" utilité ?
 noremap l c
 noremap L C
 " h = reload
