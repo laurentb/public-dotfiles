@@ -6,8 +6,10 @@ source ~/.pentadactyl/firefox.penta
 source ~/.pentadactyl/bepo.penta
 
 " scroll 8 times as much
-noremap s 8k
-noremap t 8j
+group bépo
+noremap -b s 8k
+noremap -b t 8j
+group user
 
 " scroll pages
 noremap <BS> <C-u>
