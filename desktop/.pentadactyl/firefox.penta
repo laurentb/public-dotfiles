@@ -1,0 +1,15 @@
+set! general.warnOnAboutConfig=false
+
+" restore previous session at startup
+set! browser.startup.page=3
+set! browser.startup.homepage=about:blank
+
+" grow up
+set! browser.tabs.animate=false
+set! browser.fullscreen.animateUp=0
+set! browser.panorama.animate_zoom=false
+
+" no tab close buttons at all
+set! browser.tabs.closeButtons=2
+
+set! browser.tabs.closeWindowWithLastTab=false
