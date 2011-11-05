@@ -1,0 +1,8 @@
+"1.0b7.2 "(created 2011/08/05 11:03:59)"
+
+loadplugins '\.(js|penta)$'
+group user
+
+source! ~/.pentadactyl/main.penta
+
+" vim: set ft=pentadactyl:
