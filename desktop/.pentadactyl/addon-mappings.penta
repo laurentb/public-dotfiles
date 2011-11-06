@@ -1,0 +1,4 @@
+command pm -description "Fill fields with PasswordMaker" emenu Tools.PasswordMaker.CoolKey
+command pmd -description "Open PasswordMaker dialog" emenu Tools.PasswordMaker.Open PasswordMaker
+
+command fb -description "Toggle Firebug" firebug toggle

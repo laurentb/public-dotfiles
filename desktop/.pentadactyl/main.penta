@@ -1,6 +1,9 @@
 " pure Firefox configuration (about:config values)
 source ~/.pentadactyl/firefox.penta
 
+" configure addons
+source ~/.pentadactyl/addons.penta
+
 
 " appearance tweaks
 source ~/.pentadactyl/appearance.penta
@@ -25,8 +28,9 @@ noremap <Return> zz
 " switch css use
 map ! :set invum<CR>
 
-command pm emenu Tools.PasswordMaker.CoolKey
-command pmd emenu Tools.PasswordMaker.Open PasswordMaker
+" addon mappings
+
+source ~/.pentadactyl/addon-mappings.penta
 
 " can't use urxvtc as it returns immediately
 set editor='urxvt -geometry 90x40 -e vim -f +<line> +"sil! call cursor(0, <column>)" <file>'
