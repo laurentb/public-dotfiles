@@ -8,8 +8,15 @@ set! browser.startup.homepage=about:blank
 set! browser.tabs.animate=false
 set! browser.fullscreen.animateUp=0
 set! browser.panorama.animate_zoom=false
+set! general.smoothScroll=false
 
 " no tab close buttons at all
 set! browser.tabs.closeButtons=2
 
 set! browser.tabs.closeWindowWithLastTab=false
+
+" privacy
+set! privacy.donottrackheader.enabled=true
+set! browser.safebrowsing.enabled=false
+set! browser.safebrowsing.malware.enabled=false
+set! signon.rememberSignons=false
