@@ -19,8 +19,8 @@ hi -a Hint font-size: 15px !important; font-weight: normal !important; backgroun
 hi -a HintElem background-color: rgba(255, 150, 255, 0.3) !important; color: #000 !important;
 
 hi TabNumber    color: #c55; margin-left: 0px !important; margin-right: 2px !important; font-size: 90% !important; margin-top: 2px !important; font-weight: bold !important;
-hi -a TabText      font-size: 80% !important;
-hi -a TabIcon      margin-left: 1px !important; margin-right: 0px !important; padding: 0 !important;
+hi -a TabText      font-size: 80% !important; padding: 0 !important;
+hi -a TabIcon      margin-left: 2px !important; margin-right: 0 !important; padding: 0 !important;
 
 " style for the tabs
 style -name tabs chrome://* <<EOM
@@ -36,6 +36,7 @@ style -name tabs chrome://* <<EOM
 /* make tabs flat and compact */
 #tabbrowser-tabs .tabbrowser-tab {
     border: none !important;
+    border-left: 1px solid #bcbcac !important;
     background-image: none !important;
 
     -moz-border-radius-topleft: 0 !important;

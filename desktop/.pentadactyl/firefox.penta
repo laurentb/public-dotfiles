@@ -1,5 +1,6 @@
 set! general.warnOnAboutConfig=false
 set! security.warn_viewing_mixed=false
+set! browser.fullscreen.autohide=false
 
 " restore previous session at startup
 set! browser.startup.page=3
