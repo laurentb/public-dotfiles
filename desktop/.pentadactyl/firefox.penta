@@ -1,4 +1,5 @@
 set! general.warnOnAboutConfig=false
+set! security.warn_viewing_mixed=false
 
 " restore previous session at startup
 set! browser.startup.page=3
@@ -9,6 +10,7 @@ set! browser.tabs.animate=false
 set! browser.fullscreen.animateUp=0
 set! browser.panorama.animate_zoom=false
 set! general.smoothScroll=false
+set! browser.tabs.drawInTitlebar=false
 
 " no tab close buttons at all
 set! browser.tabs.closeButtons=2

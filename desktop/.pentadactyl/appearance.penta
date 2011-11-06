@@ -5,3 +5,49 @@ set guioptions-=r
 
 " show tab number
 set guioptions+=n
+
+" use Droid fonts
+hi -a StatusLine   font-family: "Droid Sans Mono Dotted", "Droid Sans Mono" !important; font-size: 100% !important;
+hi -a CmdLine      font-family: "Droid Sans Mono Dotted", "Droid Sans Mono" !important; font-size: 100% !important;
+hi -a Normal       font-family: "Droid Sans Mono Dotted", "Droid Sans Mono" !important; font-size: 100% !important;
+hi -a REPL         font-family: "Droid Sans Mono Dotted", "Droid Sans Mono" !important; font-size: 100% !important;
+
+" the zenburn command line is too compact
+hi -a CmdLine padding: 2px 1px !important;
+
+hi TabNumber    color: #c55; margin-left: 0px !important; margin-right: 2px !important; font-size: 90% !important; margin-top: 2px !important; font-weight: bold !important;
+hi -a TabText      font-size: 80% !important;
+hi -a TabIcon      margin-left: 1px !important; margin-right: 0px !important; padding: 0 !important;
+
+" style for the tabs
+style -name tabs chrome://* <<EOM
+/* remove new tab button from the tab bar */
+#tabbrowser-tabs .tabs-newtab-button {
+    display: none; !important
+}
+/* remove tab selection menu */
+#TabsToolbar .tabs-alltabs-button {
+    display: none; !important
+}
+
+/* make tabs flat and compact */
+#tabbrowser-tabs .tabbrowser-tab {
+    border: none !important;
+    background-image: none !important;
+
+    -moz-border-radius-topleft: 0 !important;
+    -moz-border-radius-topright: 0 !important;
+    -moz-border-radius-bottomright: 0 !important;
+    -moz-border-radius-bottomleft: 0 !important;
+}
+#tabbrowser-tabs .tabbrowser-tab[selected=false] {
+    background-color: #dcdccc !important;
+}
+#tabbrowser-tabs .tabbrowser-tab[selected=true] {
+    background-color: #fefeee !important;
+    font-weight: bold !important;
+    color: #3a3a3a !important;
+}
+EOM
+
+style -name gray-about-blank about:blank body { background-color: #3a3a3a; }

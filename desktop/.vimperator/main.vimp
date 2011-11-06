@@ -19,5 +19,3 @@ set showstatuslinks=2
 
 " switch css use or not
 map ! :set invum<CR>
-
-color zenburn
