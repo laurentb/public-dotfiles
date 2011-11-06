@@ -2,6 +2,10 @@
 source ~/.pentadactyl/firefox.penta
 
 
+" appearance tweaks
+source ~/.pentadactyl/appearance.penta
+
+
 " bépo mappings
 source ~/.pentadactyl/bepo.penta
 
@@ -17,13 +21,6 @@ noremap <Space> <C-d>
 
 " normal zoom
 noremap <Return> zz
-
-
-" hide right scrollbar
-set guioptions-=r
-
-" show tab number
-set guioptions+=n
 
 " can't use urxvtc as it returns immediately
 set editor='urxvt -geometry 90x40 -e vim -f +<line> +"sil! call cursor(0, <column>)" <file>'

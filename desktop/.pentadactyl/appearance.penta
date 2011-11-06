@@ -1,0 +1,7 @@
+colorscheme zenburn
+
+" hide right scrollbar
+set guioptions-=r
+
+" show tab number
+set guioptions+=n
