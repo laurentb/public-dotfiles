@@ -4,3 +4,5 @@ set! extensions.firebug.showStatusIcon=true
 set! webdeveloper.toolbar.icons=icons
 
 set! extensions.beef-taco.showtoolbarpref=true
+
+set! extensions.longurlplease.expandstyle=full
