@@ -52,3 +52,6 @@ noremap ge g0
 " suivre liens précédent/suivant
 noremap « [[
 noremap » ]]
+
+" utiliser les touches centrales
+set hintkeys=auie,ctsrnmbépoèvdljz
