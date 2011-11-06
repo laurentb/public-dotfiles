@@ -1,2 +1,4 @@
 " use addon bar and not location bar for Firebug icon
 set! extensions.firebug.showStatusIcon=true
+
+set! webdeveloper.toolbar.icons=icons

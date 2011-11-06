@@ -2,3 +2,6 @@ command pm -description "Fill fields with PasswordMaker" emenu Tools.PasswordMak
 command pmd -description "Open PasswordMaker dialog" emenu Tools.PasswordMaker.Open PasswordMaker
 
 command fb -description "Toggle Firebug" firebug toggle
+
+command wd -description "Toggle Web Developer Toolbar" toolbartoggle Web Developer Toolbar
+toolbarhide Web Developer Toolbar
