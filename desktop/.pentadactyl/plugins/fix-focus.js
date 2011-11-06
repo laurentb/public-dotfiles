@@ -478,7 +478,7 @@ else {
                 let (keys = events.fromString(value, true))
                     Option.validIf(keys.length == 1,
                                    "Only one key may be specified") &&
-                    Option.validIf(set.has(keysyms, keys[0].dactylKeyname),
+                    Option.validIf(Set.has(keysyms, keys[0].dactylKeyname),
                                    "Invalid keysym name")
         });
 }
