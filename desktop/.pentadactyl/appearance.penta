@@ -6,6 +6,9 @@ set guioptions-=r
 " show tab number
 set guioptions+=n
 
+" show menu
+set guioptions+=m
+
 " use Droid fonts
 hi -a StatusLine   font-family: "Droid Sans Mono Dotted", "Droid Sans Mono" !important; font-size: 100% !important;
 hi -a CmdLine      font-family: "Droid Sans Mono Dotted", "Droid Sans Mono" !important; font-size: 100% !important;
