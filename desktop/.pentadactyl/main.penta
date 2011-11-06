@@ -28,8 +28,9 @@ noremap <Return> zz
 " switch css use
 map ! :set invum<CR>
 
-" addon mappings
+set fixfocus-key=<scroll_lock>
 
+" addon mappings
 source ~/.pentadactyl/addon-mappings.penta
 
 " can't use urxvtc as it returns immediately
