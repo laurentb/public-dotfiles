@@ -4,8 +4,8 @@ source ~/.pentadactyl/firefox.penta
 " configure addons
 source ~/.pentadactyl/addons.penta
 
-
 " appearance tweaks
+set hlfind
 source ~/.pentadactyl/appearance.penta
 
 
@@ -40,9 +40,6 @@ set editor='urxvt -geometry 90x40 -e vim -f +<line> +"sil! call cursor(0, <colum
 set complete-=f
 
 set jsdebugger
-
-set hlfind
-
 
 " add French next/prevpatterns
 set nextpattern+=^\s*suivant\s*$
