@@ -2,7 +2,6 @@ set! general.warnOnAboutConfig=false
 set! security.warn_viewing_mixed=false
 set! browser.fullscreen.autohide=false
 
-set! middlemouse.paste=false
 set! middlemouse.contentLoadURL=false
 
 " restore previous session at startup
