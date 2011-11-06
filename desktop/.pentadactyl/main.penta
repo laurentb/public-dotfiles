@@ -22,5 +22,19 @@ noremap <Space> <C-d>
 " normal zoom
 noremap <Return> zz
 
+" switch css use
+map ! :set invum<CR>
+
+
 " can't use urxvtc as it returns immediately
 set editor='urxvt -geometry 90x40 -e vim -f +<line> +"sil! call cursor(0, <column>)" <file>'
+
+" don't use files for default autocomplete
+set complete-=f
+
+set jsdebugger
+
+
+" add French next/prevpatterns
+set nextpattern+=^\s*suivant\s*$
+set previouspattern+=^\s*pr(é|e)c(é|e)d(a|e)nt\s*$
