@@ -28,6 +28,8 @@ noremap <Return> zz
 " switch css use
 map ! :set invum<CR>
 
+command yt :yank :echo document.title.replace(/ - Pentadactyl$/, '');
+
 set fixfocus-key=<scroll_lock>
 
 " addon mappings
