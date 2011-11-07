@@ -5,3 +5,8 @@ command fb -description "Toggle Firebug" firebug toggle
 
 command wd -description "Toggle Web Developer Toolbar" toolbartoggle Web Developer Toolbar
 toolbarhide Web Developer Toolbar
+
+map <A-c> :set noscript-objects!=<A-Tab>
+map <A-s> :set noscript-sites!=<A-Tab>
+map <A-S-s> :set noscript-tempsites!=<A-Tab>
+map <A-C-s> :set noscript-untrusted!=<A-Tab>

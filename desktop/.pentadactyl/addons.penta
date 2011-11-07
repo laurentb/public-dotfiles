@@ -6,3 +6,9 @@ set! webdeveloper.toolbar.icons=icons
 set! extensions.beef-taco.showtoolbarpref=true
 
 set! extensions.longurlplease.expandstyle=full
+
+
+hi NoScriptAllowed         color: #ccdc90;
+hi NoScriptBlocked         color: #aaa; font-style: italic;
+hi NoScriptTemp            color: lightblue;
+hi NoScriptUntrusted       color: #c00; font-style: italic;
