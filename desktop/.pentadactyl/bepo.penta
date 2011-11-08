@@ -44,6 +44,9 @@ noremap gé gt
 noremap I i
 noremap i gT
 noremap e gt
+" précédent/suivant dans l'historique
+noremap <C-i> :back<CR>
+noremap <C-e> :forward<CR>
 
 " premier/dernier onglet
 noremap gi g^
