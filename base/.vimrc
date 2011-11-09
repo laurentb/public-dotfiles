@@ -123,6 +123,20 @@ let g:localvimrc_ask = 0
 " keyboard shortcuts
 set pastetoggle=<F11>
 
+function ToggleNumber()
+    if (&number)
+        set nonumber norelativenumber
+        hi LineNr          ctermfg=248   ctermbg=235
+    elseif (&relativenumber)
+        set norelativenumber number
+        hi LineNr          ctermfg=248   ctermbg=235
+    else
+        set nonumber relativenumber
+        hi LineNr          ctermfg=240   ctermbg=235
+    endif
+endfunction
+nmap <silent> <F1> <Esc>:call ToggleNumber()<CR>
+
 function ToggleSpell()
     if (&spell && &spelllang=="en")
         set spelllang=fr
