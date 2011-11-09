@@ -105,7 +105,7 @@ au BufReadPost *
 " do not hl previous search
 au BufReadPost * setlocal nohlsearch
 
-set list listchars=nbsp:¤,tab:»·,trail:·,extends:»,precedes:«
+set list listchars=nbsp:⍽,tab:»·,trail:·,extends:»,precedes:«
 set showbreak=»
 
 set writebackup nobackup
