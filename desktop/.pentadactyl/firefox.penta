@@ -25,3 +25,5 @@ set! privacy.donottrackheader.enabled=true
 set! browser.safebrowsing.enabled=false
 set! browser.safebrowsing.malware.enabled=false
 set! signon.rememberSignons=false
+" block third-party cookies
+set! network.cookie.cookieBehavior=1
