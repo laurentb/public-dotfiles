@@ -58,3 +58,6 @@ noremap » ]]
 
 " utiliser les touches centrales
 set hintkeys=auie,ctsrnmbépoèvdljz
+
+nmap <C-t> <C-v>j
+nmap <C-s> <C-v>k
