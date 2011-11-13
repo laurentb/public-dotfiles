@@ -3,6 +3,7 @@ set! security.warn_viewing_mixed=false
 set! browser.fullscreen.autohide=false
 
 set! middlemouse.contentLoadURL=false
+set! browser.tabs.loadDivertedInBackground=true
 
 " restore previous session at startup
 set! browser.startup.page=3
