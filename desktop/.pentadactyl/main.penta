@@ -50,3 +50,6 @@ set previouspattern+=^\s*pr(é|e)c(é|e)d(a|e)nt\s*$
 " duckduckgo
 set defsearch=d
 set passkeys+='duckduckgo\.com/':\!<C-Return>\'h1<Return><Up><Down>
+
+" google reader
+set passkeys+='google\.com/reader':vnpONP
