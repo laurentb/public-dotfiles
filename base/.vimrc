@@ -162,6 +162,12 @@ function! Cleanup()
 endfunction
 comm! Cleanup call Cleanup()
 
+" create parent directory before writing
+augroup BWCCreateDir
+    au!
+    autocmd BufWritePre * if expand("<afile>")!~#'^\w\+:/' && !isdirectory(expand("%:h")) | execute "silent! !mkdir -p ".shellescape(expand('%:h'), 1) | redraw! | endif
+augroup END
+
 let $PAGER=''
 let $MANPAGER=''
 
