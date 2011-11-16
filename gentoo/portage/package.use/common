@@ -3,8 +3,6 @@ app-portage/cfg-update -gnome -kde
 
 app-editors/vim vim-pager cscope
 
-sys-apps/util-linux loop-aes
-
 net-dns/avahi mdnsresponder-compat
 
 sys-fs/udev -devfs-compat extras
