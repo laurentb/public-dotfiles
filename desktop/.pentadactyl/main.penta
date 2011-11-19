@@ -19,7 +19,7 @@ noremap -b t 8j
 group user
 
 " toggle bookmarks sidebar
-nnoremap A -ex sidebar! Bookmarks
+noremap A -ex sidebar! Bookmarks
 
 " scroll pages
 noremap <BS> <C-u>
@@ -29,7 +29,7 @@ noremap <Space> <C-d>
 noremap <Return> zz
 
 " switch css use
-map ! :set invum<CR>
+noremap ! -ex set invum
 
 command yt :yank :echo document.title.replace(/ - Pentadactyl$/, '');
 
