@@ -18,6 +18,9 @@ noremap -b s 8k
 noremap -b t 8j
 group user
 
+" toggle bookmarks sidebar
+nnoremap A -ex sidebar! Bookmarks
+
 " scroll pages
 noremap <BS> <C-u>
 noremap <Space> <C-d>
