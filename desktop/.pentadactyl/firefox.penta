@@ -4,6 +4,9 @@ set! browser.fullscreen.autohide=false
 
 set! middlemouse.contentLoadURL=false
 set! browser.tabs.loadDivertedInBackground=true
+set! browser.backspace_action=2
+
+set! layout.frames.force_resizability=true
 
 " restore previous session at startup
 set! browser.startup.page=3
@@ -15,6 +18,9 @@ set! browser.fullscreen.animateUp=0
 set! browser.panorama.animate_zoom=false
 set! general.smoothScroll=false
 set! browser.tabs.drawInTitlebar=false
+
+" javascript annoyances
+set! dom.disable_window_move_resize=true
 
 " no tab close buttons at all
 set! browser.tabs.closeButtons=2
@@ -36,3 +42,5 @@ set! browser.download.manager.closeWhenDone=true
 " ask where to save
 set! browser.download.folderList=2
 set! browser.download.useDownloadDir=false
+
+set! intl.accept_languages="en-us, en,fr-fr,fr"
