@@ -1,5 +1,6 @@
 " pure Firefox configuration (about:config values)
 source ~/.pentadactyl/firefox.penta
+source! ~/.pentadactyl/local.penta
 
 " configure addons
 source ~/.pentadactyl/addons.penta
