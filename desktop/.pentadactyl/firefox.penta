@@ -28,3 +28,11 @@ set! browser.safebrowsing.malware.enabled=false
 set! signon.rememberSignons=false
 " block third-party cookies
 set! network.cookie.cookieBehavior=1
+
+" quiet download manager
+set! browser.download.manager.retention=0
+set! browser.download.manager.showWhenStarting=false
+set! browser.download.manager.closeWhenDone=true
+" ask where to save
+set! browser.download.folderList=2
+set! browser.download.useDownloadDir=false
