@@ -24,3 +24,7 @@ hi NoScriptUntrusted       color: #c00; font-style: italic;
 set! extensions.bprivacy.useDelTimer=true
 set! extensions.bprivacy.DelTimerInterval=172800
 set! extensions.bprivacy.AutoDelLSOnExitMode=1
+
+" Lazarus
+set! extensions.lazarus.showDonateNotification=false
+set! extensions.lazarus.expireSavedFormsUnit=1440
