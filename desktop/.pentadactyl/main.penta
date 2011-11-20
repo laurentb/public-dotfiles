@@ -34,6 +34,10 @@ noremap ! -ex set invum
 
 command yt :yank :echo document.title.replace(/ - Pentadactyl$/, '');
 
+" view source, in new tab
+command -nargs=? -complete=url tv tab viewsource <args>
+command -nargs=? -complete=help th tab help <args>
+
 set fixfocus-key=<scroll_lock>
 
 " addon mappings
