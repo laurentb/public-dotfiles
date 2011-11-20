@@ -7,6 +7,12 @@ set! extensions.beef-taco.showtoolbarpref=true
 
 set! extensions.longurlplease.expandstyle=full
 
+set! noscript.secureCookies=true
+set! noscript.contentBlocker=true
+set! noscript.showGlobal=false
+set! noscript.firstRunRedirection=false
+set! noscript.blockNSWB=true
+set! noscript.forbidWebGL=true
 
 hi NoScriptAllowed         color: #ccdc90;
 hi NoScriptBlocked         color: #aaa; font-style: italic;
