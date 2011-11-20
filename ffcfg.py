@@ -55,7 +55,7 @@ def pentadactylrc(removed, added, changed):
     def stripval(value):
         if value.startswith('"') and value.endswith('"'):
             svalue = value[1:-1]
-            if '"' not in svalue and "=" not in svalue:
+            if '"' not in svalue and "=" not in svalue and " " not in svalue:
                 return svalue
         return value
 
