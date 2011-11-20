@@ -7,6 +7,7 @@ set! extensions.beef-taco.showtoolbarpref=true
 
 set! extensions.longurlplease.expandstyle=full
 
+" NoScript
 set! noscript.secureCookies=true
 set! noscript.contentBlocker=true
 set! noscript.showGlobal=false
@@ -18,3 +19,8 @@ hi NoScriptAllowed         color: #ccdc90;
 hi NoScriptBlocked         color: #aaa; font-style: italic;
 hi NoScriptTemp            color: lightblue;
 hi NoScriptUntrusted       color: #c00; font-style: italic;
+
+" Better Privacy
+set! extensions.bprivacy.useDelTimer=true
+set! extensions.bprivacy.DelTimerInterval=172800
+set! extensions.bprivacy.AutoDelLSOnExitMode=1
