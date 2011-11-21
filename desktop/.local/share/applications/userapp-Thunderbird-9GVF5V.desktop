@@ -1,0 +1,9 @@
+
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Exec=/usr/lib64/thunderbird/thunderbird %u
+Name=Thunderbird
+Comment=Custom definition for Thunderbird
+NoDisplay=true

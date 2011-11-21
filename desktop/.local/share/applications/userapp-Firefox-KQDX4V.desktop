@@ -1,0 +1,9 @@
+
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Exec=/usr/lib64/firefox/firefox %u
+Name=Firefox
+Comment=Custom definition for Firefox
+NoDisplay=true

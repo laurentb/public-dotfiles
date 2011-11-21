@@ -1,4 +1,26 @@
+
 [Added Associations]
-x-scheme-handler/http=mozilla-firefox-3.6.desktop;
-x-scheme-handler/https=mozilla-firefox-3.6.desktop;
-x-scheme-handler/mailto=thunderbird.desktop;
+x-scheme-handler/mailto=thunderbird.desktop;userapp-Thunderbird-9GVF5V.desktop;
+x-scheme-handler/ftp=userapp-Firefox-KQDX4V.desktop;
+x-scheme-handler/chrome=userapp-Firefox-KQDX4V.desktop;
+text/html=userapp-Firefox-KQDX4V.desktop;
+application/x-extension-htm=userapp-Firefox-KQDX4V.desktop;
+application/x-extension-html=userapp-Firefox-KQDX4V.desktop;
+application/x-extension-shtml=userapp-Firefox-KQDX4V.desktop;
+application/xhtml+xml=userapp-Firefox-KQDX4V.desktop;
+application/x-extension-xhtml=userapp-Firefox-KQDX4V.desktop;
+application/x-extension-xht=userapp-Firefox-KQDX4V.desktop;
+
+[Default Applications]
+x-scheme-handler/mailto=userapp-Thunderbird-9GVF5V.desktop
+x-scheme-handler/http=userapp-Firefox-KQDX4V.desktop
+x-scheme-handler/https=userapp-Firefox-KQDX4V.desktop
+x-scheme-handler/ftp=userapp-Firefox-KQDX4V.desktop
+x-scheme-handler/chrome=userapp-Firefox-KQDX4V.desktop
+text/html=userapp-Firefox-KQDX4V.desktop
+application/x-extension-htm=userapp-Firefox-KQDX4V.desktop
+application/x-extension-html=userapp-Firefox-KQDX4V.desktop
+application/x-extension-shtml=userapp-Firefox-KQDX4V.desktop
+application/xhtml+xml=userapp-Firefox-KQDX4V.desktop
+application/x-extension-xhtml=userapp-Firefox-KQDX4V.desktop
+application/x-extension-xht=userapp-Firefox-KQDX4V.desktop
