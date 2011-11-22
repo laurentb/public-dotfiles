@@ -7,6 +7,8 @@ set! extensions.beef-taco.showtoolbarpref=true
 
 set! extensions.longurlplease.expandstyle=full
 
+set! extensions.adblockplus.frameobjects=false
+
 " NoScript
 set! noscript.secureCookies=true
 set! noscript.contentBlocker=true
