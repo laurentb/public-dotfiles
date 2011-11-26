@@ -11,7 +11,7 @@ URxvt*font: xft:Droid Sans Mono Dotted:pixelsize=18:antialias=true,\
     xft:Monospace:pixelsize=18,antialias=true,\
     xft:DejaVu Sans Mono:pixelsize=18:antialias=true,\
     xft:Symbola:pixelsize=18:antialias=true
-
+URxvt*depth: 32
 URxvt*scrollBar: false
 URxvt*scrollstyle: plain
 
