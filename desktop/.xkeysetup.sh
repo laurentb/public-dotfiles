@@ -14,3 +14,6 @@ killall -HUP xbindkeys||xbindkeys
 
 # make the center button acts as a third button to avoid using the wheel
 xinput set-button-map "Kingsis Peripherals  Evoluent VerticalMouse 3 " 1 2 2 4 5 6 7 3 8
+
+# shorter delay, bigger rate
+xset r rate 300 50
