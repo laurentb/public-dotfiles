@@ -28,11 +28,6 @@ urxvtd -q -o -f
 # prevent GTK and QT from using their own input systems
 export GTK_IM_MODULE=xim
 export QT_IM_MODULE=xim
-# pointer: acceleration, threshold
-xset mouse 3 3
-# keyboard repeat
-xset r on
-xset r rate 600 40
 
 xsetroot -solid "#323232"
 
