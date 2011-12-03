@@ -28,7 +28,7 @@ hi -a TabIcon      margin-left: 2px !important; margin-right: 0 !important; padd
 " style for the tabs
 style -name tabs chrome://* <<EOM
 /* remove new tab button from the tab bar */
-#TabsToolbar #new-tab-button {
+#TabsToolbar .tabs-newtab-button {
     display: none; !important
 }
 /* remove tab selection menu */
