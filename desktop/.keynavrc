@@ -43,3 +43,6 @@ u warp,click 3,end
 
 # Zoom to the current window
 w windowzoom
+
+# Zoom to the cursor location with a given height and width
+z cursorzoom 200 200
