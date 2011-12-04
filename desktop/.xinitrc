@@ -24,7 +24,6 @@ source ~/.urxvt/xrdb.sh
 urxvtd -q -o -f
 
 . ~/.xkeysetup.sh
-keynav &
 
 # prevent GTK and QT from using their own input systems
 export GTK_IM_MODULE=xim
