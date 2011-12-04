@@ -1,0 +1,45 @@
+clear
+
+daemonize
+
+ctrl+space start
+Escape end
+
+c cut-left
+t cut-down
+s cut-up
+r cut-right
+v cut-left,cut-up
+d cut-right,cut-up
+apostrophe cut-left,cut-down
+q cut-right,cut-down
+Left cut-left
+Down cut-down
+Up cut-up
+Right cut-right
+
+shift+c move-left
+shift+t move-down
+shift+s move-up
+shift+r move-right
+shift+v move-left,move-up
+shift+d move-right,move-up
+shift+apostrophe move-left,move-down
+shift+q move-right,move-down
+shift+Left move-left
+shift+Down move-down
+shift+Up move-up
+shift+Right move-right
+
+space warp,click 1,end
+period warp,end
+
+1 click 1
+2 click 2
+3 click 3
+e warp,click 1,end
+i warp,click 2,end
+u warp,click 3,end
+
+# Zoom to the current window
+w windowzoom
