@@ -53,3 +53,7 @@ dev-python/PyQt4 declarative multimedia xmlpatterns
 x11-libs/qt-gui gtkstyle
 
 app-mobilephone/gnokii -usb sms
+
+kde-base/kdebase-data -wallpapers
+kde-base/kdebase-meta -wallpapers
+kde-base/kdebase-startkde -wallpapers
