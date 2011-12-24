@@ -21,7 +21,7 @@ kde-base/ksysguard lm_sensors
 media-sound/ncmpc help-screen artist-screen colors key-screen lyrics-screen search-screen song-screen
 media-sound/ncmpcpp outputs
 
-x11-terms/rxvt-unicode 256-color fading-colors font-styles wcwidth unicode3
+x11-terms/rxvt-unicode -vanilla 256-color fading-colors font-styles wcwidth unicode3 alt-font-width
 
 kde-base/okular ebook
 
