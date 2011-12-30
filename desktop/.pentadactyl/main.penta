@@ -38,8 +38,6 @@ command yt :yank :echo document.title.replace(/ - Pentadactyl$/, '');
 command -nargs=? -complete=url tv tab viewsource <args>
 command -nargs=? -complete=help th tab help <args>
 
-set fixfocus-key=<scroll_lock>
-
 " addon mappings
 source ~/.pentadactyl/addon-mappings.penta
 

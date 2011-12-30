@@ -4,7 +4,7 @@
  *
  * Documentation is at the tail of this file.
  */
-"use strict";
+/* use strict */
 
 dactyl.assert("noscriptOverlay" in window,
               "This plugin requires the NoScript add-on.");
@@ -97,7 +97,7 @@ function getObjects() {
     return specific.concat(general).filter(function (site) !Set.add(seen, site));
 }
 
-var onUnload = util.overlayObject(gBrowser, {
+var onUnload = overlay.overlayObject(gBrowser, {
     // Extend NoScript's bookmarklet handling hack to the command-line
     // Modified from NoScript's own wrapper.
     loadURIWithFlags: function loadURIWithFlags(url) {
@@ -139,7 +139,7 @@ highlight.loadCSS(<css>
 
 let groupProto = {};
 ["temp", "jsPolicy", "untrusted"].forEach(function (group)
-    memoize(groupProto, group, function () services.get("noscript")[group + "Sites"].matches(this.site)));
+    memoize(groupProto, group, function () services.noscript[group + "Sites"].matches(this.site)));
 let groupDesc = {
     NoScriptTemp:       "Temporarily allowed",
     NoScriptAllowed:    "Allowed permanently",
@@ -156,7 +156,7 @@ function splitContext(context, list) {
 }
 
 completion.noscriptObjects = function (context) {
-    let whitelist = this.set;
+    let whitelist = options.get("noscript-objects").set;
     context = context.fork();
     context.compare = CompletionContext.Sort.unsorted;
     context.generate = getObjects;
@@ -244,16 +244,16 @@ function groupParams(group) ( {
     initialValue: true,
     persist: false
 });
-options.add(["noscript-forbid", "nsf"],
+group.options.add(["noscript-forbid", "nsf"],
     "The set of permissions forbidden to untrusted sites",
     "stringlist", "",
     groupParams("forbid"));
-options.add(["noscript-list", "nsl"],
+group.options.add(["noscript-list", "nsl"],
     "The set of domains to show in the menu and completion list",
     "stringlist", "",
     groupParams("list"));
 
-options.add(["script"],
+group.options.add(["script"],
     "Whether NoScript is enabled",
     "boolean", false,
     {
@@ -320,7 +320,7 @@ options.add(["script"],
         completer: function (context) completion.noscriptObjects(context)
     }
 ].forEach(function (params)
-    options.add(params.names, params.description,
+    group.options.add(params.names, params.description,
         "stringlist", "",
         {
             completer: function (context) {
@@ -348,7 +348,7 @@ options.add(["script"],
 XML.ignoreWhitespace = false;
 XML.prettyPrinting   = false;
 var INFO =
-<plugin name="noscript" version="0.7"
+<plugin name="noscript" version="0.8"
         href="http://dactyl.sf.net/pentadactyl/plugins#noscript-plugin"
         summary="NoScript integration"
         xmlns={NS}>

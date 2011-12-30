@@ -10,9 +10,9 @@ set guioptions+=n
 set guioptions+=m
 
 " use Droid fonts
+hi -a Normal       font-family: "Droid Sans Mono Dotted", "Droid Sans Mono" !important; font-size: 13px !important;
 hi -a StatusLine   font-family: "Droid Sans Mono Dotted", "Droid Sans Mono" !important; font-size: 100% !important;
 hi -a CmdLine      font-family: "Droid Sans Mono Dotted", "Droid Sans Mono" !important; font-size: 100% !important;
-hi -a Normal       font-family: "Droid Sans Mono Dotted", "Droid Sans Mono" !important; font-size: 100% !important;
 hi -a REPL         font-family: "Droid Sans Mono Dotted", "Droid Sans Mono" !important; font-size: 100% !important;
 
 " the zenburn command line is too compact
