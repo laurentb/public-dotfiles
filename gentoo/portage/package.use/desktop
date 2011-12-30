@@ -57,3 +57,6 @@ app-mobilephone/gnokii -usb sms
 kde-base/kdebase-data -wallpapers
 kde-base/kdebase-meta -wallpapers
 kde-base/kdebase-startkde -wallpapers
+
+# required by some gnome packages
+net-dns/avahi gtk3
