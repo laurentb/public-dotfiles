@@ -1,8 +1,5 @@
 net-p2p/amule daemon remote stats
 
-# avoid some issues; also unneeded dependency
-dev-python/wxpython -opengl
-
 app-admin/conky mpd
 
 media-sound/mpd lame -mikmod -ffmpeg -aac
@@ -11,10 +8,6 @@ media-video/vlc matroska rtsp stream vlm kate libass
 
 media-video/ffmpeg threads rtmp
 virtual/ffmpeg threads
-
-media-libs/libdvdread css
-
-app-editors/vim vim-with-x
 
 kde-base/ksysguard lm_sensors
 
@@ -30,11 +23,7 @@ net-voip/ekiga -gnome
 
 net-im/gajim -gnome srv trayicon
 
-app-office/akonadi-server -mysql
-
 media-sound/audacity vamp soundtouch midi
-
-x11-libs/cairo glitz
 
 games-board/xscrabble linguas_fr
 net-print/gutenprint foomaticdb

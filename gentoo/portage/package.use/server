@@ -1,6 +1,5 @@
 dev-lang/php bcmath calendar cgi curlwrappers flatfile fpm gmp imap inifile intl mysql mysqli mysqlnd pcntl pdo sharedmem soap sockets sysvipc tidy wddx xmlrpc xsl zip xmlreader xmlwriter
 
-www-servers/lighttpd fastcgi -ldap -webdav
+www-servers/lighttpd fastcgi -webdav
 
-dev-db/mysql extraengine -berkdb
-
+dev-db/mysql extraengine

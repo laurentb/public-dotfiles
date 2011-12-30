@@ -1,11 +1,11 @@
 # avoid depencies
-app-portage/cfg-update -gnome -kde
+app-portage/cfg-update -gnome
 
 app-editors/vim vim-pager cscope
 
 net-dns/avahi mdnsresponder-compat
 
-sys-fs/udev -devfs-compat extras
+sys-fs/udev extras
 
 dev-vcs/mercurial gpg
 dev-vcs/subversion -dso
