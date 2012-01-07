@@ -15,11 +15,35 @@ available_use_flags = ( "avx", "mmx", "mmxext", "3dnow", "3dnowext", "sse", "sse
 use_flags = [ flag for flag in available_use_flags if flag in flags ]
 use_flags += [ "-"+flag for flag in available_use_flags if flag not in flags ]
 
-gcc = "gcc -march=native -E -v - </dev/null 2>&1 | sed -n 's/.* -v - //p'|sed -r 's/ --param [^ ]+//g'"
-cflags = subprocess.Popen(gcc, shell=True, stdout=subprocess.PIPE).communicate()[0].strip()
+gccv = subprocess.Popen(['gcc', '-march=native', '-E', '-v', '-'],
+        stdin=subprocess.PIPE,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE).communicate('')[1] # capture stderr
+gccv = [flags for flags in gccv.split('\n') if ' -v - ' in flags]
+assert len(gccv) == 1
+
+# Remove everything before -march.
+# It usually has -D_FORTIFY_SOURCE=2 which is implied by -O2 in Gentoo.
+cflags, count = re.subn('^.+-march=', '-march=', gccv[0], 1)
+assert count == 1
+
+# Remove everything after -mtune
+# It is implied by -march, and everything after is either nothing or
+# default Gentoo Hardened stuff.
+cflags, count = re.subn('-mtune=.+$', '', cflags, 1)
+assert count == 1
+
+## Remove --param arguments.
+## They don't seem that useful (sets exact CPU cache sizes).
+## This prevents badly written build systems, like Chromium's,
+## from failing.
+#cflags = re.sub(' --param [^ ]+', '', cflags)
+
+cflags = cflags.strip()
 
 if __name__ == "__main__":
     print use_flags
+    print gccv[0]
     print cflags
     print jobs
     exit()
