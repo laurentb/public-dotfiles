@@ -1,22 +1,33 @@
 #!/usr/bin/env python
 from __future__ import with_statement
 from os import path, popen, system
+import re
 
 config_file = path.join(path.dirname(__file__), "bashcomp.wanted")
 
-available_completions = popen("eselect --brief bashcomp list") \
-            .read().strip().split("\n")
+REGEXP = re.compile('^ +\[\d+\] +(?P<name>[^ ]+)(?P<enabled> \*)?$')
 
-def is_enabled(name):
-    return path.exists(path.join(path.expanduser("~/.bash_completion.d"), name))
+eselect = [REGEXP.match(line) \
+        for line \
+        in popen("eselect bashcomp list").read().strip().split('\n') \
+        if REGEXP.match(line)]
 
-active_completions = filter(is_enabled, available_completions)
+available_completions = [line.groupdict()['name'] \
+        for line \
+        in eselect]
 
-with open(config_file, "r") as file:
-    wanted_completions = file.read().strip().split("\n")
+active_completions = [line.groupdict()['name'] \
+        for line \
+        in eselect \
+        if line.groupdict().get('enabled')]
+
+with open(config_file, "r") as f:
+    wanted_completions = f.read().strip().split("\n")
 
 completions = set(wanted_completions) - set(active_completions)
 for completion in completions:
-  print "+"+completion
-  system("eselect bashcomp enable "+completion)
-
+    if completion in available_completions:
+        print "+%s" % completion
+        system("eselect bashcomp enable %s" % completion)
+    else:
+        print "-%s" % completion
