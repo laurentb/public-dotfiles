@@ -1,7 +1,11 @@
-if [[ ${EBUILD_PHASE} == "postinst" ]]; then
-    einfo "Running localepurge..."
-    PATH="/bin:/usr/bin" localepurge
-fi
-
 # This hook is neccesary for automatic updating of the cfg-update index, please do not modify it!
-if [ "$EBUILD_PHASE" = "setup" ] && [ -e "/usr/bin/cfg-update" ]; then cfg-update --index; fi
+pre_pkg_setup() {
+    [[ $ROOT = / ]] && cfg-update --index
+}
+
+pre_pkg_preinst() {
+    sed '/^\(LOCALE\|MANPAGE\)DIRS=/s/\([" ]\)\//\1${LP_PREFIX}\//g' \
+        /usr/bin/localepurge > ${S}/localepurge
+    chmod +x ${S}/localepurge
+    LP_PREFIX=${D} ${S}/localepurge
+}
