@@ -1,17 +1,21 @@
-collections = [ "USE_UNWANTED", "USE_OPTIMIZE", "USE_LANGUAGES",
+collections = set(["USE_UNWANTED", "USE_OPTIMIZE", "USE_LANGUAGES",
 "USE_HARDWARE", "USE_ADDONS", "USE_FEATURES",
-"USE_NETWORK", "USE_COMPRESSION", "USE_ARCH", ]
+"USE_NETWORK", "USE_COMPRESSION", "USE_ARCH", ])
 
-inpdevs = [ "evdev" ]
+inpdevs = ["evdev"]
 
 if "desktop" in options.tags:
-    collections += ["USE_X", "USE_XFEATURES", "USE_DESKENV",
-                    "USE_MEDIA", "USE_DESKDEVS", ]
+    collections.update(["USE_X", "USE_XFEATURES", "USE_DESKENV",
+                    "USE_MEDIA", "USE_DESKDEVS", "USE_HOMENETWORK", ])
+
+if "homeserver" in options.tags:
+    collections.add("USE_HOMENETWORK")
+
 if "laptop" in options.tags:
-    collections.append("USE_LAPTOP")
+    collections.add("USE_LAPTOP")
     inpdevs.append("synaptics")
 
-use = [ "${%s}" % flag for flag in collections ]
+use = ["${%s}" % flag for flag in collections]
 
 text("""# $warning
 USE="$use"
