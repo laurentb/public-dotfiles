@@ -20,3 +20,8 @@ sys-apps/fr-bepo-keymap
 dev-python/fabric
 
 dev-python/pep8
+
+app-arch/duff
+
+app-text/restview
+=dev-python/rst2pdf-0.16-r1
