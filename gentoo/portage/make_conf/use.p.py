@@ -5,7 +5,7 @@ collections = [ "USE_UNWANTED", "USE_OPTIMIZE", "USE_LANGUAGES",
 inpdevs = [ "evdev" ]
 
 if "desktop" in options.tags:
-    collections += ["USE_X", "USE_DESKENV",
+    collections += ["USE_X", "USE_XFEATURES", "USE_DESKENV",
                     "USE_MEDIA", "USE_DESKDEVS", ]
 if "laptop" in options.tags:
     collections.append("USE_LAPTOP")
