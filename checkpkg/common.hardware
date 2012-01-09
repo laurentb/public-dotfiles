@@ -1,4 +1,6 @@
 cpufrequtils
+dmidecode
+ethtool
 hddtemp
 hdparm
 lm_sensors

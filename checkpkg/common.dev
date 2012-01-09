@@ -1,5 +1,15 @@
-vim
 dev-vcs/git
 dev-vcs/tig
-subversion
+sci-calculators/units
+sci-calculators/wcalc
+colordiff
+colorsvn
+gdb
+git-goggles
+git-publish-branch
+git-wtf
 mercurial
+strace
+subversion
+vim
+wdiff

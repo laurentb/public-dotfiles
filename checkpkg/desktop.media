@@ -1,0 +1,17 @@
+media-sound/mpc
+media-sound/mpd
+media-sound/sox
+alsa-plugins
+alsa-utils
+dnuos
+easytag
+mpdscribble
+ncmpc
+ncmpcpp
+paprefs
+pavucontrol
+pavumeter
+picard
+sonata
+vorbis-tools
+vorbisgain

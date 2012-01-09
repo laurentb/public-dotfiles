@@ -42,6 +42,6 @@ for tag in TAGS:
     for config_file in config_files:
         group = config_file.split('.')[1]
         pkgs = list(needed(wanted(config_file)))
-        print "## Group: %s" % group
         if pkgs:
+            print "## Group: %s" % group
             print cmd(pkgs)

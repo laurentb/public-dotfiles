@@ -1,5 +1,13 @@
+net-analyzer/slurm
 sys-block/di
-sysstat
-lsof
-htop
+sys-block/parted
 bwm-ng
+genkernel
+gptfdisk
+haveged
+htop
+lsof
+mlocate
+module-rebuild
+nethogs
+sysstat

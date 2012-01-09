@@ -1,0 +1,15 @@
+dev-python/argparse
+dev-python/bpython
+dev-python/coverage
+dev-python/fabric
+dev-python/feedparser
+dev-python/html2text
+dev-python/ipython
+dev-python/nose
+dev-python/pep8
+dev-python/pychecker
+dev-python/pyflakes
+dev-python/pylint
+dev-python/python-dateutil
+dev-python/pyyaml
+dev-python/virtualenv

@@ -1,3 +1,13 @@
-app-crypt/gnupg
-keychain
+app-admin/apg
+app-arch/cfv
+app-arch/duff
 app-backup/dar
+app-crypt/gnupg
+cryptsetup
+dnotify
+dtrx
+keychain
+lrzip
+lrzip
+p7zip
+pbzip2

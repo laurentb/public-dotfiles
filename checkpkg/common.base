@@ -1,3 +1,4 @@
+nano
 sudo
 rsyslog
 fcron
@@ -6,4 +7,7 @@ screen
 tmux
 dash
 zsh
+logrotate
 fr-bepo-keymap
+bash-completion
+zsh-completion
