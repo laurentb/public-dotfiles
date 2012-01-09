@@ -11,3 +11,6 @@ mlocate
 module-rebuild
 nethogs
 sysstat
+btrfs-progs
+iotop
+mdadm

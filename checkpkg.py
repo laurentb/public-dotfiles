@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 from glob import glob
 import os
+import sys
 
 
 TAGS = sorted(os.listdir("/etc/dotfiles/tags"))
@@ -21,7 +22,7 @@ def needed(pkgs):
 
 
 def cmd(pkgs):
-    return 'emerge -av --select --noreplace %s' % ' '.join(pkgs)
+    return 'emerge -av --select --noreplace %s' % ' '.join(sorted(pkgs))
 
 
 def wanted(filename):
@@ -29,19 +30,30 @@ def wanted(filename):
         return f.read().strip().split('\n')
 
 
+def bonus(pkg):
+    return pkg not in WANTED and shorten(pkg) not in WANTED
+
+
 with open('/var/lib/portage/world') as f:
     INSTALLED = set(f.read().strip().split('\n'))
 
 INSTALLED_SHORT = set([shorten(pkg) for pkg in INSTALLED])
 
+WANTED = set()
 
 for tag in TAGS:
     print "# Tag: %s" % tag
     config_files = [os.path.basename(c) for c in \
         glob(os.path.join(BASEDIR, '%s.*' % tag))]
     for config_file in config_files:
-        group = config_file.split('.')[1]
-        pkgs = list(needed(wanted(config_file)))
-        if pkgs:
+        pkgs = wanted(config_file)
+        WANTED.update(pkgs)
+        needed_pkgs = list(needed(pkgs))
+        if needed_pkgs:
+            group = config_file.split('.')[1]
             print "## Group: %s" % group
-            print cmd(pkgs)
+            print cmd(needed_pkgs)
+
+pkgs = [shorten(pkg) for pkg in INSTALLED if bonus(pkg)]
+if '-b' in sys.argv[1:]:
+    print 'Bonus packages: %s' % ' '.join(sorted(pkgs))
