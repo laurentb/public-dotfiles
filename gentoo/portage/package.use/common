@@ -29,6 +29,7 @@ dev-python/bpython urwid
 dev-db/sqlite secure-delete unlock-notify
 
 net-p2p/mktorrent threads
+net-p2p/rtorrent color xmlrpc
 
 # needed for cryptsetup
 dev-libs/libgcrypt static-libs
