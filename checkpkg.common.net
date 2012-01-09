@@ -1,8 +1,12 @@
+net-dns/host
 bind-tools
 curl
+ftp
 lft
+lftp
 mtr
-traceroute
 netcat6
+nmap
 telnet-bsd
+traceroute
 whois

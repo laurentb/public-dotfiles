@@ -5,3 +5,5 @@ usbutils
 mcelog
 cpufrequtils
 smartmontools
+hdparm
+hddtemp

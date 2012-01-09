@@ -1,3 +1,5 @@
+sys-block/di
 sysstat
 lsof
 htop
+bwm-ng

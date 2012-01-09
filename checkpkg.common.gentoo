@@ -4,4 +4,8 @@ cfg-update
 localepurge
 eix
 layman
-git
+dev-vcs/git
+elogv
+euses
+genlop
+lafilefixer

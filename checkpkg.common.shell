@@ -1,9 +1,11 @@
+app-misc/color
 app-misc/mc
 app-misc/rl
 sys-apps/ack
 sys-apps/less
 sys-apps/most
 sys-apps/pv
+sys-apps/rename
 sys-process/time
 bogosort
 convmv
@@ -11,4 +13,5 @@ jot
 mmv
 moreutils
 realpath
+recode
 watchpid
