@@ -3,5 +3,7 @@ openbox
 rxvt-unicode
 stalonetray
 xbindkeys
+xev
 xkbutils
 xscreensaver
+xterm

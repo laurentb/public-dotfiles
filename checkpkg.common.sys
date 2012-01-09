@@ -1,5 +1,3 @@
-sudo
-rsyslog
-fcron
-screen
-tmux
+sysstat
+lsof
+htop

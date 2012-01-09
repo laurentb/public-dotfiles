@@ -2,3 +2,6 @@ lshw
 lm_sensors
 pciutils
 usbutils
+mcelog
+cpufrequtils
+smartmontools
