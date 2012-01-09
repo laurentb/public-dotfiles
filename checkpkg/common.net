@@ -4,6 +4,7 @@ curl
 ftp
 lft
 lftp
+mailx
 mtr
 netcat6
 nmap

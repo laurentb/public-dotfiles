@@ -6,7 +6,7 @@ import os
 TAGS = sorted(os.listdir("/etc/dotfiles/tags"))
 TAGS.insert(0, 'common')
 
-BASEDIR = os.path.dirname(__file__)
+BASEDIR = os.path.join(os.path.dirname(__file__), 'checkpkg')
 
 
 def shorten(pkg):
@@ -38,9 +38,9 @@ INSTALLED_SHORT = set([shorten(pkg) for pkg in INSTALLED])
 for tag in TAGS:
     print "# Tag: %s" % tag
     config_files = [os.path.basename(c) for c in \
-        glob(os.path.join(BASEDIR, 'checkpkg.%s.*' % tag))]
+        glob(os.path.join(BASEDIR, '%s.*' % tag))]
     for config_file in config_files:
-        group = config_file.split('.')[2]
+        group = config_file.split('.')[1]
         pkgs = list(needed(wanted(config_file)))
         print "## Group: %s" % group
         if pkgs:

@@ -1,0 +1,3 @@
+cowsay
+figlet
+toilet

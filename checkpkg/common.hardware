@@ -1,0 +1,11 @@
+cpufrequtils
+hddtemp
+hdparm
+lm_sensors
+lshw
+mcelog
+pciutils
+powertop
+sdparm
+smartmontools
+usbutils
