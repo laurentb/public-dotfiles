@@ -3,3 +3,5 @@ dev-lang/php bcmath calendar cgi curlwrappers flatfile fpm gmp imap inifile intl
 www-servers/lighttpd fastcgi -webdav
 
 dev-db/mysql extraengine
+
+dev-python/paste flup
