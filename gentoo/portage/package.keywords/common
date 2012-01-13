@@ -9,6 +9,8 @@ dev-util/scanmem
 
 app-arch/dtrx
 
+media-sound/dnuos
+
 dev-vcs/git-wtf
 dev-vcs/git-publish-branch
 
@@ -25,3 +27,12 @@ app-arch/duff
 
 app-text/restview
 =dev-python/rst2pdf-0.16-r1
+
+www-apps/ass2m
+dev-python/PyRSS2Gen
+
+<net-im/minbif-9999
+
+www-client/weboob
+dev-python/prettytable
+dev-python/html2text
