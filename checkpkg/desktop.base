@@ -16,7 +16,6 @@ xev
 xfontsel
 xkbprint
 xkbutils
-xkbutils
 xkill
 xorg-server
 xorg-x11
