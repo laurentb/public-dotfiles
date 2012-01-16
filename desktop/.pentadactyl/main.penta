@@ -52,6 +52,13 @@ set jsdebugger
 " add French next/prevpatterns
 set nextpattern+=^\s*suivant\s*$
 set previouspattern+=^\s*pr(é|e)c(é|e)d(a|e)nt\s*$
+" add some unicode next/prevpatters
+set nextpattern+='^→$'
+set nextpattern+='^→'
+set nextpattern+='→$'
+set previouspattern+='^←$'
+set previouspattern+='^←'
+set previouspattern+='←$'
 
 set passkeys=
 
