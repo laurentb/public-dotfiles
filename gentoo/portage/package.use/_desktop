@@ -18,9 +18,6 @@ x11-terms/rxvt-unicode -vanilla 256-color fading-colors font-styles wcwidth unic
 
 kde-base/okular ebook
 
-# avoid evolution-data-server
-net-voip/ekiga -gnome
-
 net-im/gajim -gnome srv trayicon
 
 media-sound/audacity vamp soundtouch midi
@@ -31,6 +28,8 @@ net-print/gutenprint foomaticdb
 media-libs/libcanberra -sound
 
 x11-base/xorg-server xnest xvfb
+
+x11-misc/xscreensaver -opengl
 
 x11-misc/shutter drawing
 
