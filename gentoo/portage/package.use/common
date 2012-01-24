@@ -5,8 +5,6 @@ app-editors/vim vim-pager cscope
 
 net-dns/avahi mdnsresponder-compat
 
-sys-fs/udev extras
-
 dev-vcs/mercurial gpg
 dev-vcs/subversion -dso
 app-portage/layman git mercurial

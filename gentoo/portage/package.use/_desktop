@@ -1,3 +1,5 @@
+sys-fs/udev extras
+
 net-p2p/amule daemon remote stats
 
 app-admin/conky mpd
