@@ -4,7 +4,7 @@ import subprocess
 with open("/proc/cpuinfo", "r") as cpuinfo:
     flags = re.search("^flags\s+:\s+(.+)$", cpuinfo.read(), re.MULTILINE).groups()[0].split(" ")
     # HACK: pni means sse3
-    flags = [ 'sse3' if flag == 'pni' else flag for flag in flags ]
+    flags = ['sse3' if flag == 'pni' else flag for flag in flags]
 
 with open("/proc/cpuinfo", "r") as cpuinfo:
     procs = re.findall("^processor\s+:\s+(\d+)$", cpuinfo.read(), re.MULTILINE)
@@ -12,8 +12,8 @@ with open("/proc/cpuinfo", "r") as cpuinfo:
 
 available_use_flags = ( "avx", "mmx", "mmxext", "3dnow", "3dnowext", "sse", "sse2", "sse3", "sse4", "ssse3" )
 
-use_flags = [ flag for flag in available_use_flags if flag in flags ]
-use_flags += [ "-"+flag for flag in available_use_flags if flag not in flags ]
+use_flags = [flag for flag in available_use_flags if flag in flags]
+use_flags += ["-"+flag for flag in available_use_flags if flag not in flags]
 
 gccv = subprocess.Popen(['gcc', '-march=native', '-E', '-v', '-'],
         stdin=subprocess.PIPE,
@@ -33,23 +33,27 @@ assert count == 1
 cflags, count = re.subn('-mtune=.+$', '', cflags, 1)
 assert count == 1
 
-## Remove --param arguments.
-## They don't seem that useful (sets exact CPU cache sizes).
-## This prevents badly written build systems, like Chromium's,
-## from failing.
-#cflags = re.sub(' --param [^ ]+', '', cflags)
+# Remove --param arguments.
+# They don't seem that useful (sets exact CPU cache sizes).
+# This prevents badly written build systems, like Chromium's,
+# from failing.
+short_cflags = re.sub(' --param [^ ]+', '', cflags).strip()
 
 cflags = cflags.strip()
+
 
 if __name__ == "__main__":
     print use_flags
     print gccv[0]
     print cflags
+    print short_cflags
     print jobs
     exit()
+
 
 text("""# $warning
 USE_ARCH="$flags"
 ARCH_FLAGS="$cflags"
+SHORT_ARCH_FLAGS="$short_cflags"
 ARCH_JOBS="$jobs"
-""").render(flags=" ".join(use_flags), cflags=cflags, jobs=jobs)
+""").render(flags=" ".join(use_flags), cflags=cflags, short_cflags=short_cflags, jobs=jobs)
