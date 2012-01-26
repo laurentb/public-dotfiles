@@ -4,8 +4,10 @@ pre_pkg_setup() {
 }
 
 pre_pkg_preinst() {
-    sed '/^\(LOCALE\|MANPAGE\)DIRS=/s/\([" ]\)\//\1${LP_PREFIX}\//g' \
-        /usr/bin/localepurge > ${S}/localepurge
-    chmod +x ${S}/localepurge
-    LP_PREFIX=${D} ${S}/localepurge
+    if [ -d "${S}" ]; then
+        sed '/^\(LOCALE\|MANPAGE\)DIRS=/s/\([" ]\)\//\1${LP_PREFIX}\//g' \
+            /usr/bin/localepurge > ${S}/localepurge
+        chmod +x ${S}/localepurge
+        LP_PREFIX=${D} ${S}/localepurge
+    fi
 }
