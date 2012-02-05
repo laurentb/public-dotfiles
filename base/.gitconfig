@@ -16,3 +16,5 @@
 	root = !pwd
 [core]
 	pager = cat
+[gitgoggles]
+	fetch = false
