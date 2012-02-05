@@ -8,6 +8,8 @@ try:
 except SystemExit, e:
     pass
 
+import pep8
+pep8.MAX_LINE_LENGTH = 120
 from sys import argv
 argv.insert(1, '--repeat')
 with warnings.catch_warnings():
