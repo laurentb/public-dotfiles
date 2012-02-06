@@ -148,6 +148,8 @@ function ToggleSpell()
 endfunction
 nmap <silent> <F2> <Esc>:call ToggleSpell()<CR>
 
+nnoremap <silent> <F12> :YRShow<CR>
+
 " bépo keyboard layout
 source ~/.vim/bepo.vim
 
