@@ -18,6 +18,7 @@ convmv
 jot
 mmv
 moreutils
+ncdu
 pinfo
 realpath
 recode
