@@ -51,4 +51,4 @@ kde-base/kdebase-startkde -wallpapers
 # required by some gnome packages
 net-dns/avahi gtk3
 
-dev-util/qt-creator -qml -subversion fakevim
+dev-util/qt-creator -qml fakevim

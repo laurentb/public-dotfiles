@@ -7,7 +7,8 @@ net-dns/avahi mdnsresponder-compat
 
 dev-vcs/mercurial gpg
 dev-vcs/subversion -dso
-app-portage/layman git mercurial
+app-portage/layman git mercurial subversion
+dev-vcs/git subversion
 
 # needed for elinks
 dev-scheme/guile deprecated discouraged networking
