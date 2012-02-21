@@ -3,6 +3,7 @@ aspell
 base
 bash-builtins
 bind-utils
+bluez
 bzip2
 configure
 coreutils
@@ -10,6 +11,8 @@ cowsay
 cryptsetup
 dd
 dict
+e2fsprogs
+eix
 eselect
 figlet
 findutils
@@ -24,11 +27,15 @@ gpg
 gpg2
 gvfs
 gzip
+iconv
 info
 iptables
+ipv6calc
 layman
 lftp
+libreoffice
 links
+lsof
 make
 man
 mc
@@ -41,13 +48,14 @@ mpc
 mplayer
 munin-node
 ncmpcpp
-libreoffice
 perl
 postfix
+procps
 python
 rsync
 screen
 scrot
+sh
 shadow
 smartctl
 ssh
@@ -65,4 +73,5 @@ util-linux
 vim
 wireless-tools
 xrandr
+xrdb
 xz
