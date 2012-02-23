@@ -41,3 +41,5 @@ dev-libs/nss utils
 
 # required by udev[hwdb]
 sys-apps/pciutils -zlib
+
+net-misc/openvpn iproute2

@@ -37,3 +37,5 @@ dev-python/PyRSS2Gen
 www-client/weboob
 dev-python/prettytable
 dev-python/html2text
+
+<net-misc/openvpn-2.4
