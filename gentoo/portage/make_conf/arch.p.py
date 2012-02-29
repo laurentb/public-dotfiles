@@ -10,7 +10,7 @@ with open("/proc/cpuinfo", "r") as cpuinfo:
     procs = re.findall("^processor\s+:\s+(\d+)$", cpuinfo.read(), re.MULTILINE)
     jobs = len(procs) + 1
 
-available_use_flags = ( "avx", "mmx", "mmxext", "3dnow", "3dnowext", "sse", "sse2", "sse3", "sse4", "ssse3" )
+available_use_flags = ( "avx", "mmx", "mmxext", "3dnow", "3dnowext", "sse", "sse2", "sse3", "sse4", "sse4_1", "ssse3" )
 
 use_flags = [flag for flag in available_use_flags if flag in flags]
 use_flags += ["-"+flag for flag in available_use_flags if flag not in flags]
