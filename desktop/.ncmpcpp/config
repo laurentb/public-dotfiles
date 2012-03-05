@@ -3,7 +3,7 @@ browser_display_mode = "columns"
 search_engine_display_mode = "columns"
 user_interface = "alternative"
 
-song_columns_list_format = "(4)[blue]{n} (32)[yellow]{a} (29)[cyan]{b} (30)[red]{t} (5)[blue]{l}"
+song_columns_list_format = "(4)[blue]{n} (31)[yellow]{a} (29)[cyan]{b} (30)[red]{t} (6)[blue]{l}"
 alternative_header_first_line_format = "$2$aqqu$/a {%N} $b{%t}|{%f}$/b $atqq$/a$9"
 
 mouse_support = "no"
