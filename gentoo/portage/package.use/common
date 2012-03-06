@@ -43,3 +43,5 @@ dev-libs/nss utils
 sys-apps/pciutils -zlib
 
 net-misc/openvpn iproute2
+
+dev-python/pyyaml libyaml
