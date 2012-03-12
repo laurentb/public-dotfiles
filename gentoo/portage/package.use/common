@@ -34,6 +34,7 @@ net-p2p/rtorrent color xmlrpc
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
 dev-libs/popt static-libs
+sys-apps/util-linux static-libs
 
 media-libs/libpng apng
 
