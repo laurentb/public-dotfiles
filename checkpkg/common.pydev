@@ -1,8 +1,9 @@
-dev-python/argparse
+dev-python/autopep8
 dev-python/bpython
 dev-python/coverage
 dev-python/fabric
 dev-python/feedparser
+dev-python/flakeplus
 dev-python/html2text
 dev-python/ipython
 dev-python/nose
@@ -11,5 +12,5 @@ dev-python/pychecker
 dev-python/pyflakes
 dev-python/pylint
 dev-python/python-dateutil
-dev-python/pyyaml
+dev-python/unicode-nazi
 dev-python/virtualenv

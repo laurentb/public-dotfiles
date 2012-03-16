@@ -34,8 +34,22 @@ dev-python/PyRSS2Gen
 
 <net-im/minbif-9999
 
+<net-misc/openvpn-2.4
+
 www-client/weboob
 dev-python/prettytable
 dev-python/html2text
 
-<net-misc/openvpn-2.4
+net-misc/httpie
+
+dev-python/requests
+dev-python/certifi
+
+dev-python/routes
+
+dev-python/unicode-nazi
+
+dev-python/flakeplus
+
+dev-python/unipath
+dev-python/autopep8
