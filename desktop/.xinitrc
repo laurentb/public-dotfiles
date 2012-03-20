@@ -43,12 +43,12 @@ xscreensaver &
 
 (sleep 4 && nice lal) &
 
-which wicd-gtk && /etc/init.d/wicd status && (sleep 3 && nice wicd-gtk) &
-which gnome-power-manager && (sleep 4 && nice gnome-power-manager) &
+type -p wicd-gtk && /etc/init.d/wicd status && (sleep 3 && nice wicd-gtk) &
+type -p gnome-power-manager && (sleep 4 && nice gnome-power-manager) &
 
 [ -f ~/.xinitrc.local ] && . ~/.xinitrc.local
 
 # check /usr/libexec/openbox-xdg-autostart --list for more stuff we should launch
 
-which ck-launch-session && exec ck-launch-session openbox
+type -p ck-launch-session && exec ck-launch-session openbox
 exec openbox
