@@ -20,9 +20,9 @@ function! s:IndentGuidesDisable()
 endfunction
 
 " Commands
-command! IndentGuidesToggle  call s:IndentGuidesToggle()
-command! IndentGuidesEnable  call s:IndentGuidesEnable()
-command! IndentGuidesDisable call s:IndentGuidesDisable()
+command! -bar IndentGuidesToggle  call s:IndentGuidesToggle()
+command! -bar IndentGuidesEnable  call s:IndentGuidesEnable()
+command! -bar IndentGuidesDisable call s:IndentGuidesDisable()
 
 "
 " Initializes a given variable to a given value. The variable is only
@@ -30,7 +30,7 @@ command! IndentGuidesDisable call s:IndentGuidesDisable()
 "
 function s:InitVariable(var, value)
   if !exists(a:var)
-    if type(a:var) == type("")
+    if type(a:value) == type("")
       exec 'let ' . a:var . ' = ' . "'" . a:value . "'"
     else
       exec 'let ' . a:var . ' = ' .  a:value
@@ -52,6 +52,7 @@ call s:InitVariable('g:indent_guides_guide_size',            0 )
 call s:InitVariable('g:indent_guides_start_level',           1 )
 call s:InitVariable('g:indent_guides_enable_on_vim_startup', 0 )
 call s:InitVariable('g:indent_guides_debug',                 0 )
+call s:InitVariable('g:indent_guides_space_guides',          1 )
 
 " Default mapping
 nmap <Leader>ig :IndentGuidesToggle<CR>
@@ -66,4 +67,3 @@ augroup indent_guides
 
   autocmd BufEnter,WinEnter * call indent_guides#process_autocmds()
 augroup END
-
