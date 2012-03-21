@@ -1,8 +1,7 @@
 scriptencoding utf-8
 
 filetype off
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+call pathogen#infect()
 
 " usually these are already defaults in the global vimrc
 set nocompatible
