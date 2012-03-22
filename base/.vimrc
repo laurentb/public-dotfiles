@@ -5,6 +5,7 @@ call pathogen#infect()
 
 " usually these are already defaults in the global vimrc
 set nocompatible
+set hidden
 set ttyfast
 set termencoding=utf-8
 filetype on
