@@ -33,7 +33,8 @@ set backspace=indent,eol,start
 " can be ignored with \c or \C in the pattern
 set ignorecase smartcase
 
-set hlsearch
+" clear search hilight
+nnoremap <silent> <F10> :nohlsearch<CR>
 
 " autoinsert comment leader
 set formatoptions+=ro
@@ -101,9 +102,6 @@ au BufReadPost *
     \ if line("'\"") > 1 && line("'\"") <= line("$") && &ft !~ "commit" |
     \ exe "normal! g`\"" |
     \ endif
-
-" do not hl previous search
-au BufReadPost * setlocal nohlsearch
 
 set list listchars=nbsp:⍽,tab:»·,trail:·,extends:»,precedes:«
 set showbreak=»
