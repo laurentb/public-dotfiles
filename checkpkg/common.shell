@@ -12,6 +12,7 @@ sys-apps/less
 sys-apps/most
 sys-apps/pv
 sys-apps/rename
+sys-process/parallel
 sys-process/time
 bogosort
 convmv
