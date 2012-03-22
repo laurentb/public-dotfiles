@@ -1,3 +1,5 @@
 *.pyc
 /confman.py
 TODO
+base/.vim/bundle/*/doc/tags
+base/.vim/doc/tags
