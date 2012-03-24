@@ -47,7 +47,6 @@ GtkAssistant .sidebar {
 
 GtkHCollapsablePaned,
 SourceList.pane-separator {
-    engine: gtk;
     border-width:            0;
     -GtkPaned-handle-size:    2;
 }

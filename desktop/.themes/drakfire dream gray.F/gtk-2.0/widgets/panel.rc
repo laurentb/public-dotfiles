@@ -9,7 +9,7 @@ style "theme-panel"
 	fg[PRELIGHT]	= "#ffffff"
 	fg[ACTIVE]	= "#f5f5f5"
 	text[NORMAL]	= "#222"
-	text[PRELIGHT]	= "#1a1a"
+	text[PRELIGHT]	= "#1a1a1a"
 	text[ACTIVE]	= "#222"
 	
 	engine "pixmap" {
