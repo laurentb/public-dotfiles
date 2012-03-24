@@ -1,5 +1,4 @@
-gtk-theme-name="Raleigh"
+gtk-theme-name="drakfire dream gray"
 gtk-icon-theme-name="Tango"
 gtk-font-name="Sans 10"
 gtk-toolbar-style=3
-include ".gtkrc-zenburn"
