@@ -67,7 +67,7 @@ URxvt*loginShell: true
 ! C-z
 URxvt.keysym.Menu: \032
 
-Xcursor.size: 24
+Xcursor.theme: OpenZone_Black
 
 lal*font: Droid Sans Mono Dotted
 lal*bold: false

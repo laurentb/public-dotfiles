@@ -18,6 +18,7 @@ else
     fi
 fi
 
+xrdb -merge ~/.Xdefaults
 source ~/.urxvt/xrdb.sh
 
 # urxvt daemon − use urxvtc instead of urxvt
