@@ -12,5 +12,6 @@ dev-python/pychecker
 dev-python/pyflakes
 dev-python/pylint
 dev-python/python-dateutil
+dev-python/sphinx
 dev-python/unicode-nazi
 dev-python/virtualenv
