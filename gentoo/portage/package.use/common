@@ -25,6 +25,8 @@ net-analyzer/vnstat -gd
 
 dev-python/bpython urwid
 
+dev-python/nose coverage
+
 dev-db/sqlite secure-delete unlock-notify
 
 net-p2p/mktorrent threads
