@@ -1,25 +1,29 @@
 import re
 import subprocess
 
-with open("/proc/cpuinfo", "r") as cpuinfo:
-    flags = re.search("^flags\s+:\s+(.+)$", cpuinfo.read(), re.MULTILINE).groups()[0].split(" ")
+with open("/proc/cpuinfo") as f:
+    cpuinfo = f.read()
+    flags = re.search("^flags\s+:\s+(.+)$", cpuinfo, re.MULTILINE).groups()[0].split(" ")
     # HACK: pni means sse3
     flags = ['sse3' if flag == 'pni' else flag for flag in flags]
 
-with open("/proc/cpuinfo", "r") as cpuinfo:
-    procs = re.findall("^processor\s+:\s+(\d+)$", cpuinfo.read(), re.MULTILINE)
+    procs = re.findall("^processor\s+:\s+(\d+)$", cpuinfo, re.MULTILINE)
     jobs = len(procs) + 1
 
-available_use_flags = ( "avx", "mmx", "mmxext", "3dnow", "3dnowext", "sse", "sse2", "sse3", "sse4", "sse4_1", "ssse3" )
+
+available_use_flags = ("avx", "ssse3",
+    "mmx", "mmxext",
+    "3dnow", "3dnowext",
+    "sse", "sse2", "sse3", "sse4", "sse4_1")
 
 use_flags = [flag for flag in available_use_flags if flag in flags]
-use_flags += ["-"+flag for flag in available_use_flags if flag not in flags]
+use_flags += ["-" + flag for flag in available_use_flags if flag not in flags]
 
 gccv = subprocess.Popen(['gcc', '-march=native', '-E', '-v', '-'],
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE).communicate('')[1] # capture stderr
-gccv = [flags for flags in gccv.split('\n') if ' -v - ' in flags]
+        stderr=subprocess.PIPE).communicate('')[1]  # capture stderr
+gccv = [flags for flags in gccv.splitlines() if ' -v - ' in flags]
 assert len(gccv) == 1
 
 # Remove everything before -march.
