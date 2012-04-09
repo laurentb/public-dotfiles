@@ -138,10 +138,13 @@ nmap <silent> <F1> <Esc>:call ToggleNumber()<CR>
 function ToggleSpell()
     if (&spell && &spelllang=="en")
         set spelllang=fr
+        echo "spell: fr"
     elseif (&spell)
         set nospell
+        echo "spell off"
     else
         set spell spelllang=en
+        echo "spell: en"
     endif
 endfunction
 nmap <silent> <F2> <Esc>:call ToggleSpell()<CR>
