@@ -10,6 +10,8 @@ dev-vcs/subversion -dso
 app-portage/layman git mercurial subversion
 dev-vcs/git subversion
 
+sys-libs/zlib minizip
+
 # needed for elinks
 dev-scheme/guile deprecated discouraged networking
 
