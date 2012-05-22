@@ -42,7 +42,7 @@ dev-python/html2text
 
 net-misc/httpie
 
-dev-python/requests
+<dev-python/requests-0.12.0
 dev-python/certifi
 
 dev-python/routes
