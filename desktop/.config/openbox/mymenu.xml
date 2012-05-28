@@ -24,6 +24,9 @@
   <item label="Thunderbird">
     <action name="Execute"><execute>thunderbird</execute></action>
   </item>
+  <item label="Liferea">
+    <action name="Execute"><execute>liferea</execute></action>
+  </item>
   <item label="Chromium">
     <action name="Execute"><execute>chromium</execute></action>
   </item>
@@ -54,22 +57,22 @@
 </menu>
 
 <menu id="documents-menu" label="Documents">
-  <item label="KWord">
-    <action name="Execute"><execute>kword</execute></action>
+  <item label="Kate">
+    <action name="Execute"><execute>kate</execute></action>
   </item>
-  <item label="Calc">
+  <item label="Calligra Words">
+    <action name="Execute"><execute>calligrawords</execute></action>
+  </item>
+  <item label="LO Calc">
     <action name="Execute"><execute>localc</execute></action>
   </item>
-  <item label="Draw">
+  <item label="LO Draw">
     <action name="Execute"><execute>lodraw</execute></action>
   </item>
-  <item label="Impress">
+  <item label="LO Impress">
     <action name="Execute"><execute>loimpress</execute></action>
   </item>
-  <item label="Math">
-    <action name="Execute"><execute>lomath</execute></action>
-  </item>
-  <item label="Writer">
+  <item label="LO Writer">
     <action name="Execute"><execute>lowriter</execute></action>
   </item>
 </menu>
