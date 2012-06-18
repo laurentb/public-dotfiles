@@ -8,8 +8,8 @@ media-sound/mpd lame -mikmod -ffmpeg -aac
 media-sound/sox encode
 media-video/vlc matroska rtsp stream kate libass
 
-media-video/mplayer ass bs2b rtmp
-media-video/ffmpeg threads rtmp ass
+media-video/mplayer libass bs2b rtmp
+media-video/ffmpeg threads libass rtmp
 virtual/ffmpeg threads
 
 kde-base/ksysguard lm_sensors
