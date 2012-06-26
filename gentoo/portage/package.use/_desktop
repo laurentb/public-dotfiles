@@ -1,5 +1,7 @@
 sys-fs/udev extras
 
+media-libs/mesa g3dvl
+
 net-p2p/amule daemon remote stats
 
 app-admin/conky mpd
