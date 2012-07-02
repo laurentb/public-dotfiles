@@ -36,7 +36,7 @@ xset s off
 xset dpms 10800 10800 10800
 xscreensaver &
 
-(sleep 1 && stalonetray -w -p) &
+(sleep 1 && stalonetray --dockapp-mode -p) &
 
 (sleep 2 && kmix --keepvisibility) &
 (sleep 2 && klipper) &
