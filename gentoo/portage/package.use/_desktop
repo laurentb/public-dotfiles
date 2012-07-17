@@ -57,3 +57,6 @@ net-dns/avahi gtk3
 dev-util/qt-creator -qml fakevim
 
 app-office/calligra -calligra_features_plan -calligra_features_kexi -semantic-desktop
+
+media-libs/chromaprint tools
+media-sound/picard ffmpeg amplifind
