@@ -27,6 +27,7 @@
     <!-- 'Smart' or 'UnderMouse' -->
     <center>no</center>
     <monitor>Any</monitor>
+    <primaryMonitor></primaryMonitor>
   </placement>
   <theme>
     <name>Syscrash</name>
@@ -79,14 +80,14 @@
       <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
-    <font place="OnScreenDisplay">
+    <font place="ActiveOnScreenDisplay">
+      <name/>
+    </font>
+    <font place="InactiveOnScreenDisplay">
       <name>Sans</name>
-      <size>18</size>
-      <!-- font size in points -->
-      <weight>Bold</weight>
-      <!-- 'bold' or 'normal' -->
-      <slant>Normal</slant>
-      <!-- 'italic' or 'normal' -->
+      <size>8</size>
+      <weight></weight>
+      <slant></slant>
     </font>
   </theme>
   <desktops>
@@ -122,7 +123,7 @@
     </popupFixedPosition>
   </resize>
   <dock>
-    <position>Bottom</position>
+    <position>BottomRight</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>69</floatingX>
     <floatingY>0</floatingY>
@@ -131,7 +132,7 @@
     <!-- 'Above', 'Normal', or 'Below' -->
     <direction>Horizontal</direction>
     <!-- 'Vertical' or 'Horizontal' -->
-    <autoHide>yes</autoHide>
+    <autoHide>no</autoHide>
     <hideDelay>300</hideDelay>
     <!-- in milliseconds (1000 = 1 second) -->
     <showDelay>300</showDelay>
@@ -142,31 +143,128 @@
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
-    <keybind key="C-A-Left"><action name="DesktopLeft"><wrap>yes</wrap></action></keybind>
-    <keybind key="C-A-Right"><action name="DesktopRight"><wrap>yes</wrap></action></keybind>
-    <keybind key="C-A-Up"><action name="DesktopUp"><wrap>yes</wrap></action></keybind>
-    <keybind key="C-A-Down"><action name="DesktopDown"><wrap>yes</wrap></action></keybind>
-    <keybind key="S-A-Left"><action name="SendToDesktopLeft"><wrap>yes</wrap></action></keybind>
-    <keybind key="S-A-Right"><action name="SendToDesktopRight"><wrap>yes</wrap></action></keybind>
-    <keybind key="S-A-Up"><action name="SendToDesktopUp"><wrap>yes</wrap></action></keybind>
-    <keybind key="S-A-Down"><action name="SendToDesktopDown"><wrap>yes</wrap></action></keybind><!-- Keybindings for windows -->
-    <keybind key="A-F4"><action name="Close"/></keybind>
-    <keybind key="A-Escape"><action name="Lower"/><action name="FocusToBottom"/><action name="Unfocus"/></keybind>
-    <keybind key="A-space"><action name="ShowMenu"><menu>client-menu</menu></action></keybind><!-- Keybindings for window switching -->
-    <keybind key="A-Tab"><action name="NextWindow"><allDesktops>no</allDesktops></action></keybind>
-    <keybind key="A-S-Tab"><action name="NextWindow"><allDesktops>yes</allDesktops></action></keybind>
-    <keybind key="C-A-Tab"><action name="NextWindow"><panels>yes</panels><desktop>yes</desktop></action></keybind>
+    <keybind key="C-A-Left">
+      <action name="DesktopLeft">
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="C-A-Right">
+      <action name="DesktopRight">
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="C-A-Up">
+      <action name="DesktopUp">
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="C-A-Down">
+      <action name="DesktopDown">
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="S-A-Left">
+      <action name="SendToDesktopLeft">
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="S-A-Right">
+      <action name="SendToDesktopRight">
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="S-A-Up">
+      <action name="SendToDesktopUp">
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="S-A-Down">
+      <action name="SendToDesktopDown">
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <!-- Keybindings for windows -->
+    <keybind key="A-F4">
+      <action name="Close"/>
+    </keybind>
+    <keybind key="A-Escape">
+      <action name="Lower"/>
+      <action name="FocusToBottom"/>
+      <action name="Unfocus"/>
+    </keybind>
+    <keybind key="A-space">
+      <action name="ShowMenu">
+        <menu>client-menu</menu>
+      </action>
+    </keybind>
+    <!-- Keybindings for window switching -->
+    <keybind key="A-Tab">
+      <action name="NextWindow">
+        <allDesktops>no</allDesktops>
+      </action>
+    </keybind>
+    <keybind key="A-S-Tab">
+      <action name="NextWindow">
+        <allDesktops>yes</allDesktops>
+      </action>
+    </keybind>
+    <keybind key="C-A-Tab">
+      <action name="NextWindow">
+        <panels>yes</panels>
+        <desktop>yes</desktop>
+      </action>
+    </keybind>
     <!-- Keybindings for running applications -->
-    <keybind key="W-F1"><action name="Desktop"><desktop>1</desktop></action></keybind>
-    <keybind key="W-F2"><action name="Desktop"><desktop>2</desktop></action></keybind>
-    <keybind key="W-F3"><action name="Desktop"><desktop>3</desktop></action></keybind>
-    <keybind key="W-F4"><action name="Desktop"><desktop>4</desktop></action></keybind>
-    <keybind key="W-F5"><action name="Desktop"><desktop>5</desktop></action></keybind>
-    <keybind key="W-F6"><action name="Desktop"><desktop>6</desktop></action></keybind>
-    <keybind key="W-Left"><action name="DesktopLeft"><wrap>yes</wrap></action></keybind>
-    <keybind key="W-Right"><action name="DesktopRight"><wrap>yes</wrap></action></keybind>
-    <keybind key="W-m"><action name="ShowMenu"><menu>root-menu</menu></action></keybind>
-    <keybind key="W-w"><action name="ShowMenu"><menu>client-list-combined-menu</menu></action></keybind>
+    <keybind key="W-F1">
+      <action name="Desktop">
+        <desktop>1</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-F2">
+      <action name="Desktop">
+        <desktop>2</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-F3">
+      <action name="Desktop">
+        <desktop>3</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-F4">
+      <action name="Desktop">
+        <desktop>4</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-F5">
+      <action name="Desktop">
+        <desktop>5</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-F6">
+      <action name="Desktop">
+        <desktop>6</desktop>
+      </action>
+    </keybind>
+    <keybind key="W-Left">
+      <action name="DesktopLeft">
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-Right">
+      <action name="DesktopRight">
+        <wrap>yes</wrap>
+      </action>
+    </keybind>
+    <keybind key="W-m">
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
+    </keybind>
+    <keybind key="W-w">
+      <action name="ShowMenu">
+        <menu>client-list-combined-menu</menu>
+      </action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>10</dragThreshold>
@@ -175,10 +273,14 @@
     <!-- in milliseconds (1000 = 1 second) -->
     <context name="Frame">
       <mousebind button="C-Button8" action="Press">
-          <action name="NextWindow"><allDesktops>no</allDesktops></action>
+        <action name="NextWindow">
+          <allDesktops>no</allDesktops>
+        </action>
       </mousebind>
       <mousebind button="A-Button8" action="Press">
-          <action name="NextWindow"><allDesktops>no</allDesktops></action>
+        <action name="NextWindow">
+          <allDesktops>no</allDesktops>
+        </action>
       </mousebind>
       <mousebind button="A-Left" action="Press">
         <action name="Focus"/>
