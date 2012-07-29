@@ -3,7 +3,11 @@
 [ -f ~/.sh_vars ] && . ~/.sh_vars
 
 if [ -x /usr/bin/keychain ]; then
-    eval `/usr/bin/keychain --eval -q --ignore-missing id_dsa id_rsa`
+    eval `/usr/bin/keychain --eval -q`
+    # only ask for passphrase when needed
+    alias ssh="${HOME}/.sshwrap"
+    export RSYNC_RSH="${HOME}/.sshwrap"
+    export GIT_SSH="${HOME}/.sshwrap"
 fi
 
 # disable flow control
