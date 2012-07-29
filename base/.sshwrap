@@ -2,5 +2,5 @@
 # It could be interesting to add a timeout,
 # but for now I have scripts relying on having my SSH key loaded.
 # Adding timeouts only for some keys and/or on some machines could be considered.
-ssh-add -l 2>&1 >/dev/null || /usr/bin/keychain --ignore-missing id_dsa id_rsa
+ssh-add -l 2>&1 >/dev/null || /usr/bin/keychain --ignore-missing id_dsa id_rsa id_ecdsa
 exec /usr/bin/ssh "$@"
