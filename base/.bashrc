@@ -36,7 +36,7 @@ export HISTTIMEFORMAT='%F %T '
 if [[ ${EUID} == 0 ]]; then
     PS1='\[\033[01;31m\]\h\[\033[01;34m\] \w \$\[\033[00m\] '
 elif [[ -z ${SSH_TTY} && -n ${DISPLAY} ]]; then
-    if [[ -n "${USER}" && "${USER}" == "${MAIN_USER}" ]]; then
+    if [[ -n "${USER}" && "${USER}" == "$(logname 2>/dev/null)" ]]; then
         PS1='\[\033[01;30m\]\h\[\033[01;34m\] \w \$\[\033[00m\] '
     else
         PS1='\[\033[01;30m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
@@ -44,6 +44,8 @@ elif [[ -z ${SSH_TTY} && -n ${DISPLAY} ]]; then
 else
     PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w \$\[\033[00m\] '
 fi
+
+export PROMPT_DIRTRIM=3
 
 # disallow redirections (>) to an existing file − use >| to bypass
 set -C
