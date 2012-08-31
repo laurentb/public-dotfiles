@@ -38,7 +38,6 @@ xscreensaver &
 
 (sleep 1 && stalonetray --dockapp-mode -p) &
 
-(sleep 2 && kmix --keepvisibility) &
 (sleep 2 && klipper) &
 (sleep 3 && nice rsibreak) &
 
