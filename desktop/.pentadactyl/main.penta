@@ -15,22 +15,22 @@ source ~/.pentadactyl/bepo.penta
 
 " scroll 8 times as much
 group bépo
-noremap -b s 8k
-noremap -b t 8j
+map -builtin -b s 8k
+map -builtin -b t 8j
 group user
 
 " toggle bookmarks sidebar
-noremap A -ex sidebar! Bookmarks
+map -builtin A -ex sidebar! Bookmarks
 
 " scroll pages
-noremap <BS> <C-u>
-noremap <Space> <C-d>
+map -builtin <BS> <C-u>
+map -builtin <Space> <C-d>
 
 " normal zoom
-noremap <Return> zz
+map -builtin <Return> zz
 
 " switch css use
-noremap ! -ex set invum
+map -builtin ! -ex set invum
 
 command yt :yank :echo document.title.replace(/ - Pentadactyl$/, '');
 
