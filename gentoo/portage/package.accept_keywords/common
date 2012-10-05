@@ -21,7 +21,6 @@ sys-apps/fr-bepo-keymap
 
 <dev-python/fabric-1.4.0
 
-dev-python/pep8
 
 app-arch/duff
 
@@ -41,6 +40,8 @@ dev-python/prettytable
 dev-python/html2text
 
 net-misc/httpie
+sys-apps/jsonpipe
+net-misc/googlecl
 
 <dev-python/requests-0.12.0
 dev-python/certifi
@@ -50,6 +51,14 @@ dev-python/routes
 dev-python/unicode-nazi
 
 dev-python/flakeplus
-
-dev-python/unipath
+dev-python/pep8
+dev-python/pyflakes3k
 dev-python/autopep8
+
+dev-python/sh
+dev-python/unipath
+dev-python/colorama
+dev-python/vulture
+dev-python/calabash
+
+sys-fs/dfc

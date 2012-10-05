@@ -1,7 +1,6 @@
 net-dns/host
 bind-tools
 curl
-elinks
 fping
 ftp
 gnu-netcat

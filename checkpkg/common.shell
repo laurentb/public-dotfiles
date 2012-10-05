@@ -16,6 +16,7 @@ sys-process/parallel
 sys-process/time
 bogosort
 convmv
+dfc
 jot
 mmv
 moreutils
