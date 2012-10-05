@@ -61,4 +61,8 @@ dev-python/colorama
 dev-python/vulture
 dev-python/calabash
 
+app-misc/terminal-colors
+
+app-portage/overlint
+
 sys-fs/dfc

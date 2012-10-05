@@ -1,3 +1,4 @@
+app-misc/terminal-colors
 dev-vcs/git
 dev-vcs/tig
 sci-calculators/units
@@ -9,6 +10,7 @@ git-goggles
 git-publish-branch
 git-wtf
 mercurial
+overlint
 strace
 subversion
 vim
