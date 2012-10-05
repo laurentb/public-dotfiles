@@ -58,7 +58,7 @@
 GtkScrolledWindow.frame {
 	border-style: solid;
 	border-color: @internal_element_color;
-	border-width: 1;
+	border-width: 1px;
 	border-radius: 0;
 }
 
@@ -69,14 +69,14 @@ GtkScrolledWindow.frame {
 .toolbar.entry {
 	background-color: @theme_base_color;
 	background-image: none;
-	border-radius: 2;
-	border-width: 1;
+	border-radius: 2px;
+	border-width: 1px;
 	border-style: solid;
 	-unico-border-gradient: -gtk-gradient (linear,
 		left top, left bottom,
 		from (shade (@theme_border_color_b, 1.00)),
 		to (shade (@theme_border_color_a, 1.00)));
-	padding: 2;
+	padding: 2px;
 }
 
 .entry:focused {
@@ -95,8 +95,8 @@ GtkScrolledWindow.frame {
 .entry.progressbar {
 	background-color: @theme_selected_bg_color;
 	color: @theme_selected_fg_color;
-	border-width: 1;
-	border-radius: 1;
+	border-width: 1px;
+	border-radius: 1px;
 	border-color: @progressbar_border;
 }
 

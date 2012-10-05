@@ -15,9 +15,9 @@ GtkAssistant .sidebar .highlight {
 }
 
 GtkAssistant .sidebar {
-	padding: 12;
-	border-width: 1;
-	border-radius: 2;
+	padding: 12px;
+	border-width: 1px;
+	border-radius: 2px;
 	border-style: solid;
 	border-color: @inactive_frame_color;
 	color: mix (@theme_fg_color, @theme_bg_color, 0.40);
@@ -67,14 +67,14 @@ GtkHCollapsablePaned.pane-separator:selected {
 /* View */
 GtkViewport,
 GtkIconView {
-	border-radius: 2;
+	border-radius: 2px;
 	padding: 0;
 }
 
 GtkIconView.view.cell:selected,
 GtkIconView.view.cell:selected:focused {
 	background-color: @theme_selected_bg_color;
-	border-radius: 2;
+	border-radius: 2px;
 }
 
 .view {
@@ -86,10 +86,10 @@ GtkIconView.view.cell:selected:focused {
 
 /* Calendars */
 GtkCalendar.view {
-	border-radius: 2;
+	border-radius: 2px;
 	border-style: solid;
-	border-width: 1;
-	padding: 2;
+	border-width: 1px;
+	padding: 2px;
 }
 
 GtkCalendar.header {

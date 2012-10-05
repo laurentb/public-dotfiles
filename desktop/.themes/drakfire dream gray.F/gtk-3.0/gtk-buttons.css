@@ -4,7 +4,7 @@
 GtkScale.slider,
 .button,
 .toolbar .button {
-	border-radius: 2;
+	border-radius: 2px;
 	text-shadow: 0 1 alpha (shade (@button_bg_color, 1.25), 0.4);
 	background-image: -gtk-gradient (linear,
 		left top, left bottom,
@@ -96,12 +96,12 @@ GtkScale.slider {
 
 .check,
 .check row {
-	border-radius: 3;
+	border-radius: 3px;
 }
 
 .radio,
 .radio row {
-	border-radius: 10;
+	border-radius: 10px;
 }
 
 .check:active,
@@ -156,7 +156,7 @@ GtkScale.slider {
  ************/
 column-header .button {
 	border-radius: 0;
-	padding: 1 2;
+	padding: 1px 2px;
 	background-image: -gtk-gradient (linear,
 		left top, left bottom,
 		from (shade (#F5F5F5,0.9)),
@@ -166,7 +166,7 @@ column-header .button {
 	-unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
 		from (alpha (@listview_border, 0.0)),
 		to (alpha (@listview_border, 0.5)));
-	border-width: 1;
+	border-width: 1px;
 	border-style: solid;
 }
 
@@ -198,7 +198,7 @@ row:insensitive {
 }
 
 row:selected:focused {
-	border-width: 1;
+	border-width: 1px;
 	border-style: solid;
 	background-image: -gtk-gradient (linear,
 		left top, left bottom,
@@ -212,7 +212,7 @@ row:selected:focused {
 }
 
 row:selected {
-	border-width: 1;
+	border-width: 1px;
 	border-style: solid;
 	background-image: -gtk-gradient (linear,
 		left top, left bottom,
@@ -233,7 +233,7 @@ GtkScale {
 	-GtkRange-slider-width: 17;
 	-GtkRange-trough-border: 1;
 
-	border-radius: 8;
+	border-radius: 8px;
 	-unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
 		from (shade (@theme_bg_color, 0.8)),
 		to (shade (@theme_bg_color, 0.8)));
@@ -254,7 +254,7 @@ GtkSpinButton.button:active {
 	engine: adwaita;
     background-image: none;
     background-color: @theme_base_color;
-    border-width: 1;
+    border-width: 1px;
     border-style: none;
 }
 
@@ -262,20 +262,20 @@ GtkSpinButton.button:insensitive {
 	engine: adwaita;
     background-image: none;
     background-color: @theme_base_color;
-    border-width: 4;
+    border-width: 4px;
     border-style: solid;
-    padding: 3 2;
+    padding: 3px 2px;
 }
 .spinbutton {
 	engine: adwaita;
-    padding: 3 2;
+    padding: 3px 2px;
 }
 
 /************
  * Switches *
  ************/
 GtkSwitch {
-	border-radius: 2;
+	border-radius: 2px;
 	background-image: -gtk-gradient (linear,
 		left top, left bottom,
 		from (@button_gradient_color_a),
@@ -330,8 +330,8 @@ GtkSwitch.trough:active {
  * Notebook & Tabs *
  *******************/
 .notebook {
-	padding: 2;
-	border-radius: 2;
+	padding: 2px;
+	border-radius: 2px;
 	background-color: shade (#EAEAEA, 1.0);
 	-unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
 		from (shade (#EAEAEA, 0.0)),
@@ -340,8 +340,8 @@ GtkSwitch.trough:active {
 }
 
 .notebook tab {
-	border-radius: 2;
-	padding: 2 3 0;
+	border-radius: 2px;
+	padding: 2px 3px 0;
 	background-image: -gtk-gradient (linear, left top, left bottom,
 		from (shade (#EAEAEA, 0.9)),
 		to (shade (#EAEAEA, 0.84)));
