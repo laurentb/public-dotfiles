@@ -4,8 +4,12 @@ app-text/dictator
 
 x11-plugins/lal
 
-media-fonts/symbola
-
 media-sound/picard
 
 x11-misc/keynav
+
+media-fonts/inconsolata
+media-fonts/nunito
+media-fonts/source-code-pro
+media-fonts/source-sans-pro
+media-fonts/takao-fonts
