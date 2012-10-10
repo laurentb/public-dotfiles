@@ -12,22 +12,22 @@ config_file = path.join(path.dirname(__file__), "bashcomp.wanted")
 
 REGEXP = re.compile('^ +\[\d+\] +(?P<name>[^ ]+)(?P<enabled> \*)?$')
 
-eselect = [REGEXP.match(line) \
-        for line \
-        in popen("eselect bashcomp list").read().strip().split('\n') \
-        if REGEXP.match(line)]
+eselect = [REGEXP.match(line)
+           for line
+           in popen("eselect bashcomp list").read().strip().splitlines()
+           if REGEXP.match(line)]
 
-available_completions = [line.groupdict()['name'] \
-        for line \
-        in eselect]
+available_completions = [line.groupdict()['name']
+                         for line
+                         in eselect]
 
-active_completions = [line.groupdict()['name'] \
-        for line \
-        in eselect \
-        if line.groupdict().get('enabled')]
+active_completions = [line.groupdict()['name']
+                      for line
+                      in eselect
+                      if line.groupdict().get('enabled')]
 
 with open(config_file, "r") as f:
-    wanted_completions = f.read().strip().split("\n")
+    wanted_completions = f.read().strip().splitlines()
 
 completions = set(wanted_completions) - set(active_completions)
 for completion in completions:
