@@ -29,10 +29,11 @@ active_completions = [line.groupdict()['name']
 with open(config_file, "r") as f:
     wanted_completions = f.read().strip().splitlines()
 
-completions = set(wanted_completions) - set(active_completions)
-for completion in completions:
-    if completion in available_completions:
+for completion in available_completions:
+    if completion in wanted_completions \
+            and completion not in active_completions:
         print "%s+%s%s" % (BRIGHT, NORMAL, completion),
         system("eselect bashcomp enable %s" % completion)
-    else:
+    if completion not in wanted_completions \
+            and completion in active_completions:
         print "%s-%s%s" % (BRIGHT, NORMAL, completion),
