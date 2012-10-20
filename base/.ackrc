@@ -1,6 +1,9 @@
+--ignore-dir=build
+--ignore-dir=dist
 --ignore-dir=cache
 --ignore-dir=log
 --ignore-dir=deploy
 --type-set=twig=.twig
 --type-set=ebuild=.ebuild,.eclass
 --type-set=jinja=.j2
+--type-set=doc=.rst,.md,.txt
