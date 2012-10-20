@@ -2,11 +2,9 @@
 <dev-php/PEAR-PEAR_PackageFileManager-1.7
 dev-php/PEAR-PHP_CompatInfo
 dev-php/PEAR-Console_Getargs
-dev-php5/xhprof
 
 # php 5.4 only
 <dev-php/pecl-memcache-3.0.7
-<virtual/httpd-php-5.5
 <dev-php/xcache-2.0.2
 
 net-dns/nsd

@@ -25,7 +25,6 @@ dev-python/ssh
 app-arch/duff
 
 app-text/restview
-=dev-python/rst2pdf-0.16-r1
 dev-python/xhtml2pdf
 
 www-apps/ass2m
@@ -44,7 +43,6 @@ net-misc/httpie
 sys-apps/jsonpipe
 net-misc/googlecl
 
-<dev-python/requests-0.12.0
 dev-python/certifi
 
 dev-python/routes
