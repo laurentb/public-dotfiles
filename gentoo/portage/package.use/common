@@ -12,9 +12,6 @@ dev-vcs/git subversion
 
 sys-libs/zlib minizip
 
-# needed for elinks
-dev-scheme/guile deprecated discouraged networking
-
 net-proxy/tsocks tordns
 
 app-text/enchant hunspell aspell
