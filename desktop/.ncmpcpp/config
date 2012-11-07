@@ -8,6 +8,8 @@ alternative_header_first_line_format = "$2$aqqu$/a {%N} $b{%t}|{%f}$/b $atqq$/a$
 
 mouse_support = "no"
 
+autocenter_mode = "yes"
+
 progressbar_look = "·· "
 
 titles_visibility = "no"
