@@ -43,7 +43,7 @@ xscreensaver &
 
 (sleep 4 && nice lal) &
 
-type -p wicd-gtk && /etc/init.d/wicd status && (sleep 3 && nice wicd-gtk) &
+type -p wicd-gtk && /etc/init.d/wicd status && (sleep 3 && nice wicd-gtk --tray) &
 type -p gnome-power-manager && (sleep 4 && nice gnome-power-manager) &
 
 [ -f ~/.xinitrc.local ] && . ~/.xinitrc.local
