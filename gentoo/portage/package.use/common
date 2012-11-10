@@ -31,11 +31,13 @@ dev-db/sqlite secure-delete unlock-notify
 net-p2p/mktorrent threads
 net-p2p/rtorrent color xmlrpc
 
-# needed for cryptsetup
+# needed for genkernel+LUKS
+sys-fs/cryptsetup static
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
 dev-libs/popt static-libs
 sys-apps/util-linux static-libs
+sys-libs/e2fsprogs-libs static-libs
 
 media-libs/libpng apng
 
