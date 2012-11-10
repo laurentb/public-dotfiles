@@ -32,6 +32,7 @@ net-p2p/mktorrent threads
 net-p2p/rtorrent color xmlrpc
 
 # needed for genkernel+LUKS
+sys-apps/busybox static -pam
 sys-fs/cryptsetup static
 dev-libs/libgcrypt static-libs
 dev-libs/libgpg-error static-libs
