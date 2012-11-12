@@ -31,6 +31,9 @@ dev-db/sqlite secure-delete unlock-notify
 net-p2p/mktorrent threads
 net-p2p/rtorrent color xmlrpc
 
+# issues with esniper if using openssl
+net-misc/curl -curl_ssl_openssl curl_ssl_gnutls
+
 # needed for genkernel+LUKS
 sys-apps/busybox static -pam
 sys-fs/cryptsetup static
