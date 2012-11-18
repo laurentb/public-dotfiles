@@ -1,6 +1,7 @@
 sys-fs/udev extras
 
-media-libs/mesa g3dvl
+media-libs/mesa g3dvl r600-llvm-compiler osmesa xa xorg gles2
+x11-libs/libdrm libkms
 
 net-p2p/amule daemon remote stats
 
