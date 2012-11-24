@@ -3,6 +3,7 @@ dev-python/bpython
 dev-python/coverage
 dev-python/fabric
 dev-python/feedparser
+dev-python/flake8
 dev-python/flakeplus
 dev-python/html2text
 dev-python/ipython

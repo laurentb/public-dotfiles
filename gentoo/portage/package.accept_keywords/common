@@ -53,6 +53,7 @@ dev-python/flakeplus
 dev-python/pep8
 dev-python/pyflakes3k
 dev-python/autopep8
+dev-python/flake8
 
 dev-python/sh
 dev-python/unipath
