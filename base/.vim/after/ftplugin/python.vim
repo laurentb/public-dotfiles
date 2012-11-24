@@ -1,1 +1,1 @@
-setlocal makeprg=~/.vim/pythonlint.py\ %
+setlocal makeprg=~/.vim/pythonlint.sh\ %
