@@ -13,6 +13,9 @@ dev-python/pychecker
 dev-python/pyflakes
 dev-python/pyflakes3k
 dev-python/pylint
+dev-python/pytest
+dev-python/pytest-cov
+dev-python/pytest-xdist
 dev-python/python-dateutil
 dev-python/sphinx
 dev-python/unicode-nazi

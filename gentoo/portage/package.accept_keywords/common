@@ -55,6 +55,16 @@ dev-python/pyflakes3k
 dev-python/autopep8
 dev-python/flake8
 
+# pytest with xdist
+dev-python/pytest-xdist
+<dev-python/execnet-1.1
+<dev-python/pytest-2.3
+<dev-python/py-1.5
+# and cov
+dev-python/pytest-cov
+dev-python/cov-core
+dev-python/python-exec
+
 dev-python/sh
 dev-python/unipath
 dev-python/colorama
