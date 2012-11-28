@@ -16,8 +16,10 @@ available_use_flags = ("avx", "ssse3",
     "3dnow", "3dnowext",
     "sse", "sse2", "sse3", "sse4", "sse4_1")
 
-use_flags = [flag for flag in available_use_flags if flag in flags]
-use_flags += ["-" + flag for flag in available_use_flags if flag not in flags]
+use_flags = set([flag for flag in available_use_flags if flag in flags])
+# mmxext/mmx2 is a subset of SSE (blame AMD marketing)
+if 'sse' in use_flags:
+    use_flags.add('mmxext')
 
 gccv = subprocess.Popen(['gcc', '-march=native', '-E', '-v', '-'],
         stdin=subprocess.PIPE,
