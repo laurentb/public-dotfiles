@@ -46,6 +46,7 @@ net-misc/googlecl
 dev-python/certifi
 
 dev-python/routes
+dev-python/repoze-lru
 
 dev-python/unicode-nazi
 
