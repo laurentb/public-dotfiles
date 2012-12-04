@@ -22,6 +22,8 @@ app-arch/dtrx 7z zip cpio tar gzip bzip2 rar
 
 net-analyzer/vnstat -gd
 
+net-analyzer/nmap ncat ndiff nping
+
 dev-python/bpython urwid
 
 dev-python/nose coverage
