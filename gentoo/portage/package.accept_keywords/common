@@ -60,7 +60,7 @@ dev-python/flake8
 dev-python/pytest-xdist
 <dev-python/execnet-1.1
 <dev-python/pytest-2.3
-<dev-python/py-1.5
+<=dev-python/py-1.4.12
 # and cov
 dev-python/pytest-cov
 dev-python/cov-core
