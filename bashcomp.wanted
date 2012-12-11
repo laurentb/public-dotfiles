@@ -65,6 +65,7 @@ subversion
 sysctl
 sysv-rc
 tar
+task
 tig
 tree
 udisks
