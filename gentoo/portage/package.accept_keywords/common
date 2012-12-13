@@ -65,9 +65,6 @@ dev-python/pytest-xdist
 dev-python/pytest-cov
 dev-python/cov-core
 dev-python/python-exec
-
-# becoming stable; for other packages
-<dev-python/setuptools-0.6.31
 <dev-python/coverage-3.5.4
 
 dev-python/sh
