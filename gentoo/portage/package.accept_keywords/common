@@ -64,7 +64,6 @@ dev-python/pytest-xdist
 # and cov
 dev-python/pytest-cov
 dev-python/cov-core
-dev-python/python-exec
 <dev-python/coverage-3.5.4
 
 dev-python/sh
