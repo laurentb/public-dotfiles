@@ -44,9 +44,12 @@ sys-apps/jsonpipe
 net-misc/googlecl
 
 dev-python/certifi
+dev-python/requests-transition
 
 dev-python/routes
 dev-python/repoze-lru
+
+dev-python/xunitparser
 
 dev-python/unicode-nazi
 
@@ -65,6 +68,8 @@ dev-python/pytest-xdist
 dev-python/pytest-cov
 dev-python/cov-core
 <dev-python/coverage-3.5.4
+
+<dev-python/setuptools-0.6.34
 
 dev-python/sh
 dev-python/unipath
