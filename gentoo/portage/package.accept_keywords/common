@@ -30,6 +30,8 @@ dev-python/xhtml2pdf
 www-apps/assnet
 dev-python/PyRSS2Gen
 
+media-sound/brutha
+
 <net-im/minbif-9999
 
 <net-misc/openvpn-2.4
@@ -76,6 +78,11 @@ dev-python/unipath
 dev-python/colorama
 dev-python/vulture
 dev-python/calabash
+
+dev-python/chut
+dev-python/docopt
+dev-python/docopts
+dev-python/ConfigObject
 
 app-misc/terminal-colors
 
