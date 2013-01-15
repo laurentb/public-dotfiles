@@ -8,7 +8,7 @@ with open("/proc/cpuinfo") as f:
     flags = ['sse3' if flag == 'pni' else flag for flag in flags]
 
     procs = re.findall("^processor\s+:\s+(\d+)$", cpuinfo, re.MULTILINE)
-    jobs = len(procs) + 1
+    jobs = len(procs)
 
 
 available_use_flags = ("avx", "ssse3",
