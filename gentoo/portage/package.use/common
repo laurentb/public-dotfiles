@@ -46,6 +46,8 @@ sys-apps/util-linux static-libs
 sys-libs/e2fsprogs-libs static-libs
 sys-kernel/genkernel crypt cryptsetup
 sys-fs/lvm2 static-libs
+sys-fs/udev static-libs
+virtual/udev static-libs
 
 media-libs/libpng apng
 
