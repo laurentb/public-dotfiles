@@ -12,8 +12,8 @@ media-sound/sox encode
 media-video/vlc matroska rtsp stream kate libass
 app-cdr/k3b -mp3 -sox
 
-media-video/mplayer libass bs2b rtmp
-media-video/ffmpeg threads libass rtmp
+media-video/mplayer2 libass bs2b v4l
+media-video/libav threads rtmp v4l
 virtual/ffmpeg threads
 
 kde-base/ksysguard lm_sensors
