@@ -43,10 +43,7 @@ style -name tabs chrome://* <<EOM
     border-left: 1px solid #bcbcac !important;
     background-image: none !important;
 
-    -moz-border-radius-topleft: 0 !important;
-    -moz-border-radius-topright: 0 !important;
-    -moz-border-radius-bottomright: 0 !important;
-    -moz-border-radius-bottomleft: 0 !important;
+    border-radius: 0 0 0 0 !important;
 }
 #tabbrowser-tabs .tabbrowser-tab[selected=false] {
     background-color: #dcdccc !important;
