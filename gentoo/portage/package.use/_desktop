@@ -3,6 +3,8 @@ sys-fs/udev extras
 media-libs/mesa g3dvl r600-llvm-compiler osmesa xa xorg gles2
 x11-libs/libdrm libkms
 
+media-libs/freetype infinality
+
 net-p2p/amule daemon remote stats
 
 app-admin/conky mpd
