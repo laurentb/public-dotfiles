@@ -20,7 +20,7 @@ use = ["${%s}" % flag for flag in collections]
 text("""# $warning
 USE="$use"
 INPUT_DEVICES="$inpdevs"
-VIDEO_CARDS="radeon vesa dummy none"
+VIDEO_CARDS="radeon intel vesa dummy none"
 NUT_DRIVERS="usbhid-ups"
 SANE_BACKENDS=""
 CAMERAS="ptp2"
