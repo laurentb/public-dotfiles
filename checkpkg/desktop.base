@@ -1,3 +1,4 @@
+x11-misc/xclip
 driconf
 keynav
 libtxc_dxtn
@@ -10,7 +11,6 @@ read-edid
 slock
 wmctrl
 xbindkeys
-xclip
 xclock
 xdotool
 xev

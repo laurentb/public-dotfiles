@@ -1,5 +1,6 @@
 media-sound/mpc
 media-sound/mpd
+media-sound/picard
 media-sound/sox
 alsa-plugins
 alsa-utils
@@ -11,7 +12,6 @@ ncmpcpp
 paprefs
 pavucontrol
 pavumeter
-picard
 sonata
 vorbis-tools
 vorbisgain

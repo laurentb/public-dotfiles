@@ -1,9 +1,9 @@
+app-misc/screen
 nano
 sudo
 rsyslog
 fcron
 at
-screen
 tmux
 dash
 zsh
