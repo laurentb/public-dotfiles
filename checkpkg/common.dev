@@ -1,6 +1,7 @@
 app-misc/terminal-colors
 dev-vcs/git
 dev-vcs/tig
+dev-vcs/tmpclone
 sci-calculators/units
 sci-calculators/wcalc
 colordiff

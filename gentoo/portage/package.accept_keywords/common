@@ -32,6 +32,8 @@ dev-python/PyRSS2Gen
 
 media-sound/brutha
 
+dev-vcs/tmpclone
+
 <net-im/minbif-9999
 
 <net-misc/openvpn-2.4
