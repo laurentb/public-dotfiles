@@ -41,7 +41,6 @@ dev-vcs/tmpclone
 www-client/weboob
 dev-python/prettytable
 dev-python/html2text
-=dev-python/PyQt4-4.9.4-r1
 
 net-misc/httpie
 sys-apps/jsonpipe
