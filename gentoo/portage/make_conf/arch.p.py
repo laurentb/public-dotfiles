@@ -12,14 +12,15 @@ with open("/proc/cpuinfo") as f:
 
 
 available_use_flags = ("avx", "ssse3",
-    "mmx", "mmxext",
-    "3dnow", "3dnowext",
-    "sse", "sse2", "sse3", "sse4", "sse4_1")
+                       "mmx", "mmxext",
+                       "3dnow", "3dnowext",
+                       "sse", "sse2", "sse3", "sse4", "sse4_1")
 
 use_flags = set([flag for flag in available_use_flags if flag in flags])
 # mmxext/mmx2 is a subset of SSE (blame AMD marketing)
 if 'sse' in use_flags:
     use_flags.add('mmxext')
+
 
 gccv = subprocess.Popen(['gcc', '-march=native', '-E', '-v', '-'],
         stdin=subprocess.PIPE,
@@ -48,12 +49,21 @@ short_cflags = re.sub(' --param [^ ]+', '', cflags).strip()
 cflags = cflags.strip()
 
 
+lspci = subprocess.check_output(['lspci', '-k'])
+cards = ['vesa', 'dummy', 'none']
+if ': i915' in lspci:
+    cards.append('intel')
+if ': radeon' in lspci:
+    cards.append('radeon')
+
+
 if __name__ == "__main__":
     print use_flags
     print gccv[0]
     print cflags
     print short_cflags
     print jobs
+    print cards
     exit()
 
 
@@ -62,4 +72,9 @@ USE_ARCH="$flags"
 ARCH_FLAGS="$cflags"
 SHORT_ARCH_FLAGS="$short_cflags"
 ARCH_JOBS="$jobs"
-""").render(flags=" ".join(use_flags), cflags=cflags, short_cflags=short_cflags, jobs=jobs)
+VIDEO_CARDS="$cards"
+""").render(flags=" ".join(use_flags),
+            cflags=cflags,
+            short_cflags=short_cflags,
+            jobs=jobs,
+            cards=" ".join(cards))
