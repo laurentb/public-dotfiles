@@ -40,7 +40,6 @@ dev-vcs/tmpclone
 
 www-client/weboob
 dev-python/prettytable
-dev-python/html2text
 
 net-misc/httpie
 sys-apps/jsonpipe
