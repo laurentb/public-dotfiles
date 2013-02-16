@@ -51,10 +51,12 @@ cflags = cflags.strip()
 
 lspci = subprocess.check_output(['lspci', '-k'])
 cards = ['vesa', 'dummy', 'none']
+use_cards = []
 if ': i915' in lspci:
     cards.append('intel')
 if ': radeon' in lspci:
     cards.append('radeon')
+    use_cards.append('r600-llvm-compiler')
 
 
 if __name__ == "__main__":
@@ -73,8 +75,10 @@ ARCH_FLAGS="$cflags"
 SHORT_ARCH_FLAGS="$short_cflags"
 ARCH_JOBS="$jobs"
 VIDEO_CARDS="$cards"
+USE_VIDEO_CARDS="$cards"
 """).render(flags=" ".join(use_flags),
             cflags=cflags,
             short_cflags=short_cflags,
             jobs=jobs,
-            cards=" ".join(cards))
+            cards=" ".join(cards),
+            use_cards=" ".join(use_cards))
