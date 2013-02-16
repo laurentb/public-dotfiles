@@ -8,7 +8,6 @@ app-text/dos2unix
 app-text/tree
 sys-apps/ack
 sys-apps/bar
-sys-apps/less
 sys-apps/most
 sys-apps/pv
 sys-apps/rename
