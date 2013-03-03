@@ -58,7 +58,7 @@ kde-base/kdebase-startkde -wallpapers
 # required by some gnome packages
 net-dns/avahi gtk3
 
-dev-util/qt-creator -qml fakevim
+dev-qt/qt-creator fakevim
 
 app-office/calligra -calligra_features_plan -calligra_features_kexi -semantic-desktop
 app-office/libreoffice libreoffice_extensions_pdfimport
