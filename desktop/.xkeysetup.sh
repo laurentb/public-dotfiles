@@ -21,4 +21,4 @@ xinput set-button-map "Kingsis Peripherals  Evoluent VerticalMouse 3 " 1 2 2 4 5
 xset mouse 3 3
 
 # shorter delay, bigger rate
-xset r rate 300 50
+xset r rate 250 60
