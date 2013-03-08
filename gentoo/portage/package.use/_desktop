@@ -65,3 +65,9 @@ app-office/libreoffice libreoffice_extensions_pdfimport
 
 media-libs/chromaprint tools
 media-sound/picard ffmpeg amplifind
+
+# either gstreamer or pulseaudio
+net-misc/spice-gtk -gstreamer
+
+app-emulation/qemu spice usbredir
+app-emulation/libvirt qemu virt-network
