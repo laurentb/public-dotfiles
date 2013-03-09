@@ -1,4 +1,5 @@
 app-misc/screen
+sys-apps/man-db
 nano
 sudo
 rsyslog
