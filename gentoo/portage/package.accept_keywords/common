@@ -57,9 +57,10 @@ dev-python/unicode-nazi
 
 dev-python/flakeplus
 dev-python/pep8
-dev-python/pyflakes3k
+dev-python/pyflakes
 dev-python/autopep8
 dev-python/flake8
+dev-python/mccabe
 
 # pytest with xdist
 dev-python/pytest-xdist

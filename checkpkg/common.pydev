@@ -11,7 +11,6 @@ dev-python/nose
 dev-python/pep8
 dev-python/pychecker
 dev-python/pyflakes
-dev-python/pyflakes3k
 dev-python/pylint
 dev-python/pytest
 dev-python/pytest-cov
