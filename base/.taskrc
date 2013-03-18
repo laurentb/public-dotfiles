@@ -1,0 +1,37 @@
+# [Created by task 2.1.2 11/26/2012 17:39:34]
+# Taskwarrior program configuration file.
+# For more documentation, see http://taskwarrior.org or try 'man task', 'man task-faq',
+# 'man task-tutorial', 'man task-color', 'man task-sync' or 'man taskrc'
+
+# Here is an example of entries that use the default, override and blank values
+#   variable=foo   -- By specifying a value, this overrides the default
+#   variable=      -- By specifying no value, this means no default
+#   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
+
+# Use the command 'task show' to see all defaults and overrides
+
+# Files
+data.location=~/.task
+
+# Color theme (uncomment one to use)
+include /usr/share/task/rc/dark-yellow-green.theme
+
+include /usr/share/task/rc/holidays.fr-FR.rc
+
+#push.default.uri=inara:.task/
+#pull.default.uri=inara:.task/
+merge.default.uri=inara:.task/
+merge.autopush=yes
+
+dateformat=Y-M-D
+dateformat.annotation=Y-M-D
+dateformat.edit=Y-M-D=H:N
+dateformat.holiday=YMD
+dateformat.info=Y-M-D=H:N
+dateformat.report=Y-M-D
+
+include ~/.taskrc.local
+journal.time=on
+
+calendar.holidays=full
+search.case.sensitive=no
