@@ -24,9 +24,6 @@
   <item label="Thunderbird">
     <action name="Execute"><execute>thunderbird</execute></action>
   </item>
-  <item label="Liferea">
-    <action name="Execute"><execute>liferea</execute></action>
-  </item>
   <item label="Chromium">
     <action name="Execute"><execute>chromium</execute></action>
   </item>
