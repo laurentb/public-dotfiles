@@ -35,3 +35,5 @@ journal.time=on
 
 calendar.holidays=full
 search.case.sensitive=no
+
+default.priority=M
