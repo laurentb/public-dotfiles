@@ -20,6 +20,7 @@
 	fall = fetch --all
 	alias = !git config --list|grep ^alias|sed 's/alias.//'|grep '='
 	sig = log -n1 --show-signature
+	amh = "!curl ${1}|git am - #"
 [core]
 	pager = cat
 [push]
