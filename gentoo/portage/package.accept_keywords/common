@@ -36,8 +36,6 @@ dev-vcs/tmpclone
 
 <net-im/minbif-9999
 
-<net-misc/openvpn-2.4
-
 www-client/weboob
 dev-python/prettytable
 
