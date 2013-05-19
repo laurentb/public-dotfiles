@@ -63,12 +63,9 @@ dev-python/mccabe
 # pytest with xdist
 dev-python/pytest-xdist
 <dev-python/execnet-1.1
-<dev-python/pytest-2.4
-<dev-python/py-1.5
 # and cov
 dev-python/pytest-cov
 dev-python/cov-core
-<dev-python/coverage-3.5.4
 
 <dev-python/setuptools-0.6.34
 
