@@ -157,9 +157,6 @@ nnoremap <silent> <F12> :YRShow<CR>
 " bépo keyboard layout
 source ~/.vim/bepo.vim
 
-" useful if you forgot to use sudoedit
-comm! SudoWrite exe "w !sudo tee %"
-
 " remove trailing spaces, retab…
 function! Cleanup()
     %s/\s\+$//e
