@@ -1,8 +1,7 @@
 "=============================================================================
-" FILE: neocomplcache.vim
+" FILE: sorter_nothing.vim
 " AUTHOR:  Shougo Matsushita <Shougo.Matsu@gmail.com>
-"          manga_osyo (Original)
-" Last Modified: 19 Dec 2011.
+" Last Modified: 24 Apr 2013.
 " License: MIT license  {{{
 "     Permission is hereby granted, free of charge, to any person obtaining
 "     a copy of this software and associated documentation files (the
@@ -28,43 +27,18 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! unite#sources#file_include#define()
-  return s:source
-endfunction
-
-let s:source = {
-      \ 'name' : 'file_include',
-      \ 'description' : 'candidates from include files',
-      \ 'hooks' : {},
-      \}
-function! s:source.hooks.on_init(args, context) "{{{
-  " From neocomplcache include files.
-  let a:context.source__include_files =
-        \ neocomplcache#sources#include_complete#get_include_files(bufnr('%'))
-  let a:context.source__path = &path
+function! neocomplcache#filters#sorter_nothing#define() "{{{
+  return s:sorter
 endfunction"}}}
 
-function! s:source.gather_candidates(args, context) "{{{
-  let files = map(copy(a:context.source__include_files), '{
-        \ "word" : neocomplcache#util#substitute_path_separator(v:val),
-        \ "abbr" : neocomplcache#util#substitute_path_separator(v:val),
-        \ "source" : "file_include",
-        \ "kind" : "file",
-        \ "action__path" : v:val
-        \ }')
+let s:sorter = {
+      \ 'name' : 'sorter_nothing',
+      \ 'description' : 'nothing sorter',
+      \}
 
-  for word in files
-    " Path search.
-    for path in map(split(a:context.source__path, ','),
-          \ 'neocomplcache#util#substitute_path_separator(v:val)')
-      if path != '' && neocomplcache#head_match(word.word, path . '/')
-        let word.abbr = word.abbr[len(path)+1 : ]
-        break
-      endif
-    endfor
-  endfor
-
-  return files
+function! s:sorter.filter(context) "{{{
+  " Nothing.
+  return a:candidates
 endfunction"}}}
 
 let &cpo = s:save_cpo

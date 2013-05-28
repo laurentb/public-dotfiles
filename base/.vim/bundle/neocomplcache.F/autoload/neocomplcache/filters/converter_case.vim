@@ -1,8 +1,7 @@
 "=============================================================================
-" FILE: neocomplcache.vim
+" FILE: converter_case.vim
 " AUTHOR:  Shougo Matsushita <Shougo.Matsu@gmail.com>
-"          manga_osyo (Original)
-" Last Modified: 19 Dec 2011.
+" Last Modified: 25 Apr 2013.
 " License: MIT license  {{{
 "     Permission is hereby granted, free of charge, to any person obtaining
 "     a copy of this software and associated documentation files (the
@@ -28,43 +27,50 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! unite#sources#file_include#define()
-  return s:source
-endfunction
-
-let s:source = {
-      \ 'name' : 'file_include',
-      \ 'description' : 'candidates from include files',
-      \ 'hooks' : {},
-      \}
-function! s:source.hooks.on_init(args, context) "{{{
-  " From neocomplcache include files.
-  let a:context.source__include_files =
-        \ neocomplcache#sources#include_complete#get_include_files(bufnr('%'))
-  let a:context.source__path = &path
+function! neocomplcache#filters#converter_case#define() "{{{
+  return s:converter
 endfunction"}}}
 
-function! s:source.gather_candidates(args, context) "{{{
-  let files = map(copy(a:context.source__include_files), '{
-        \ "word" : neocomplcache#util#substitute_path_separator(v:val),
-        \ "abbr" : neocomplcache#util#substitute_path_separator(v:val),
-        \ "source" : "file_include",
-        \ "kind" : "file",
-        \ "action__path" : v:val
-        \ }')
+let s:converter = {
+      \ 'name' : 'converter_case',
+      \ 'description' : 'case converter',
+      \}
 
-  for word in files
-    " Path search.
-    for path in map(split(a:context.source__path, ','),
-          \ 'neocomplcache#util#substitute_path_separator(v:val)')
-      if path != '' && neocomplcache#head_match(word.word, path . '/')
-        let word.abbr = word.abbr[len(path)+1 : ]
-        break
+function! s:converter.filter(context) "{{{
+  if neocomplcache#is_text_mode()
+    return a:context.candidates
+  endif
+
+  let convert_candidates = filter(copy(a:context.candidates),
+        \ "get(v:val, 'neocomplcache__convertable', 1)
+        \  && v:val.word =~ '^\\u\\+$\\|^\\u\\?\\l\\+$'")
+
+  if a:context.complete_str =~ '^\l\+$'
+    for candidate in convert_candidates
+      let candidate.word = tolower(candidate.word)
+      if has_key(candidate, 'abbr')
+        let candidate.abbr = tolower(candidate.abbr)
       endif
     endfor
-  endfor
+  elseif a:context.complete_str =~ '^\u\+$'
+    for candidate in convert_candidates
+      let candidate.word = toupper(candidate.word)
+      if has_key(candidate, 'abbr')
+        let candidate.abbr = toupper(candidate.abbr)
+      endif
+    endfor
+  elseif a:context.complete_str =~ '^\u\l\+$'
+    for candidate in convert_candidates
+      let candidate.word = toupper(candidate.word[0]).
+            \ tolower(candidate.word[1:])
+      if has_key(candidate, 'abbr')
+        let candidate.abbr = toupper(candidate.abbr[0]).
+              \ tolower(candidate.abbr[1:])
+      endif
+    endfor
+  endif
 
-  return files
+  return a:context.candidates
 endfunction"}}}
 
 let &cpo = s:save_cpo

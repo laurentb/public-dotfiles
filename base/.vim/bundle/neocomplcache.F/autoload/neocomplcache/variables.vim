@@ -1,8 +1,7 @@
 "=============================================================================
-" FILE: neocomplcache.vim
-" AUTHOR:  Shougo Matsushita <Shougo.Matsu@gmail.com>
-"          manga_osyo (Original)
-" Last Modified: 19 Dec 2011.
+" FILE: variables.vim
+" AUTHOR: Shougo Matsushita <Shougo.Matsu@gmail.com>
+" Last Modified: 01 May 2013.
 " License: MIT license  {{{
 "     Permission is hereby granted, free of charge, to any person obtaining
 "     a copy of this software and associated documentation files (the
@@ -28,43 +27,42 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! unite#sources#file_include#define()
-  return s:source
-endfunction
+function! neocomplcache#variables#get_frequencies() "{{{
+  if !exists('s:filetype_frequencies')
+    let s:filetype_frequencies = {}
+  endif
+  let filetype = neocomplcache#context_filetype#get(&filetype)
+  if !has_key(s:filetype_frequencies, filetype)
+    let s:filetype_frequencies[filetype] = {}
+  endif
 
-let s:source = {
-      \ 'name' : 'file_include',
-      \ 'description' : 'candidates from include files',
-      \ 'hooks' : {},
-      \}
-function! s:source.hooks.on_init(args, context) "{{{
-  " From neocomplcache include files.
-  let a:context.source__include_files =
-        \ neocomplcache#sources#include_complete#get_include_files(bufnr('%'))
-  let a:context.source__path = &path
+  let frequencies = s:filetype_frequencies[filetype]
+
+  return frequencies
 endfunction"}}}
 
-function! s:source.gather_candidates(args, context) "{{{
-  let files = map(copy(a:context.source__include_files), '{
-        \ "word" : neocomplcache#util#substitute_path_separator(v:val),
-        \ "abbr" : neocomplcache#util#substitute_path_separator(v:val),
-        \ "source" : "file_include",
-        \ "kind" : "file",
-        \ "action__path" : v:val
-        \ }')
+function! neocomplcache#variables#get_sources() "{{{
+  if !exists('s:sources')
+    let s:sources = {}
+  endif
+  return s:sources
+endfunction"}}}
 
-  for word in files
-    " Path search.
-    for path in map(split(a:context.source__path, ','),
-          \ 'neocomplcache#util#substitute_path_separator(v:val)')
-      if path != '' && neocomplcache#head_match(word.word, path . '/')
-        let word.abbr = word.abbr[len(path)+1 : ]
-        break
-      endif
-    endfor
-  endfor
+function! neocomplcache#variables#get_filters() "{{{
+  if !exists('s:filters')
+    let s:filters = {}
+  endif
+  return s:filters
+endfunction"}}}
 
-  return files
+function! neocomplcache#variables#get_custom() "{{{
+  if !exists('s:custom')
+    let s:custom = {}
+    let s:custom.sources = {}
+    let s:custom.sources._ = {}
+  endif
+
+  return s:custom
 endfunction"}}}
 
 let &cpo = s:save_cpo

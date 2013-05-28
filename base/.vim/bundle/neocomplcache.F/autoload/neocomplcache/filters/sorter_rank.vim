@@ -1,8 +1,7 @@
 "=============================================================================
-" FILE: neocomplcache.vim
+" FILE: sorter_rank.vim
 " AUTHOR:  Shougo Matsushita <Shougo.Matsu@gmail.com>
-"          manga_osyo (Original)
-" Last Modified: 19 Dec 2011.
+" Last Modified: 09 May 2013.
 " License: MIT license  {{{
 "     Permission is hereby granted, free of charge, to any person obtaining
 "     a copy of this software and associated documentation files (the
@@ -28,44 +27,23 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! unite#sources#file_include#define()
-  return s:source
-endfunction
+function! neocomplcache#filters#sorter_rank#define() "{{{
+  return s:sorter
+endfunction"}}}
 
-let s:source = {
-      \ 'name' : 'file_include',
-      \ 'description' : 'candidates from include files',
-      \ 'hooks' : {},
+let s:sorter = {
+      \ 'name' : 'sorter_rank',
+      \ 'description' : 'sort by matched rank order',
       \}
-function! s:source.hooks.on_init(args, context) "{{{
-  " From neocomplcache include files.
-  let a:context.source__include_files =
-        \ neocomplcache#sources#include_complete#get_include_files(bufnr('%'))
-  let a:context.source__path = &path
+
+function! s:sorter.filter(context) "{{{
+  return sort(a:context.candidates, 's:compare')
 endfunction"}}}
 
-function! s:source.gather_candidates(args, context) "{{{
-  let files = map(copy(a:context.source__include_files), '{
-        \ "word" : neocomplcache#util#substitute_path_separator(v:val),
-        \ "abbr" : neocomplcache#util#substitute_path_separator(v:val),
-        \ "source" : "file_include",
-        \ "kind" : "file",
-        \ "action__path" : v:val
-        \ }')
-
-  for word in files
-    " Path search.
-    for path in map(split(a:context.source__path, ','),
-          \ 'neocomplcache#util#substitute_path_separator(v:val)')
-      if path != '' && neocomplcache#head_match(word.word, path . '/')
-        let word.abbr = word.abbr[len(path)+1 : ]
-        break
-      endif
-    endfor
-  endfor
-
-  return files
-endfunction"}}}
+function! s:compare(i1, i2)
+  let diff = (get(a:i2, 'rank', 0) - get(a:i1, 'rank', 0))
+  return (diff != 0) ? diff : (a:i1.word ># a:i2.word) ? 1 : -1
+endfunction"
 
 let &cpo = s:save_cpo
 unlet s:save_cpo

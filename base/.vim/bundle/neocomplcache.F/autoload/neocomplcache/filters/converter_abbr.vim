@@ -1,8 +1,7 @@
 "=============================================================================
-" FILE: neocomplcache.vim
+" FILE: converter_abbr.vim
 " AUTHOR:  Shougo Matsushita <Shougo.Matsu@gmail.com>
-"          manga_osyo (Original)
-" Last Modified: 19 Dec 2011.
+" Last Modified: 24 Apr 2013.
 " License: MIT license  {{{
 "     Permission is hereby granted, free of charge, to any person obtaining
 "     a copy of this software and associated documentation files (the
@@ -28,43 +27,30 @@
 let s:save_cpo = &cpo
 set cpo&vim
 
-function! unite#sources#file_include#define()
-  return s:source
-endfunction
-
-let s:source = {
-      \ 'name' : 'file_include',
-      \ 'description' : 'candidates from include files',
-      \ 'hooks' : {},
-      \}
-function! s:source.hooks.on_init(args, context) "{{{
-  " From neocomplcache include files.
-  let a:context.source__include_files =
-        \ neocomplcache#sources#include_complete#get_include_files(bufnr('%'))
-  let a:context.source__path = &path
+function! neocomplcache#filters#converter_abbr#define() "{{{
+  return s:converter
 endfunction"}}}
 
-function! s:source.gather_candidates(args, context) "{{{
-  let files = map(copy(a:context.source__include_files), '{
-        \ "word" : neocomplcache#util#substitute_path_separator(v:val),
-        \ "abbr" : neocomplcache#util#substitute_path_separator(v:val),
-        \ "source" : "file_include",
-        \ "kind" : "file",
-        \ "action__path" : v:val
-        \ }')
+let s:converter = {
+      \ 'name' : 'converter_abbr',
+      \ 'description' : 'abbr converter',
+      \}
 
-  for word in files
-    " Path search.
-    for path in map(split(a:context.source__path, ','),
-          \ 'neocomplcache#util#substitute_path_separator(v:val)')
-      if path != '' && neocomplcache#head_match(word.word, path . '/')
-        let word.abbr = word.abbr[len(path)+1 : ]
-        break
+function! s:converter.filter(context) "{{{
+  for candidate in a:context.candidates
+    let abbr = get(candidate, 'abbr', candidate.word)
+    if len(abbr) > g:neocomplcache_max_keyword_width
+      let len = neocomplcache#util#wcswidth(abbr)
+
+      if len > g:neocomplcache_max_keyword_width
+        let candidate.abbr = neocomplcache#util#truncate_smart(
+              \ abbr, g:neocomplcache_max_keyword_width,
+              \ g:neocomplcache_max_keyword_width/2, '..')
       endif
-    endfor
+    endif
   endfor
 
-  return files
+  return a:context.candidates
 endfunction"}}}
 
 let &cpo = s:save_cpo
