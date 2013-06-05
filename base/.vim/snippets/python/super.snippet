@@ -1,0 +1,2 @@
+snippet super
+    super(${1:`substitute(getline(search('^\s*class', 'bn')), '^\s*\h\+\s\+\(\h\w*\).*', '\1', '')`}, ${2:self}).${3:`substitute(getline(search('^\s*def', 'bn')), '^\s*\h\+\s\+\(\h\w*\).*', '\1', '')`}(${4:*args, **kwargs})
