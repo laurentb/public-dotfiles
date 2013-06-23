@@ -60,7 +60,9 @@ net-dns/avahi gtk3
 
 dev-qt/qt-creator fakevim
 
-app-office/calligra -calligra_features_plan -calligra_features_kexi -semantic-desktop
+kde-base/kdelibs semantic-desktop
+
+app-office/calligra -calligra_features_plan -calligra_features_kexi
 app-office/libreoffice libreoffice_extensions_pdfimport
 
 media-libs/chromaprint tools

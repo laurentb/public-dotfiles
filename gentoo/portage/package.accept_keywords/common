@@ -26,6 +26,9 @@ app-arch/duff
 
 app-text/restview
 dev-python/xhtml2pdf
+<dev-python/reportlab-2.7
+dev-python/pyPdf
+<dev-python/html5lib-1.0
 
 www-apps/assnet
 dev-python/PyRSS2Gen
