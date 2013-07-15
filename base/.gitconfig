@@ -1,8 +1,8 @@
 [color]
-	diff = auto
-	status = auto
 	branch = auto
+	diff = auto
 	interactive = auto
+	status = auto
 	ui = auto
 [user]
 	name = Laurent Bachelier
@@ -35,4 +35,6 @@
 	textconv = odt2txt
 [include]
 	path = .gitconfig.sendemail
+[branch]
+	autosetuprebase = always
 # vim: set noexpandtab:
