@@ -89,7 +89,7 @@
   </item>
   -->
   <item label="Reset Input">
-    <action name="Execute"><execute>bash -c 'source ~/.xkeysetup.sh'</execute></action>
+    <action name="Execute"><execute>bash -c 'source ~/.xinitrc.input'</execute></action>
   </item>
   <item label="Reconfigure">
     <action name="Reconfigure" />

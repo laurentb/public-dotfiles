@@ -24,7 +24,7 @@ source ~/.urxvt/xrdb.sh
 # urxvt daemon − use urxvtc instead of urxvt
 urxvtd -q -o -f
 
-. ~/.xkeysetup.sh
+. ~/.xinitrc.input
 
 # prevent GTK and QT from using their own input systems
 export GTK_IM_MODULE=xim

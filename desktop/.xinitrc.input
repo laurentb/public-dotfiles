@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # clear options
 setxkbmap -option
 
@@ -10,9 +12,9 @@ setxkbmap fr bepo -option terminate:ctrl_alt_bksp -option caps:swapescape
 xmodmap ~/.Xmodmap
 
 # reload xbindkeys or start it
-killall -HUP xbindkeys||xbindkeys
+killall -HUP xbindkeys || xbindkeys
 # same with keynav
-killall -HUP keynav||keynav
+killall -HUP keynav || keynav
 
 # make the center button acts as a third button to avoid using the wheel
 xinput set-button-map "Kingsis Peripherals  Evoluent VerticalMouse 3 " 1 2 2 4 5 6 7 3 8
@@ -22,3 +24,13 @@ xset mouse 3 3
 
 # shorter delay, bigger rate
 xset r rate 250 60
+
+# find out my trackpad
+if [ -n "$(xinput list --id-only 'pointer:Generic USB K/B' 2>/dev/null)" ]; then
+    xinput create-master 'trackball'
+    xinput reattach 'pointer:Generic USB K/B' 'trackball pointer'
+else
+    # AttachToMaster also works to switch back
+    # to having only one pointer for two devices
+    xinput remove-master 'trackball pointer' AttachToMaster 2>/dev/null
+fi
