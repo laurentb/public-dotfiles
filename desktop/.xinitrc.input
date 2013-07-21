@@ -25,12 +25,13 @@ xset mouse 3 3
 # shorter delay, bigger rate
 xset r rate 250 60
 
-# find out my trackpad
-if [ -n "$(xinput list --id-only 'pointer:Generic USB K/B' 2>/dev/null)" ]; then
-    xinput create-master 'trackball'
-    xinput reattach 'pointer:Generic USB K/B' 'trackball pointer'
-else
-    # AttachToMaster also works to switch back
-    # to having only one pointer for two devices
-    xinput remove-master 'trackball pointer' AttachToMaster 2>/dev/null
-fi
+# DISABLED: too buggy with focus follow mouse / hide pointer on typing
+## find out my trackpad
+#if [ -n "$(xinput list --id-only 'pointer:Generic USB K/B' 2>/dev/null)" ]; then
+#    xinput create-master 'trackball'
+#    xinput reattach 'pointer:Generic USB K/B' 'trackball pointer'
+#else
+#    # AttachToMaster also works to switch back
+#    # to having only one pointer for two devices
+#    xinput remove-master 'trackball pointer' AttachToMaster 2>/dev/null
+#fi
