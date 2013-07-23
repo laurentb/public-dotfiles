@@ -17,6 +17,8 @@ if (&term !~ 'linux')
     " 256 colors
     set t_Co=256
     colorscheme zenburn
+    hi NonText ctermfg=240
+    hi SpecialKey ctermfg=244
 endif
 
 " indentation basics
@@ -106,8 +108,8 @@ au BufReadPost *
 " no auto wrap for pentadactyl edits
 au BufRead,BufNewFile pentadactyl*.txt set textwidth=0 wrapmargin=0
 
-set list listchars=nbsp:⍽,tab:»·,trail:·,extends:»,precedes:«
-set showbreak=»
+set list listchars=nbsp:⍽,tab:→\ ,trail:·,extends:⇉,precedes:⇇
+set showbreak=↳
 
 set writebackup nobackup
 set undolevels=2000
@@ -186,8 +188,8 @@ if (&t_Co > 255)
     let g:indent_guides_guide_size = 1
     let g:indent_guides_start_level = 2
     let g:indent_guides_enable_on_vim_startup = 1
-    autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=236
-    autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=238
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  ctermbg=240
+    autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=238
 endif
 
 " copy/paste from the X clipboard
