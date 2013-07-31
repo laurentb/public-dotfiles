@@ -75,3 +75,6 @@ app-emulation/qemu spice usbredir -accessibility
 app-emulation/libvirt qemu virt-network
 
 app-arch/p7zip -kde
+
+# I use libav
+www-client/chromium -system-ffmpeg
