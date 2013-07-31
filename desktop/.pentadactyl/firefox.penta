@@ -8,9 +8,10 @@ set! browser.backspace_action=2
 
 set! layout.frames.force_resizability=true
 
-" restore previous session at startup
+" restore previous session at startup / no homepage
 set! browser.startup.page=3
 set! browser.startup.homepage=about:blank
+set! browser.newtabpage.enabled=false
 
 " grow up
 set! browser.tabs.animate=false
