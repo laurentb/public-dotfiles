@@ -37,7 +37,7 @@ def full(wanted_font):
         yield wanted_font
     else:
         for font in available_fonts:
-            if NUMRE.match(font).groupdict()['name'] == wanted_font:
+            if NUMRE.match(font) and NUMRE.match(font).groupdict()['name'] == wanted_font:
                 yield font
 
 wanted_fonts = set()
