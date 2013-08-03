@@ -1,0 +1,15 @@
+# python packages that I need in their distutils-r1 version
+<dev-python/setuptools-0.6.34
+
+<dev-python/html2text-3.200.4
+<dev-python/chardet-2.1.0
+<dev-python/gdata-2.0.18
+<dev-python/pyyaml-3.11
+<dev-python/cssselect-0.8.0
+<dev-python/cython-0.19
+<dev-python/mechanize-0.2.6
+
+<dev-python/reportlab-2.7
+<dev-python/html5lib-1.0
+
+<media-libs/mutagen-1.22

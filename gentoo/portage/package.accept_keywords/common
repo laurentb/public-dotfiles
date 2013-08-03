@@ -25,9 +25,7 @@ app-arch/duff
 
 app-text/restview
 dev-python/xhtml2pdf
-<dev-python/reportlab-2.7
 dev-python/pyPdf
-<dev-python/html5lib-1.0
 
 www-apps/assnet
 dev-python/PyRSS2Gen
@@ -68,8 +66,6 @@ dev-python/pytest-xdist
 # and cov
 dev-python/pytest-cov
 dev-python/cov-core
-
-<dev-python/setuptools-0.6.34
 
 dev-python/sh
 dev-python/unipath
