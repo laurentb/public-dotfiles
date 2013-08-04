@@ -78,3 +78,6 @@ app-arch/p7zip -kde
 
 # I use libav
 www-client/chromium -system-ffmpeg
+
+# it's either qt4 or gtk
+net-analyzer/wireshark -gtk
