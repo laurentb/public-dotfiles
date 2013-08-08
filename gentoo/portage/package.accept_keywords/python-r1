@@ -1,6 +1,4 @@
 # python packages that I need in their distutils-r1 version
-<dev-python/setuptools-0.6.34
-
 <dev-python/html2text-3.200.4
 <dev-python/chardet-2.1.0
 <dev-python/gdata-2.0.18

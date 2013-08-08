@@ -3,8 +3,4 @@
 dev-php/PEAR-PHP_CompatInfo
 dev-php/PEAR-Console_Getargs
 
-# php 5.4 only
-<dev-php/pecl-memcache-3.0.7
-<dev-php/xcache-2.0.2
-
 net-dns/nsd
