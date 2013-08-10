@@ -12,6 +12,7 @@
 
 <media-libs/mutagen-1.22
 
-<dev-python/weboob-1.2.4
+<dev-python/webob-1.2.4
+<dev-python/beaker-1.6.5
 <dev-python/mako-0.7.4
 <dev-python/paste-1.8
