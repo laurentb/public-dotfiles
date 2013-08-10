@@ -5,18 +5,21 @@ pythons = subprocess.Popen(['eselect', '--brief', 'python', 'list'],
 pythons = [python.replace('.', '_') for python in pythons.splitlines()]
 assert len(pythons)
 
-defpython = subprocess.Popen(['eselect', '--brief', 'python', 'show'],
-        stdout=subprocess.PIPE).communicate()[0]  # capture stdout
-defpython = defpython.strip().replace('python', '')
-assert len(defpython)
+py2 = subprocess.Popen(
+    ['eselect', '--brief', 'python', 'show', '--ABI', '--python2'],
+    stdout=subprocess.PIPE).communicate()[0].strip()
+py3 = subprocess.Popen(
+    ['eselect', '--brief', 'python', 'show', '--ABI', '--python3'],
+    stdout=subprocess.PIPE).communicate()[0].strip()
+assert len(py2) and len(py3)
 
 if __name__ == "__main__":
     print pythons
-    print defpython
+    print py2, py3
     exit()
 
 
 text("""# $warning
 PYTHON_TARGETS="$pythons"
-USE_PYTHON="$defpython"
-""").render(pythons=" ".join(pythons), defpython=defpython)
+USE_PYTHON="$py2 $py3"
+""").render(pythons=" ".join(pythons), py2=py2, py3=py3)
