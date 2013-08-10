@@ -11,3 +11,7 @@
 <dev-python/html5lib-1.0
 
 <media-libs/mutagen-1.22
+
+<dev-python/weboob-1.2.4
+<dev-python/mako-0.7.4
+<dev-python/paste-1.8
