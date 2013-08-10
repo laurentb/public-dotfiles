@@ -62,7 +62,7 @@ dev-python/mccabe
 
 # pytest with xdist
 dev-python/pytest-xdist
-<dev-python/execnet-1.1
+<dev-python/execnet-1.2
 # and cov
 dev-python/pytest-cov
 dev-python/cov-core
