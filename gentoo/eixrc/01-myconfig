@@ -1,1 +1,3 @@
-NOSTATUSLINE="1"
+NOSTATUSLINE=true
+DARK=true
+BG1=none
