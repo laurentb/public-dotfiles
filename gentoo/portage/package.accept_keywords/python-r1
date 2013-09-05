@@ -3,7 +3,6 @@
 <dev-python/chardet-2.1.0
 <dev-python/gdata-2.0.18
 <dev-python/pyyaml-3.11
-<dev-python/cssselect-0.8.0
 <dev-python/cython-0.19
 <dev-python/mechanize-0.2.6
 
@@ -12,7 +11,7 @@
 
 <media-libs/mutagen-1.22
 
-<dev-python/webob-1.2.4
-<dev-python/beaker-1.6.5
-<dev-python/mako-0.7.4
 <dev-python/paste-1.8
+
+<dev-python/pytest-runner-1.2
+<dev-python/hgtools-3.0.0
