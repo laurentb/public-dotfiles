@@ -1,6 +1,6 @@
 net-im/pidgin -gtk -gstreamer -startup-notification -xscreensaver -zeroconf
 
-dev-python/imaging -scanner
+dev-python/pillow -scanner
 
 media-libs/libcaca imlib
 media-libs/imlib2 gif jpeg png
