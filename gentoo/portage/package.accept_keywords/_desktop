@@ -11,3 +11,6 @@ x11-misc/keynav
 media-fonts/nunito
 media-fonts/source-pro
 media-fonts/takao-fonts
+
+# pillow-compatible
+<media-gfx/comix-4.0.5
