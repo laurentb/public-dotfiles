@@ -14,3 +14,5 @@ media-fonts/takao-fonts
 
 # pillow-compatible
 <media-gfx/comix-4.0.5
+
+app-admin/profile-cleaner
