@@ -46,5 +46,7 @@ defflow off
 # change command line color
 sorendition "=r dG"
 
-source .screenrc-local
+# default window title
+shelltitle "sh"
 
+source .screenrc-local
