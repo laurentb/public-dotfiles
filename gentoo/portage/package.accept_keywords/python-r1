@@ -17,3 +17,6 @@
 <dev-python/hgtools-3.0.0
 
 <dev-python/urwid-1.2
+
+# first series with proper Python 3 support
+<dev-python/sqlalchemy-0.9.0
