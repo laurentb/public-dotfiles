@@ -17,3 +17,6 @@ media-fonts/takao-fonts
 <media-gfx/comix-4.0.5
 
 app-admin/profile-cleaner
+
+<dev-python/rst2pdf-0.94
+<media-gfx/svg2rlg-0.4
