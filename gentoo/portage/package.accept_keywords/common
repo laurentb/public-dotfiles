@@ -83,3 +83,21 @@ app-misc/terminal-colors
 app-portage/overlint
 
 sys-fs/dfc
+
+# isort
+dev-python/isort
+dev-python/enum34
+dev-python/pies
+dev-python/pies2overrides
+dev-python/natsort
+dev-python/ipaddress
+
+# hyde
+dev-python/commando
+<dev-python/smartypants-1.8
+dev-python/typogrify
+dev-python/fswrap
+dev-python/jinja-2.7.1
+app-text/hyde
+<dev-python/markupsafe-0.19
+<dev-python/markdown-2.3.2
