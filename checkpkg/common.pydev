@@ -7,6 +7,7 @@ dev-python/flake8
 dev-python/flakeplus
 dev-python/html2text
 dev-python/ipython
+dev-python/isort
 dev-python/nose
 dev-python/pep8
 dev-python/pychecker
