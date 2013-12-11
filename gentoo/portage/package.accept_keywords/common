@@ -59,6 +59,7 @@ dev-python/pyflakes
 dev-python/autopep8
 dev-python/flake8
 dev-python/mccabe
+<dev-python/pyflakes-0.7.5
 
 # pytest with xdist
 dev-python/pytest-xdist
