@@ -58,6 +58,7 @@ kde-base/kdebase-startkde -wallpapers
 # required by some gnome packages
 net-dns/avahi gtk3
 
+app-office/akonadi-server -mysql
 kde-base/kdelibs semantic-desktop
 
 app-office/calligra -calligra_features_plan -calligra_features_kexi
