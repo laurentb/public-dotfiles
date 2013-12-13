@@ -39,12 +39,9 @@ dev-vcs/tmpclone
 www-client/weboob
 dev-python/prettytable
 
-<net-misc/httpie-0.4
+<net-misc/httpie-0.8
 sys-apps/jsonpipe
 net-misc/googlecl
-
-dev-python/certifi
-dev-python/requests-transition
 
 dev-python/routes
 dev-python/repoze-lru
