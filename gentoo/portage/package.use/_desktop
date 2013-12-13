@@ -81,3 +81,7 @@ www-client/chromium -system-ffmpeg
 
 # it's either qt4 or gtk
 net-analyzer/wireshark -gtk -gtk2 -gtk3
+
+# broken crap (webkit-gtk)
+net-libs/libproxy -webkit
+media-gfx/gimp -webkit
