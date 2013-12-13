@@ -28,6 +28,7 @@ x11-terms/rxvt-unicode -vanilla 256-color fading-colors font-styles wcwidth unic
 kde-base/okular ebook
 
 net-im/gajim -gnome srv trayicon
+app-dicts/verbiste -gnome
 
 media-sound/audacity vamp soundtouch midi
 
