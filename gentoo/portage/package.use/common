@@ -5,6 +5,8 @@ app-editors/vim vim-pager cscope
 
 net-dns/avahi mdnsresponder-compat
 
+net-misc/openssh ldns
+
 net-fs/cifs-utils -acl
 
 dev-vcs/mercurial gpg
