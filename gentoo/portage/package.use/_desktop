@@ -25,6 +25,8 @@ media-sound/ncmpcpp outputs
 
 x11-terms/rxvt-unicode -vanilla 256-color fading-colors font-styles wcwidth unicode3 alt-font-width iso14755
 
+x11-wm/openbox xdg
+
 kde-base/okular ebook
 
 net-im/gajim -gnome srv trayicon
