@@ -52,5 +52,5 @@ if [ -x '/usr/bin/vim' ]; then
 fi
 
 [ -f ~/.sh_common.desktop ] && . ~/.sh_common.desktop
-
+[ -f ~/.sh_common.private ] && . ~/.sh_common.private
 [ -f ~/.sh_common.local ] && . ~/.sh_common.local
