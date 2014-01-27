@@ -8,7 +8,6 @@ haveged
 htop
 lsof
 mlocate
-module-rebuild
 nethogs
 sysstat
 btrfs-progs
