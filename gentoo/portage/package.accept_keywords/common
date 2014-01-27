@@ -99,3 +99,5 @@ dev-python/fswrap
 app-text/hyde
 <dev-python/markupsafe-0.19
 <dev-python/markdown-2.3.2
+
+app-admin/pass
