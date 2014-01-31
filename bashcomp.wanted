@@ -48,6 +48,8 @@ mpc
 mplayer
 munin-node
 ncmpcpp
+openssl
+pass
 perl
 postfix
 procps
@@ -67,6 +69,7 @@ sysv-rc
 tar
 task
 tig
+tmux
 tree
 udisks
 unrar
@@ -76,3 +79,4 @@ wireless-tools
 xrandr
 xrdb
 xz
+youtube-dl
