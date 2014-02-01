@@ -1,3 +1,4 @@
 NOSTATUSLINE=true
 DARK=true
 BG1=none
+OVERLAY_CACHE_METHOD="assign"
