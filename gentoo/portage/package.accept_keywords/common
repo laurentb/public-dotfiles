@@ -19,7 +19,7 @@ dev-python/termcolor
 
 sys-apps/fr-bepo-keymap
 
-<dev-python/fabric-1.7.0
+<dev-python/fabric-1.9.0
 
 app-arch/duff
 
