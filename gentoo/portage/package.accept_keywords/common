@@ -92,7 +92,7 @@ dev-python/ipaddress
 
 # hyde
 dev-python/commando
-<dev-python/smartypants-1.8
+<dev-python/smartypants-1.9
 dev-python/typogrify
 dev-python/fswrap
 =dev-python/jinja-2.7.1
