@@ -49,7 +49,7 @@ media-libs/libtheora encode
 
 media-sound/pulseaudio realtime
 
-dev-python/PyQt4 declarative multimedia xmlpatterns script
+dev-python/PyQt4 declarative multimedia xmlpatterns script designer
 dev-qt/qtgui gtkstyle
 
 app-mobilephone/gnokii -usb sms
