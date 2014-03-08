@@ -87,3 +87,6 @@ net-analyzer/wireshark -gtk -gtk2 -gtk3
 # broken crap (webkit-gtk)
 net-libs/libproxy -webkit
 media-gfx/gimp -webkit
+
+# wine
+dev-libs/elfutils static-libs
