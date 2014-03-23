@@ -21,9 +21,6 @@ fi
 xrdb -merge ~/.Xdefaults
 source ~/.urxvt/xrdb.sh
 
-# urxvt daemon − use urxvtc instead of urxvt
-urxvtd -q -o -f
-
 . ~/.xinitrc.input
 
 # prevent GTK and QT from using their own input systems

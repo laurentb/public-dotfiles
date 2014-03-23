@@ -41,7 +41,6 @@ command -nargs=? -complete=help th tab help <args>
 " addon mappings
 source ~/.pentadactyl/addon-mappings.penta
 
-" can't use urxvtc as it returns immediately
 set editor='urxvt -geometry 90x40 -e vim -f +<line> +"sil! call cursor(0, <column>)" <file>'
 
 " don't use files for default autocomplete

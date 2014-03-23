@@ -4,7 +4,7 @@
 
 <menu id="apps-menu" label="Base">
   <item label="urxvt">
-    <action name="Execute"><execute>urxvtc</execute></action>
+    <action name="Execute"><execute>urxvt</execute></action>
   </item>
   <item label="Kate">
     <action name="Execute"><execute>kate</execute></action>
