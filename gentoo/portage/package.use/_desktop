@@ -1,6 +1,6 @@
 sys-fs/udev extras
 
-media-libs/mesa g3dvl osmesa xa xorg gles2
+media-libs/mesa g3dvl osmesa xa xorg gles2 gbm
 x11-libs/libdrm libkms
 
 media-libs/freetype infinality
