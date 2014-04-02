@@ -2,6 +2,8 @@ app-admin/apg
 app-admin/pass
 app-arch/cfv
 app-arch/duff
+app-arch/par
+app-arch/par2cmdline
 app-backup/dar
 app-crypt/gnupg
 cryptsetup
