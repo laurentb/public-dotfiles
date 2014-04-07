@@ -1,13 +1,10 @@
-" use addon bar and not location bar for Firebug icon
-set! extensions.firebug.showStatusIcon=true
+set! extensions.adblockedge.frameobjects=false
 
-set! webdeveloper.toolbar.icons=icons
+set! extensions.bonardonet.expire-history-by-days.days=120
 
-set! extensions.beef-taco.showtoolbarpref=true
-
-set! extensions.longurlplease.expandstyle=full
-
-set! extensions.adblockplus.frameobjects=false
+" NoSquint
+set! extensions.nosquint.fullZoomLevel=100
+set! extensions.nosquint.hideStatus=true
 
 " NoScript
 set! noscript.secureCookies=true
@@ -27,6 +24,11 @@ set! extensions.bprivacy.useDelTimer=true
 set! extensions.bprivacy.DelTimerInterval=172800
 set! extensions.bprivacy.AutoDelLSOnExitMode=1
 
-" Lazarus
-set! extensions.lazarus.showDonateNotification=false
-set! extensions.lazarus.expireSavedFormsUnit=1440
+" Form History
+set! extensions.formhistory.customDateTimeFormat="yyyy-MM-dd hh:mm:ss"
+set! extensions.formhistory.useCustomDateTimeFormat=true
+set! extensions.formhistory.defaultSearchCurrentPageChecked=true
+set! extensions.formhistory.cleanupOnShutdown=true
+set! extensions.formhistory.manageFormhistoryByFHC=true
+set! extensions.formhistory.multiline.saveolder=5
+set! extensions.formhistory.multiline.savelength=200

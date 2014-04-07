@@ -2,12 +2,10 @@
 (function() {
   "use strict";
 
-  var chrome, cmd, fb, firebug, global,
+  var chrome, cmd, fb, firebug,
     __slice = [].slice;
 
-  global = window;
-
-  fb = global.Firebug;
+  fb = top.Firebug;
 
   chrome = fb.chrome;
 
@@ -31,7 +29,8 @@
       '<': "focuses the next firebug tab(left)",
       '#': "focuses the prev firebug tab",
       '/': "search",
-      inspect: "toggle the firebug element inspector"
+      inspect: "toggle the firebug element inspector",
+      behave: "use Behave.js for console (like auto-pairs)"
     },
     open: function() {
       if (!chrome.isOpen()) {
@@ -54,6 +53,18 @@
         fb.toggleBar(true);
       }
       return fb.Inspector.toggleInspecting(fb.currentContext);
+    },
+    behave: function() {
+      if (this._editor) {
+        this._editor.destroy();
+        this._editor = null;
+        return;
+      }
+      if (!this._editor && cmd && dactyl.plugins && dactyl.plugins.Behave) {
+        return this._editor = new dactyl.plugins.Behave({
+          textarea: cmd.getCommandEditor().editor.textBox
+        });
+      }
     },
     console: function() {
       var cmEditor, cmLine;
@@ -130,9 +141,10 @@
       }
     },
     _initialize: function() {
-      fb = global.Firebug;
+      fb = top.Firebug;
       chrome = fb.chrome;
-      return cmd = fb.CommandLine;
+      cmd = fb.CommandLine;
+      return this.behave();
     }
   };
 

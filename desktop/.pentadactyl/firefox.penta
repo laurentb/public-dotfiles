@@ -1,6 +1,7 @@
 set! general.warnOnAboutConfig=false
 set! security.warn_viewing_mixed=false
 set! browser.fullscreen.autohide=false
+set! datareporting.healthreport.service.enabled=false
 
 set! middlemouse.contentLoadURL=false
 set! browser.tabs.loadDivertedInBackground=true
@@ -12,6 +13,7 @@ set! layout.frames.force_resizability=true
 set! browser.startup.page=3
 set! browser.startup.homepage=about:blank
 set! browser.newtabpage.enabled=false
+set! browser.newtab.url=about:blank
 
 " grow up
 set! browser.tabs.animate=false
@@ -19,6 +21,7 @@ set! browser.fullscreen.animateUp=0
 set! browser.panorama.animate_zoom=false
 set! general.smoothScroll=false
 set! browser.tabs.drawInTitlebar=false
+set! browser.pagethumbnails.capturing_disabled=true
 
 " javascript annoyances
 set! dom.disable_window_move_resize=true
@@ -44,4 +47,4 @@ set! browser.download.manager.closeWhenDone=true
 set! browser.download.folderList=2
 set! browser.download.useDownloadDir=false
 
-set! intl.accept_languages="en-us, en,fr-fr,fr"
+set! intl.accept_languages="en-us, en, fr-fr, fr"
