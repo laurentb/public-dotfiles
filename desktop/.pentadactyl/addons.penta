@@ -25,10 +25,10 @@ set! extensions.bprivacy.DelTimerInterval=172800
 set! extensions.bprivacy.AutoDelLSOnExitMode=1
 
 " Form History
-set! extensions.formhistory.customDateTimeFormat="yyyy-MM-dd hh:mm:ss"
-set! extensions.formhistory.useCustomDateTimeFormat=true
-set! extensions.formhistory.defaultSearchCurrentPageChecked=true
-set! extensions.formhistory.cleanupOnShutdown=true
-set! extensions.formhistory.manageFormhistoryByFHC=true
-set! extensions.formhistory.multiline.saveolder=5
-set! extensions.formhistory.multiline.savelength=200
+"set! extensions.formhistory.customDateTimeFormat="yyyy-MM-dd hh:mm:ss"
+"set! extensions.formhistory.useCustomDateTimeFormat=true
+"set! extensions.formhistory.defaultSearchCurrentPageChecked=true
+"set! extensions.formhistory.cleanupOnShutdown=true
+"set! extensions.formhistory.manageFormhistoryByFHC=true
+"set! extensions.formhistory.multiline.saveolder=5
+"set! extensions.formhistory.multiline.savelength=200
