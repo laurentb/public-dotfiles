@@ -5,6 +5,9 @@ x11-plugins/lal
 media-sound/picard
 <media-libs/chromaprint-1.2
 
+<media-sound/easytag-2.3.0
+<media-libs/libid3tag-0.15.2
+
 x11-misc/keynav
 
 media-fonts/nunito
