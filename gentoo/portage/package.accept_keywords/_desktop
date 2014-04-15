@@ -7,6 +7,7 @@ media-sound/picard
 
 <media-sound/easytag-2.3.0
 <media-libs/libid3tag-0.15.2
+<media-libs/taglib-1.10
 
 x11-misc/keynav
 
