@@ -5,6 +5,7 @@ application/x-extension-shtml=userapp-Firefox-KQDX4V.desktop;
 application/x-extension-xht=userapp-Firefox-KQDX4V.desktop;
 application/x-extension-xhtml=userapp-Firefox-KQDX4V.desktop;
 application/xhtml+xml=userapp-Firefox-KQDX4V.desktop;
+inode/directory=kde4-kfmclient_dir.desktop;kde4-dolphin.desktop;
 text/html=userapp-Firefox-KQDX4V.desktop;
 video/3gpp=smplayer.desktop;vlc.desktop;smplayer_enqueue.desktop;
 video/3gpp2=smplayer.desktop;smplayer_enqueue.desktop;vlc.desktop;
@@ -39,6 +40,7 @@ x-scheme-handler/https=userapp-Firefox-KQDX4V.desktop
 x-scheme-handler/mailto=userapp-Thunderbird-9GVF5V.desktop
 
 [Removed Associations]
+inode/directory=easytag.desktop;kde4-filelight.desktop;
 video/3gpp=gnac.desktop;realplay.desktop;
 video/3gpp2=realplay.desktop;
 video/mp4=gnac.desktop;
