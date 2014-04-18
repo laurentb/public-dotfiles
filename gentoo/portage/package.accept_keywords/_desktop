@@ -9,6 +9,8 @@ media-sound/picard
 <media-libs/libid3tag-0.15.2
 <media-libs/taglib-1.10
 
+<media-libs/opus-1.2
+
 x11-misc/keynav
 
 media-fonts/nunito
