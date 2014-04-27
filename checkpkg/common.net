@@ -11,7 +11,7 @@ lft
 lftp
 links
 lynx
-mailx
+mailutils
 mtr
 netcat
 nmap
