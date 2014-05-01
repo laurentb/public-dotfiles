@@ -14,8 +14,8 @@ media-sound/sox encode
 media-video/vlc matroska rtsp stream kate libass
 app-cdr/k3b -mp3 -sox
 
-media-video/mplayer2 libass bs2b v4l
-media-video/libav threads rtmp v4l
+media-video/mpv lua libguess bs2b v4l
+media-video/ffmpeg openssl threads rtmp v4l
 virtual/ffmpeg threads
 
 kde-base/ksysguard lm_sensors
@@ -77,9 +77,6 @@ app-emulation/qemu spice usbredir -accessibility
 app-emulation/libvirt qemu virt-network
 
 app-arch/p7zip -kde
-
-# I use libav
-www-client/chromium -system-ffmpeg
 
 # it's either qt4 or gtk
 net-analyzer/wireshark -gtk -gtk2 -gtk3

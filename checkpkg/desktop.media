@@ -2,6 +2,8 @@ media-sound/mpc
 media-sound/mpd
 media-sound/picard
 media-sound/sox
+media-video/ffmpeg
+media-video/mpv
 alsa-plugins
 alsa-utils
 dnuos
@@ -15,5 +17,3 @@ pavumeter
 sonata
 vorbis-tools
 vorbisgain
-mplayer2
-smplayer

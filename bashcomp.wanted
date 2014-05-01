@@ -45,7 +45,7 @@ mercurial
 module-init-tools
 mount
 mpc
-mplayer
+mpv
 munin-node
 ncmpcpp
 openssl
