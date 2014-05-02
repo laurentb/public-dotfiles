@@ -57,6 +57,8 @@ if ': i915' in lspci:
 if ': radeon' in lspci:
     cards.append('radeon')
     use_cards.append('r600-llvm-compiler')
+if ': nouveau' in lspci:
+    cards.append('nouveau')
 
 
 if __name__ == "__main__":
