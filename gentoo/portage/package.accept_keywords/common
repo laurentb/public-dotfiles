@@ -1,6 +1,3 @@
-# v2
-app-arch/unace
-
 net-misc/esniper
 
 dev-util/scanmem
@@ -56,7 +53,6 @@ dev-python/pyflakes
 dev-python/autopep8
 dev-python/flake8
 dev-python/mccabe
-<dev-python/pyflakes-0.7.5
 
 # pytest with xdist
 dev-python/pytest-xdist
@@ -98,7 +94,6 @@ dev-python/fswrap
 =dev-python/jinja-2.7.1
 app-text/hyde
 <dev-python/markupsafe-0.19
-<dev-python/markdown-2.3.2
 
 app-admin/pass
 <app-text/tree-1.8.0
