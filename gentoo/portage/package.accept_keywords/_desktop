@@ -28,3 +28,5 @@ app-admin/profile-cleaner
 media-video/mpv
 <media-video/ffmpeg-1.3.0
 <media-libs/libcaca-0.99_beta19
+
+www-plugins/chrome-binary-plugins:stable
