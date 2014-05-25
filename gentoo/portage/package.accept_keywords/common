@@ -1,8 +1,6 @@
 # v2
 app-arch/unace
 
-net-fs/curlftpfs
-
 net-misc/esniper
 
 dev-util/scanmem

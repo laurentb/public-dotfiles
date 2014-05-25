@@ -1,5 +1,3 @@
 www-client/firefox system-sqlite pgo
 
 mail-client/thunderbird system-sqlite
-
-www-plugins/adobe-flash nspluginwrapper

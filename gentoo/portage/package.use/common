@@ -22,7 +22,7 @@ app-text/enchant hunspell aspell
 app-text/aspell linguas_fr linguas_en
 app-text/hunspell linguas_fr linguas_en
 
-app-arch/dtrx 7z zip cpio tar gzip bzip2 rar
+app-arch/dtrx 7z cpio rar
 
 net-analyzer/vnstat -gd
 
@@ -64,6 +64,5 @@ sys-apps/pciutils -zlib
 
 net-misc/openvpn iproute2
 
-dev-python/pyyaml libyaml
-
 www-client/weboob fast-libs
+dev-python/pyyaml libyaml
