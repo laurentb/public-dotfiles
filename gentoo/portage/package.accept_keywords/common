@@ -36,6 +36,7 @@ dev-python/prettytable
 
 <net-misc/httpie-0.9
 <dev-python/requests-2.3
+dev-python/ndg-httpsclient
 
 sys-apps/jsonpipe
 net-misc/googlecl
