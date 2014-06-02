@@ -87,3 +87,8 @@ media-gfx/gimp -webkit
 
 # wine
 dev-libs/elfutils static-libs
+
+# brings systemd
+kde-base/kdelibs -upower
+virtual/libudev static-libs
+virtual/libgudev static-libs
