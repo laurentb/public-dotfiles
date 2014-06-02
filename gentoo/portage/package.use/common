@@ -53,6 +53,8 @@ sys-kernel/genkernel crypt cryptsetup
 sys-fs/lvm2 static-libs
 sys-fs/udev static-libs
 virtual/udev static-libs
+virtual/libudev static-libs
+virtual/libgudev static-libs
 sys-fs/udisks cryptsetup
 
 media-libs/libpng apng
