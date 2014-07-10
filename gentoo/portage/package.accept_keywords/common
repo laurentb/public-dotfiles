@@ -97,6 +97,7 @@ app-text/hyde
 <dev-python/markupsafe-0.19
 
 app-admin/pass
-<app-text/tree-1.8.0
 
 <app-misc/task-2.4.0
+
+dev-python/bpython

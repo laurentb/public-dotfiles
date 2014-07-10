@@ -22,7 +22,6 @@ media-fonts/takao-fonts
 
 app-admin/profile-cleaner
 
-media-video/mpv
 =media-libs/libcaca-0.99_beta18-r1
 
 www-plugins/chrome-binary-plugins:stable
