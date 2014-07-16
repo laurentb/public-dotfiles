@@ -101,3 +101,5 @@ app-admin/pass
 <app-misc/task-2.4.0
 
 dev-python/bpython
+
+dev-util/vmtouch
