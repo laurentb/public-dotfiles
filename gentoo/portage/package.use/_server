@@ -3,6 +3,6 @@ app-admin/eselect-php fpm
 
 www-servers/lighttpd fam libev fastcgi -webdav
 
-dev-db/mysql extraengine
+dev-db/mariadb extraengine
 
 dev-python/paste flup

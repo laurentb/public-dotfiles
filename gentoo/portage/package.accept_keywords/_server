@@ -1,1 +1,4 @@
 net-dns/nsd
+
+<dev-db/mariadb-10.1
+<virtual/mysql-5.7
