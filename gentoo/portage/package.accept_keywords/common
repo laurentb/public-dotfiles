@@ -20,7 +20,6 @@ app-arch/duff
 
 app-text/restview
 dev-python/xhtml2pdf
-dev-python/pyPdf
 
 www-apps/assnet
 dev-python/PyRSS2Gen
@@ -35,8 +34,6 @@ www-client/weboob
 dev-python/prettytable
 
 <net-misc/httpie-0.9
-<dev-python/requests-2.3
-dev-python/ndg-httpsclient
 
 sys-apps/jsonpipe
 net-misc/googlecl
@@ -92,7 +89,6 @@ dev-python/commando
 <dev-python/smartypants-1.9
 dev-python/typogrify
 dev-python/fswrap
-=dev-python/jinja-2.7.1
 app-text/hyde
 <dev-python/markupsafe-0.19
 
