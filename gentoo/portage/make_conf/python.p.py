@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 import subprocess
 
 pythons = subprocess.Popen(['eselect', '--brief', 'python', 'list'],
@@ -19,9 +21,9 @@ py3 = subprocess.Popen(
 assert len(py2) and len(py3)
 
 if __name__ == "__main__":
-    print pythons
-    print python
-    print py2, py3
+    print(pythons)
+    print(python)
+    print(py2, py3)
     exit()
 
 

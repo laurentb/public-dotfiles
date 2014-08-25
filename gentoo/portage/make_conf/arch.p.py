@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 import re
 import subprocess
 
@@ -62,12 +64,12 @@ if ': nouveau' in lspci:
 
 
 if __name__ == "__main__":
-    print use_flags
-    print gccv[0]
-    print cflags
-    print short_cflags
-    print jobs
-    print cards
+    print(use_flags)
+    print(gccv[0])
+    print(cflags)
+    print(short_cflags)
+    print(jobs)
+    print(cards)
     exit()
 
 
