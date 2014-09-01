@@ -85,5 +85,5 @@ net-analyzer/wireshark -gtk -gtk2 -gtk3
 net-libs/libproxy -webkit
 media-gfx/gimp -webkit
 
-# wine
+# wine requiring prelink
 dev-libs/elfutils static-libs

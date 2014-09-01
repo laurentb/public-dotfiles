@@ -37,20 +37,7 @@ dev-db/sqlite secure-delete unlock-notify
 net-p2p/mktorrent threads
 net-p2p/rtorrent color xmlrpc
 
-# needed for genkernel+LUKS
-sys-apps/busybox static -pam
-sys-fs/cryptsetup static
-dev-libs/libgcrypt static-libs
-dev-libs/libgpg-error static-libs
-dev-libs/popt static-libs
-sys-apps/util-linux static-libs
-sys-libs/e2fsprogs-libs static-libs
 sys-kernel/genkernel crypt cryptsetup
-sys-fs/lvm2 static-libs
-sys-fs/udev static-libs
-virtual/udev static-libs
-virtual/libudev static-libs
-virtual/libgudev static-libs
 sys-fs/udisks cryptsetup
 
 media-libs/libpng apng
