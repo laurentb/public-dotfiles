@@ -33,6 +33,9 @@ dev-vcs/tmpclone
 www-client/weboob
 dev-python/prettytable
 
+dev-python/futures
+virtual/python-futures
+
 <net-misc/httpie-0.9
 
 sys-apps/jsonpipe
