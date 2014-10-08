@@ -111,6 +111,8 @@ au BufRead,BufNewFile pentadactyl*.txt set textwidth=0 wrapmargin=0
 set list listchars=nbsp:⍽,tab:→\ ,trail:·,extends:⇉,precedes:⇇
 set showbreak=↳
 
+set scrolloff=3
+
 set writebackup nobackup
 set undolevels=2000
 set timeoutlen=750
