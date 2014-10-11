@@ -93,7 +93,6 @@ dev-python/commando
 dev-python/typogrify
 dev-python/fswrap
 app-text/hyde
-<dev-python/markupsafe-0.19
 
 app-admin/pass
 
@@ -102,4 +101,3 @@ app-admin/pass
 dev-python/bpython
 
 dev-util/vmtouch
-sys-process/tiptop
