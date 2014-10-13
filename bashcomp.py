@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 from __future__ import with_statement
-from os import path, popen, system
+
 import re
 import sys
+from os import listdir, path, popen, readlink, system, unlink
 
 interactive = sys.stdin.isatty()
 BRIGHT = '\x1b[1m' if interactive else ''
@@ -37,3 +38,13 @@ for completion in available_completions:
     if completion not in wanted_completions \
             and completion in active_completions:
         print "%s-%s%s" % (BRIGHT, NORMAL, completion),
+
+
+BCPATH = path.expanduser('~/.bash_completion.d')
+for completion in listdir(BCPATH):
+    try:
+        if not path.exists(path.join(BCPATH, readlink(path.join(BCPATH, completion)))):
+            print "%s_%s%s" % (BRIGHT, NORMAL, completion),
+            unlink(path.join(BCPATH, completion))
+    except OSError:
+        pass
