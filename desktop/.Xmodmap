@@ -9,9 +9,6 @@
 !! print screen becomes compose
 !!keycode 107 = Multi_key
 
-! KBC Poker mappings
-! Right Windows key to Alt Gr
-remove Mod4 = Super_R
-add Mod5 = Super_R
-! "Web" key (needs fn) to Compose
-keysym XF86HomePage = Multi_key
+! KBParadise V60 Mini
+! "Prev" key (needs Fn) to Compose
+keysym XF86AudioPrev = Multi_key
