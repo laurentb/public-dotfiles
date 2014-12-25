@@ -55,8 +55,12 @@ dev-qt/qtgui gtkstyle
 app-mobilephone/gnokii -usb sms
 
 kde-base/kdebase-data -wallpapers
-kde-base/kdebase-meta -wallpapers
+kde-base/kdebase-meta -wallpapers -display-manager minimal
 kde-base/kdebase-startkde -wallpapers
+kde-base/libplasmaclock -kdepim
+kde-base/baloo minimal
+kde-base/nepomuk-core -migrator -exif -ffmpeg -pdf -taglib -epub
+kde-base/kdebase-runtime-meta -crash-reporter minimal
 
 # required by some gnome packages
 net-dns/avahi gtk3
@@ -64,7 +68,7 @@ net-dns/avahi gtk3
 app-office/akonadi-server -mysql
 kde-base/kdelibs semantic-desktop
 
-app-office/calligra -calligra_features_plan -calligra_features_kexi
+app-office/calligra -calligra_features_plan -calligra_features_kexi -kdepim
 app-office/libreoffice libreoffice_extensions_pdfimport
 
 media-libs/chromaprint tools
