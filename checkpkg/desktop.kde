@@ -4,9 +4,13 @@ k3b
 kate
 kcharselect
 kcolorchooser
+kcontrol
+kdebase-kioslaves
 kdebase-meta
 kdiff3
 kget
+khotkeys
+klipper
 kmix
 kompare
 konqueror
@@ -14,3 +18,5 @@ krename
 krusader
 okular
 qt-meta
+systemsettings
+zeroconf-ioslave
