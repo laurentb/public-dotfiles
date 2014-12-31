@@ -1,5 +1,5 @@
 # python packages that I need in their distutils-r1 version
-<dev-python/html2text-3.200.4
+<dev-python/html2text-2015
 <dev-python/gdata-2.0.18
 <dev-python/mechanize-0.2.6
 
@@ -7,8 +7,3 @@
 
 <dev-python/paste-1.8
 <dev-python/tempita-0.5.3
-
-<dev-python/pytest-runner-1.2
-<dev-python/hgtools-3.0.0
-
-<dev-python/urwid-1.2

@@ -36,6 +36,12 @@ dev-python/prettytable
 dev-python/futures
 virtual/python-futures
 
+dev-python/irc
+dev-python/jaraco-utils
+dev-python/more-itertools
+<dev-python/pytest-runner-1.2
+<dev-python/hgtools-7.0.0
+
 <net-misc/httpie-0.9
 
 sys-apps/jsonpipe
