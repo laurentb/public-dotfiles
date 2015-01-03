@@ -18,6 +18,14 @@ else
     fi
 fi
 
+if [ -n $DBUS_SESSION_BUS_ADDRESS ]; then
+    dbus-send --session \
+        --dest=org.freedesktop.DBus \
+        /org/freedesktop/DBus \
+        org.freedesktop.DBus.StartServiceByName \
+        string:org.gtk.vfs.Daemon uint32:0
+fi
+
 xrdb -merge ~/.Xdefaults
 source ~/.urxvt/xrdb.sh
 
