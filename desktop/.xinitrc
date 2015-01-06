@@ -36,7 +36,9 @@ export GTK_IM_MODULE=xim
 export QT_IM_MODULE=xim
 
 # Chromium options
-export CHROMIUM_USER_FLAGS="--disable-sync --disable-manager-for-sync-signin --disallow-autofill-sync-credential --disallow-autofill-sync-credential-for-reauth --remember-cert-error-decisions=7257600"
+[ -f /etc/chromium/pepper-flash ] && . /etc/chromium/pepper-flash
+export CHROMIUM_USER_FLAGS="${CHROMIUM_FLAGS} ${CHROMIUM_USER_FLAGS} --disable-sync --disable-manager-for-sync-signin --disallow-autofill-sync-credential --disallow-autofill-sync-credential-for-reauth --remember-cert-error-decisions=7257600 --disable-metrics --disable-metrics-reporting"
+
 # force to use a keyring
 type -p gnome-keyring && export CHROMIUM_USER_FLAGS="$CHROMIUM_USER_FLAGS --password-store=gnome"
 
