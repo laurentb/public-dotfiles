@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# deprecated; can be removed later but is useful to keep existing
+# systems sane without rebooting
+unset GREP_OPTIONS
+
 [ -f ~/.sh_vars ] && . ~/.sh_vars
 
 if [ -x /usr/bin/keychain ]; then
@@ -32,8 +36,11 @@ alias chown='chown -c'
 if [ -x /usr/bin/dircolors ]; then
     #eval `dircolors -b /etc/DIR_COLORS`
     alias ls='ls --color=auto'
-    export GREP_OPTIONS="--color=auto"
 fi
+
+alias grep='grep --color=auto'
+alias egrep='grep -E --color=auto'
+alias fgrep='grep -F --color=auto'
 
 alias ll='ls -lh'
 alias la='ls -A'
