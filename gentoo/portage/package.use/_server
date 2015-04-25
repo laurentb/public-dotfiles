@@ -1,5 +1,5 @@
 dev-lang/php bcmath calendar cgi curlwrappers exif flatfile fpm gd gmp imap inifile intl mhash mysql mysqli mysqlnd pcntl pdo sharedmem sqlite soap sockets sysvipc tidy wddx xmlrpc xslt zip xmlreader xmlwriter
-app-admin/eselect-php fpm
+app-eselect/eselect-php fpm
 
 www-servers/lighttpd fam libev fastcgi -webdav
 
