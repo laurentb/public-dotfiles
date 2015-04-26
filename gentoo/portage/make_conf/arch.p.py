@@ -74,7 +74,7 @@ if __name__ == "__main__":
 
 
 text("""# $warning
-USE_ARCH="$flags"
+CPU_FLAGS_X86="$flags"
 ARCH_FLAGS="$cflags"
 SHORT_ARCH_FLAGS="$short_cflags"
 ARCH_JOBS="$jobs"

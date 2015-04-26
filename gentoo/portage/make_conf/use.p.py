@@ -1,6 +1,6 @@
 collections = set(["USE_UNWANTED", "USE_OPTIMIZE", "USE_LANGUAGES",
                    "USE_HARDWARE", "USE_ADDONS", "USE_FEATURES",
-                   "USE_NETWORK", "USE_COMPRESSION", "USE_ARCH"])
+                   "USE_NETWORK", "USE_COMPRESSION"])
 
 inpdevs = ["evdev"]
 
