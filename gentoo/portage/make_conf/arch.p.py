@@ -47,6 +47,8 @@ assert count == 1
 # This prevents badly written build systems, like Chromium's,
 # from failing.
 short_cflags = re.sub(' --param [^ ]+', '', cflags).strip()
+# Remove -mno arguments, they confuse some packages.
+short_cflags = re.sub(' -mno-[^ ]+', '', short_cflags).strip()
 
 cflags = cflags.strip()
 
