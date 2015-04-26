@@ -14,8 +14,6 @@ dev-python/termcolor
 
 sys-apps/fr-bepo-keymap
 
-<dev-python/fabric-1.11.0
-
 app-arch/duff
 
 app-text/restview
@@ -31,46 +29,23 @@ dev-vcs/tmpclone
 <net-im/minbif-9999
 
 www-client/weboob
-dev-python/prettytable
 
-dev-python/futures
-virtual/python-futures
-
-dev-python/irc
-dev-python/jaraco-utils
-dev-python/more-itertools
-<dev-python/pytest-runner-1.2
-<dev-python/hgtools-7.0.0
-
-<net-misc/httpie-0.9
+<net-misc/httpie-0.10
 
 sys-apps/jsonpipe
 net-misc/googlecl
-
-dev-python/routes
-dev-python/repoze-lru
 
 dev-python/xunitparser
 
 dev-python/unicode-nazi
 
 dev-python/flakeplus
-dev-python/pep8
-dev-python/pyflakes
-dev-python/autopep8
-dev-python/flake8
-dev-python/mccabe
 
 # pytest with xdist
 dev-python/pytest-xdist
-<dev-python/execnet-1.2
-# and cov
-dev-python/pytest-cov
-dev-python/cov-core
 
 dev-python/sh
 dev-python/unipath
-dev-python/colorama
 dev-python/vulture
 dev-python/calabash
 
@@ -81,8 +56,6 @@ dev-python/ConfigObject
 
 app-misc/terminal-colors
 
-app-portage/overlint
-
 sys-fs/dfc
 
 # isort
@@ -90,7 +63,6 @@ dev-python/isort
 dev-python/enum34
 dev-python/pies
 dev-python/pies2overrides
-dev-python/natsort
 dev-python/ipaddress
 
 # hyde
