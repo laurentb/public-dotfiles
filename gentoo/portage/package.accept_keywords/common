@@ -17,10 +17,11 @@ sys-apps/fr-bepo-keymap
 app-arch/duff
 
 app-text/restview
+<dev-python/readme-0.6
+
 dev-python/xhtml2pdf
 
 www-apps/assnet
-dev-python/PyRSS2Gen
 
 media-sound/brutha
 
