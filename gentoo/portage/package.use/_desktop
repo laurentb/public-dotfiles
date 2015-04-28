@@ -5,6 +5,8 @@ x11-libs/libdrm libkms
 
 media-libs/freetype infinality
 
+media-fonts/source-pro cjk
+
 net-p2p/amule daemon remote stats
 
 app-admin/conky mpd
@@ -53,6 +55,8 @@ media-sound/pulseaudio realtime
 dev-python/PyQt4 declarative multimedia xmlpatterns script designer
 dev-qt/qtgui gtkstyle
 
+media-libs/phonon designer
+
 app-mobilephone/gnokii -usb sms
 
 kde-base/kdebase-data -wallpapers
@@ -82,6 +86,8 @@ app-emulation/qemu spice usbredir -accessibility
 app-emulation/libvirt qemu virt-network
 
 app-arch/p7zip -kde
+
+app-crypt/qca gpg
 
 # it's either qt4 or gtk
 net-analyzer/wireshark -gtk -gtk2 -gtk3
