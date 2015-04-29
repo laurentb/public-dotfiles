@@ -6,6 +6,8 @@ x11-libs/libdrm libkms
 media-libs/freetype infinality
 
 media-fonts/source-pro cjk
+media-fonts/corefonts tahoma
+media-fonts/terminus-font distinct-l
 
 net-p2p/amule daemon remote stats
 
