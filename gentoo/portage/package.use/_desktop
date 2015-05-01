@@ -35,7 +35,6 @@ kde-base/okular ebook
 
 net-im/gajim -gnome srv trayicon
 app-dicts/verbiste -gnome
-app-text/evince -gnome
 
 media-sound/audacity vamp soundtouch midi
 
