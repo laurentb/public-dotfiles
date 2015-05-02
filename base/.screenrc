@@ -49,4 +49,7 @@ sorendition "=r dG"
 # default window title
 shelltitle "sh"
 
+# disable one-key wrap toggler - ^R still works
+bind r
+
 source .screenrc-local
