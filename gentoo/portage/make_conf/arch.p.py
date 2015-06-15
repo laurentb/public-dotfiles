@@ -6,17 +6,22 @@ import subprocess
 with open("/proc/cpuinfo") as f:
     cpuinfo = f.read()
     flags = re.search("^flags\s+:\s+(.+)$", cpuinfo, re.MULTILINE).groups()[0].split(" ")
-    # HACK: pni means sse3
+    # See /usr/portage/profiles/desc/cpu_flags_x86.desc
     flags = ['sse3' if flag == 'pni' else flag for flag in flags]
+    flags = ['fma3' if flag == 'fma' else flag for flag in flags]
+    flags = ['popcnt' if flag == 'abm' else flag for flag in flags]
+    flags = ['padlock' if flag == 'phe' else flag for flag in flags]
 
     procs = re.findall("^processor\s+:\s+(\d+)$", cpuinfo, re.MULTILINE)
     jobs = len(procs)
 
 
-available_use_flags = ("avx", "ssse3",
+available_use_flags = ("avx", "axv2", "ssse3", "xop", "aes",
+                       "popcnt",
                        "mmx", "mmxext",
                        "3dnow", "3dnowext",
-                       "sse", "sse2", "sse3", "sse4", "sse4_1")
+                       "fma3", "fma4",
+                       "sse", "sse2", "sse3", "sse4a", "sse4_1", "sse4_2")
 
 use_flags = set([flag for flag in available_use_flags if flag in flags])
 # mmxext/mmx2 is a subset of SSE (blame AMD marketing)
