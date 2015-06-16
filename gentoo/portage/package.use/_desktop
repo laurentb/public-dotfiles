@@ -31,7 +31,7 @@ x11-terms/rxvt-unicode -vanilla 256-color fading-colors font-styles wcwidth unic
 
 x11-wm/openbox xdg
 
-kde-base/okular ebook
+kde-apps/okular ebook
 
 net-im/gajim -gnome srv trayicon
 app-dicts/verbiste -gnome
@@ -60,13 +60,13 @@ media-libs/phonon designer
 
 app-mobilephone/gnokii -usb sms
 
-kde-base/kdebase-data -wallpapers
-kde-base/kdebase-meta -wallpapers -display-manager minimal
+kde-apps/kdebase-data -wallpapers
+kde-apps/kdebase-meta -wallpapers -display-manager minimal
 kde-base/kdebase-startkde -wallpapers
 kde-base/libplasmaclock -kdepim
 kde-base/baloo minimal
 kde-base/nepomuk-core -migrator -exif -ffmpeg -pdf -taglib -epub
-kde-base/kdebase-runtime-meta -crash-reporter minimal
+kde-apps/kdebase-runtime-meta -crash-reporter minimal
 
 # required by some gnome packages
 net-dns/avahi gtk3
