@@ -51,3 +51,5 @@ net-misc/openvpn iproute2
 
 www-client/weboob fast-libs
 dev-python/pyyaml libyaml
+
+sys-libs/readline utils
