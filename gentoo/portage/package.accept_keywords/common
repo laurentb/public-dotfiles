@@ -75,8 +75,4 @@ app-text/hyde
 
 app-admin/pass
 
-<app-misc/task-2.4.0
-
 dev-util/vmtouch
-
-<net-irc/weechat-1.1.2
