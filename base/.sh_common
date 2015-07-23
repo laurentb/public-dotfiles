@@ -7,7 +7,8 @@ unset GREP_OPTIONS
 [ -f ~/.sh_vars ] && . ~/.sh_vars
 
 if [ -x /usr/bin/keychain ]; then
-    eval `/usr/bin/keychain --eval -q`
+    [ -d ~/.ssh ] && eval `/usr/bin/keychain --eval -q --agents ssh`
+    [ -d ~/.gnupg ] && eval `/usr/bin/keychain --eval -q --agents gpg`
     # only ask for passphrase when needed
     alias ssh="${HOME}/.sshwrap"
     export RSYNC_RSH="${HOME}/.sshwrap"
