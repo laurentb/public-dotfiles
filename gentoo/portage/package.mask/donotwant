@@ -9,3 +9,5 @@ www-servers/apache
 gnome-extra/evolution-data-server
 
 x11-themes/sound-theme-freedesktop
+
+dev-lang/ruby:2.1
