@@ -1,3 +1,5 @@
+kde-base/khotkeys
+kde-base/systemsettings
 ark
 filelight
 k3b
@@ -9,7 +11,6 @@ kdebase-kioslaves
 kdebase-meta
 kdiff3
 kget
-khotkeys
 klipper
 kmix
 kompare
@@ -18,5 +19,4 @@ krename
 krusader
 okular
 qt-meta
-systemsettings
 zeroconf-ioslave
