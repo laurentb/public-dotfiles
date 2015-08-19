@@ -8,13 +8,9 @@ dev-python/python-discid
 
 <media-sound/easytag-2.3.0
 
-<media-libs/opus-1.2
-
 x11-misc/keynav
 
 media-fonts/nunito
 media-fonts/takao-fonts
 
 app-admin/profile-cleaner
-
-www-plugins/chrome-binary-plugins:stable
