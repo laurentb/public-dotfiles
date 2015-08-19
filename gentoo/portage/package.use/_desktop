@@ -66,8 +66,6 @@ kde-apps/kdebase-data -wallpapers
 kde-apps/kdebase-meta -wallpapers -display-manager minimal
 kde-base/kdebase-startkde -wallpapers
 kde-base/libplasmaclock -kdepim
-kde-base/baloo minimal
-kde-base/nepomuk-core -migrator -exif -ffmpeg -pdf -taglib -epub
 kde-apps/kdebase-runtime-meta -crash-reporter minimal
 kde-apps/solid-runtime -bluetooth
 
