@@ -2,13 +2,11 @@ from __future__ import print_function
 
 import subprocess
 
-pythons = subprocess.Popen(['eselect', '--brief', 'python', 'list'],
-        stdout=subprocess.PIPE).communicate()[0]  # capture stdout
+pythons = subprocess.check_output(['eselect', '--brief', 'python', 'list'])
 pythons = [python.replace('.', '_') for python in pythons.splitlines()]
 assert len(pythons)
 
-python = subprocess.Popen(['eselect', '--brief', 'python', 'show'],
-        stdout=subprocess.PIPE).communicate()[0]  # capture stdout
+python = subprocess.check_output(['eselect', '--brief', 'python', 'show'])
 python = python.replace('.', '_').strip()
 assert python
 
