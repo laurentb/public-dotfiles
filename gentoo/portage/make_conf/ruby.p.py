@@ -1,6 +1,7 @@
 from __future__ import print_function
 
 import subprocess
+from textwrap import dedent
 
 try:
     subprocess.check_output(['eselect', 'ruby', 'show'], stderr=subprocess.PIPE)
@@ -19,8 +20,9 @@ if __name__ == "__main__":
 
 
 if has_ruby:
-    text("""# $warning
-    RUBY_TARGETS="$rubies"
-    """).render(rubies=" ".join(rubies))
+    text(dedent("""
+        # $warning
+        RUBY_TARGETS="$rubies"
+        """)).render(rubies=" ".join(rubies))
 else:
     text("# No ruby installation found.\n").render()
