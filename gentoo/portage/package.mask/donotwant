@@ -12,5 +12,7 @@ x11-themes/sound-theme-freedesktop
 
 dev-lang/ruby:2.1
 
+virtual/jdk
+
 kde-base/baloo
 app-office/akonadi-server
