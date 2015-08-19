@@ -10,7 +10,7 @@ assert len(pythons)
 python = subprocess.Popen(['eselect', '--brief', 'python', 'show'],
         stdout=subprocess.PIPE).communicate()[0]  # capture stdout
 python = python.replace('.', '_').strip()
-assert len(pythons)
+assert python
 
 py2 = subprocess.Popen(
     ['eselect', '--brief', 'python', 'show', '--ABI', '--python2'],
