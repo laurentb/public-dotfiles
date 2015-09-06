@@ -92,6 +92,8 @@ app-arch/p7zip -kde
 
 app-crypt/qca gpg
 
+app-crypt/pinentry clipboard
+
 # it's either qt4 or gtk
 net-analyzer/wireshark -gtk -gtk2 -gtk3
 
