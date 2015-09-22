@@ -16,19 +16,19 @@ shopt -s cdspell
 
 shopt -s checkwinsize
 
-# Make Bash append rather than overwrite the history on disk:
-shopt -s histappend
 
-# Whenever displaying the prompt, read new items and write the previous line to disk
-PROMPT_COMMAND='history -n;history -a'
 # hande multiline commands as a single command
 shopt -s cmdhist
 
 # ignore dangerous commands and duplicates/whitespace
 HISTIGNORE='&:[bf]g:exit:*>|*:history*:svn revert*:*rm*-rf*:*rm*-f*'
-HISTCONTROL=ignoreboth:erasedups
 
-HISTSIZE=3000
+# history sharing
+HISTCONTROL=ignoreboth
+shopt -u histappend
+PROMPT_COMMAND="history -a; history -c; history -r"
+
+HISTSIZE=9000
 HISTFILESIZE=9000
 
 export HISTTIMEFORMAT='%F %T '
