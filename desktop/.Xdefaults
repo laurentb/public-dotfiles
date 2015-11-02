@@ -77,3 +77,4 @@ lal*color: #3a3a3a
 lal*width: 42
 lal*format: %H%M
 
+URxvt.print-pipe: cat > $(mktemp -p ~/tmp urxvt.XXXXXX)
