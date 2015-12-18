@@ -53,3 +53,6 @@ www-client/weboob fast-libs
 dev-python/pyyaml libyaml
 
 sys-libs/readline utils
+
+# requires an old libvpx
+<media-libs/gd-2.1.1-r1 -webp
