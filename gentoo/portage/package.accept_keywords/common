@@ -67,6 +67,7 @@ dev-python/commando
 dev-python/typogrify
 dev-python/fswrap
 app-text/hyde
+<dev-python/markdown-2.6.4
 
 app-admin/pass
 
