@@ -50,8 +50,6 @@ dev-python/vulture
 dev-python/calabash
 
 dev-python/chut
-dev-python/docopt
-dev-python/docopts
 dev-python/ConfigObject
 
 app-misc/terminal-colors
