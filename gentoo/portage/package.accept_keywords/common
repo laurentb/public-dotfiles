@@ -60,9 +60,6 @@ sys-fs/dfc
 
 # isort
 dev-python/isort
-dev-python/enum34
-dev-python/pies
-dev-python/pies2overrides
 
 # hyde
 dev-python/commando
