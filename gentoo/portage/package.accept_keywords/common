@@ -63,7 +63,6 @@ dev-python/isort
 dev-python/enum34
 dev-python/pies
 dev-python/pies2overrides
-dev-python/ipaddress
 
 # hyde
 dev-python/commando
