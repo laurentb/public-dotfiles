@@ -1,7 +1,6 @@
 sys-fs/udev extras
 
-media-libs/mesa g3dvl osmesa xa xorg gles2 gbm
-x11-apps/mesa-progs gles2
+media-libs/mesa g3dvl osmesa xa xorg gbm
 x11-libs/libdrm libkms
 
 media-libs/freetype infinality
@@ -57,7 +56,13 @@ media-libs/libtheora encode
 media-sound/pulseaudio realtime
 
 dev-python/PyQt4 declarative multimedia xmlpatterns script designer
-dev-qt/qtgui gtkstyle
+dev-qt/qtgui:4 gtkstyle
+
+# calibre deps
+app-text/poppler qt5
+dev-python/PyQt5 webkit
+dev-libs/libpcre pcre16
+dev-qt/qtwebkit:5 printsupport
 
 media-libs/phonon designer
 

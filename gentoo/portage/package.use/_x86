@@ -103,3 +103,5 @@ dev-libs/glib abi_x86_32
 dev-libs/libgpg-error abi_x86_32
 virtual/libudev abi_x86_32
 media-plugins/alsa-plugins abi_x86_32
+x11-libs/libva abi_x86_32
+x11-libs/libva-vdpau-driver abi_x86_32
