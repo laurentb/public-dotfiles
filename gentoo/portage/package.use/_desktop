@@ -53,7 +53,7 @@ x11-misc/shutter drawing
 
 media-libs/libtheora encode
 
-media-sound/pulseaudio realtime
+media-sound/pulseaudio realtime equalizer -libsamplerate
 
 dev-python/PyQt4 declarative multimedia xmlpatterns script designer
 dev-qt/qtgui:4 gtkstyle
