@@ -3,3 +3,5 @@ bind generic t move-down
 bind generic s move-up
 
 set tab-size = 4
+
+set ignore-case = true
