@@ -3,6 +3,10 @@ from __future__ import print_function
 import re
 import subprocess
 
+# References:
+# https://bitbucket.org/mgorny/cpuinfo2cpuflags
+# https://github.com/hartwork/resolve-march-native
+
 with open("/proc/cpuinfo") as f:
     cpuinfo = f.read()
     flags = re.search("^flags\s+:\s+(.+)$", cpuinfo, re.MULTILINE).groups()[0].split(" ")
