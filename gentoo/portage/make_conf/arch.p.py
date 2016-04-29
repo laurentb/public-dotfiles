@@ -69,7 +69,8 @@ if ': i915' in lspci:
     cards.append('intel')
 if ': radeon' in lspci:
     cards.append('radeon')
-    use_cards.append('r600-llvm-compiler')
+    cards.append('radeonsi')
+    cards.append('amdgpu')
 if ': nouveau' in lspci:
     cards.append('nouveau')
 
