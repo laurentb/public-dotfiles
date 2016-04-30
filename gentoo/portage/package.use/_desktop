@@ -105,3 +105,10 @@ net-analyzer/wireshark -gtk -gtk2 -gtk3
 # broken crap (webkit-gtk)
 net-libs/libproxy -webkit
 media-gfx/gimp -webkit
+
+# various qt5
+media-libs/phonon-vlc qt5
+sys-auth/polkit-qt qt5
+media-libs/phonon qt5
+dev-libs/libdbusmenu-qt qt5
+media-libs/phonon-gstreamer qt5
