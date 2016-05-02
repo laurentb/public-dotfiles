@@ -48,7 +48,7 @@ xset s off
 xset dpms 10800 10800 10800
 xscreensaver &
 
-(sleep 1 && stalonetray --dockapp-mode -p) &
+(sleep 1 && stalonetray --dockapp-mode -p --kludges force_icons_size) &
 
 (sleep 2 && klipper) &
 (sleep 3 && nice rsibreak) &
