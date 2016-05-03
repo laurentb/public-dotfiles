@@ -41,6 +41,7 @@ export CHROMIUM_USER_FLAGS="${CHROMIUM_FLAGS} ${CHROMIUM_USER_FLAGS} --disable-s
 
 # force to use a keyring
 type -p gnome-keyring && export CHROMIUM_USER_FLAGS="$CHROMIUM_USER_FLAGS --password-store=gnome"
+type -p gnome-keyring-daemon && eval $(gnome-keyring-daemon --start --components=pkcs11,secrets)
 
 xsetroot -solid "#323232"
 
