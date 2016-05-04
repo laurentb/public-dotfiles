@@ -22,6 +22,7 @@
 	alias = !git config --list|grep ^alias|sed 's/alias.//'|grep '='
 	sig = log -n1 --show-signature
 	amu = "!curl ${1}|git am - #"
+	brs = "!git branch --no-merged $(git rev-parse --abbrev-ref HEAD) --sort=-committerdate"
 [core]
 	pager = cat
 [push]
