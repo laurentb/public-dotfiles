@@ -8,7 +8,7 @@ kcharselect
 kcolorchooser
 kcontrol
 kdebase-kioslaves
-kdebase-meta
+kdecore-meta
 kdiff3
 kget
 klipper

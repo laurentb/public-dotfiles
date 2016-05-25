@@ -68,18 +68,17 @@ media-libs/phonon designer
 
 app-mobilephone/gnokii -usb sms
 
+kde-apps/kate -addons
 kde-apps/kdebase-data -wallpapers
 kde-apps/kdebase-meta -wallpapers -display-manager minimal
+kde-apps/kdebase-runtime-meta -crash-reporter minimal
+kde-apps/kdecore-meta -wallpapers minimal
+kde-apps/solid-runtime -bluetooth
 kde-base/kdebase-startkde -wallpapers
 kde-base/libplasmaclock -kdepim
-kde-apps/kdebase-runtime-meta -crash-reporter minimal
-kde-apps/solid-runtime -bluetooth
 
 # required by some gnome packages
 net-dns/avahi gtk3
-
-app-office/akonadi-server -mysql
-kde-base/kdelibs semantic-desktop
 
 app-office/calligra -calligra_features_plan -calligra_features_kexi -kdepim
 app-office/libreoffice libreoffice_extensions_pdfimport

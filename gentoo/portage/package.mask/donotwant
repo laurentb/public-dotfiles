@@ -13,4 +13,9 @@ x11-themes/sound-theme-freedesktop
 virtual/jdk
 
 kde-base/baloo
+kde-frameworks/baloo
 app-office/akonadi-server
+kde-apps/kdebase-meta
+kde-plasma/plasma-meta
+kde-plasma/plasma-workspace
+kde-plasma/plasma-desktop
