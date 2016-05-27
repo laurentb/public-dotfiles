@@ -1,4 +1,5 @@
 net-misc/ipcalc
+arping
 bind-tools
 curl
 fping
