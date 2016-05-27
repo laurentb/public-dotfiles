@@ -15,7 +15,25 @@ virtual/jdk
 kde-base/baloo
 kde-frameworks/baloo
 app-office/akonadi-server
-kde-apps/kdebase-meta
+
+# Mask KDE 5 for now
+kde-apps/kdebase-runtime-meta:5
+kde-apps/kdebase-meta:5
+kde-apps/kdecore-meta:5
+kde-apps/ark:5
+kde-apps/dolphin:5
+kde-apps/filelight:5
+kde-apps/kamera:5
+kde-apps/kate:5
+kde-apps/kcharselect:5
+kde-apps/khelpcenter:5
+kde-apps/kmix:5
+kde-apps/kompare:5
+kde-apps/konsole:5
+kde-apps/kwalletmanager:5
+kde-apps/kwrite:5
+
+# KDE 5 undesirables
 kde-plasma/plasma-meta
 kde-plasma/plasma-workspace
 kde-plasma/plasma-desktop

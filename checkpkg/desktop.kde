@@ -1,4 +1,5 @@
 kde-base/khotkeys
+kde-base/legacy-icons
 kde-base/systemsettings
 ark
 filelight
@@ -8,7 +9,6 @@ kcharselect
 kcolorchooser
 kcontrol
 kdebase-kioslaves
-kdecore-meta
 kdiff3
 kget
 klipper

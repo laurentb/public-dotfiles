@@ -76,6 +76,7 @@ kde-apps/kdecore-meta -wallpapers minimal
 kde-apps/solid-runtime -bluetooth
 kde-base/kdebase-startkde -wallpapers
 kde-base/libplasmaclock -kdepim
+kde-plasma/systemsettings classic
 
 # required by some gnome packages
 net-dns/avahi gtk3
