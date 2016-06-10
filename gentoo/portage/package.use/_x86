@@ -1,5 +1,6 @@
 app-emulation/wine -scanner -v4l -cups -vaapi openal
 
+dev-libs/elfutils abi_x86_32
 net-dns/unbound abi_x86_32
 media-libs/libpng abi_x86_32
 media-libs/freetype abi_x86_32
