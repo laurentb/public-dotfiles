@@ -9,6 +9,10 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
     done
 fi
 
+if [ -n $DBUS_SESSION_BUS_ADDRESS ]; then
+    export $(dbus-launch)
+fi
+
 # start pulseaudio in the background
 if [ -x /usr/bin/start-pulseaudio-x11 ]; then
     /usr/bin/start-pulseaudio-x11
@@ -18,13 +22,6 @@ else
     fi
 fi
 
-if [ -n $DBUS_SESSION_BUS_ADDRESS ]; then
-    dbus-send --session \
-        --dest=org.freedesktop.DBus \
-        /org/freedesktop/DBus \
-        org.freedesktop.DBus.StartServiceByName \
-        string:org.gtk.vfs.Daemon uint32:0
-fi
 
 xrdb -merge ~/.Xdefaults
 source ~/.urxvt/xrdb.sh
