@@ -14,12 +14,12 @@ if [ -n $DBUS_SESSION_BUS_ADDRESS ]; then
 fi
 
 # start pulseaudio in the background
+if [ -x /usr/bin/pulseaudio ]; then
+    /usr/bin/pulseaudio --start
+fi
+# register pulseaudio
 if [ -x /usr/bin/start-pulseaudio-x11 ]; then
     /usr/bin/start-pulseaudio-x11
-else
-    if [ -x /usr/bin/pulseaudio ]; then
-        /usr/bin/pulseaudio --start
-    fi
 fi
 
 
