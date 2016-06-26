@@ -2,6 +2,7 @@ kde-apps/kdebase-meta
 kde-base/khotkeys
 kde-base/legacy-icons
 kde-base/systemsettings
+kde-frameworks/frameworkintegration
 ark
 filelight
 k3b
