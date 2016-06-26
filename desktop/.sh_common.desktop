@@ -7,4 +7,4 @@ if [ -n "$DISPLAY" ]; then
     export SDL_AUDIODRIVER=pulse
 fi
 
-alias startx="exec startx -- -nolisten tcp -verbose 5 -logverbose 1 -br"
+alias startx="exec startx -- -nolisten tcp -verbose 1 -logverbose 0"
