@@ -32,6 +32,7 @@ kde-apps/kompare:5
 kde-apps/konsole:5
 kde-apps/kwalletmanager:5
 kde-apps/kwrite:5
+kde-apps/libksane:5
 
 # KDE 5 undesirables
 kde-plasma/plasma-meta
