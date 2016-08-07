@@ -9,11 +9,8 @@
   <item label="Kate">
     <action name="Execute"><execute>kate</execute></action>
   </item>
-  <item label="Krusader">
-    <action name="Execute"><execute>krusader</execute></action>
-  </item>
-  <item label="Konqueror">
-    <action name="Execute"><execute>konqueror</execute></action>
+  <item label="Dolphin">
+    <action name="Execute"><execute>dolphin</execute></action>
   </item>
 </menu>
 

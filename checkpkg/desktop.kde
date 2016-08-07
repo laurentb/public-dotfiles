@@ -1,8 +1,11 @@
-kde-apps/kdebase-meta
+kde-apps/dolphin
+kde-apps/kdebase-runtime-meta
 kde-base/khotkeys
-kde-base/legacy-icons
-kde-base/systemsettings
 kde-frameworks/frameworkintegration
+kde-frameworks/kfilemetadata
+kde-frameworks/krunner
+kde-plasma/kinfocenter
+kde-plasma/systemsettings
 ark
 filelight
 k3b
@@ -15,7 +18,6 @@ kdiff3
 kget
 kmix
 kompare
-konqueror
 krename
 krusader
 okular

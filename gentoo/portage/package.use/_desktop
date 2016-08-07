@@ -65,6 +65,7 @@ dev-libs/libpcre pcre16
 dev-qt/qtwebkit:5 printsupport
 
 media-libs/phonon designer
+dev-qt/qtwebkit:4 -gstreamer
 
 app-mobilephone/gnokii -usb sms
 
@@ -77,6 +78,7 @@ kde-apps/solid-runtime -bluetooth
 kde-base/kdebase-startkde -wallpapers
 kde-base/libplasmaclock -kdepim
 kde-plasma/systemsettings classic
+kde-plasma/plasma-workspace -geolocation
 
 # required by some gnome packages
 net-dns/avahi gtk3
