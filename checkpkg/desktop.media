@@ -1,6 +1,5 @@
 media-sound/mpc
 media-sound/mpd
-media-sound/picard
 media-sound/sox
 media-video/ffmpeg
 media-video/mpv
@@ -14,6 +13,7 @@ ncmpcpp
 paprefs
 pavucontrol
 pavumeter
+puddletag
 sonata
 vorbis-tools
 vorbisgain

@@ -2,11 +2,8 @@ app-text/dictator
 
 x11-plugins/lal
 
-media-sound/picard
-media-sound/acoustid-fingerprinter
-dev-python/python-discid
-
 <media-sound/easytag-2.3.0
+media-sound/puddletag
 
 x11-misc/keynav
 

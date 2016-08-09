@@ -29,7 +29,7 @@
   </item>
 </menu>
 
-<menu id="images-menu" label="Images">
+<menu id="images-menu" label="Media">
   <item label="GQview">
     <action name="Execute"><execute>gqview</execute></action>
   </item>
@@ -42,23 +42,14 @@
   <item label="Shutter">
     <action name="Execute"><execute>shutter</execute></action>
   </item>
-</menu>
-
-<menu id="sound-menu" label="Sound">
   <item label="Volume Control">
     <action name="Execute"><execute>pavucontrol</execute></action>
-  </item>
-  <item label="Picard">
-    <action name="Execute"><execute>picard</execute></action>
   </item>
 </menu>
 
 <menu id="documents-menu" label="Documents">
   <item label="Kate">
     <action name="Execute"><execute>kate</execute></action>
-  </item>
-  <item label="Calligra Words">
-    <action name="Execute"><execute>calligrawords</execute></action>
   </item>
   <item label="LO Calc">
     <action name="Execute"><execute>localc</execute></action>
