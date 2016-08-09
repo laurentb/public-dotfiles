@@ -30,10 +30,10 @@
 </menu>
 
 <menu id="images-menu" label="Media">
-  <item label="GQview">
-    <action name="Execute"><execute>gqview</execute></action>
+  <item label="Geeqie">
+    <action name="Execute"><execute>geeqie</execute></action>
   </item>
-  <item label="The GIMP">
+  <item label="GIMP">
     <action name="Execute"><execute>gimp</execute></action>
   </item>
   <item label="Inkscape">
