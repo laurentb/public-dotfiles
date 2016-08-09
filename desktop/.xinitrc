@@ -48,7 +48,7 @@ xscreensaver &
 
 (sleep 1 && stalonetray --dockapp-mode -p --kludges force_icons_size) &
 
-(sleep 2 && klipper) &
+(sleep 2 && gpaste-client start && gpaste-client applet) &
 (sleep 3 && nice rsibreak) &
 
 (sleep 4 && nice lal) &
