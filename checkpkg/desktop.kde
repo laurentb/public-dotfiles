@@ -14,7 +14,6 @@ kate
 kcharselect
 kcolorchooser
 kcontrol
-kdebase-kioslaves
 kdiff3
 kget
 kmix
@@ -22,4 +21,3 @@ kompare
 krename
 okular
 qt-meta
-zeroconf-ioslave
