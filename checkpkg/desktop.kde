@@ -1,10 +1,11 @@
 kde-apps/dolphin
 kde-apps/kdebase-runtime-meta
-kde-base/khotkeys
+kde-apps/kdecore-meta
 kde-frameworks/frameworkintegration
 kde-frameworks/kfilemetadata
 kde-frameworks/krunner
 kde-plasma/kinfocenter
+kde-plasma/ksysguard
 kde-plasma/systemsettings
 ark
 filelight
@@ -19,7 +20,6 @@ kget
 kmix
 kompare
 krename
-krusader
 okular
 qt-meta
 zeroconf-ioslave
