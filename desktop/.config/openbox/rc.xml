@@ -102,15 +102,12 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>6</number>
+    <number>3</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>one</name>
       <name>two</name>
       <name>three</name>
-      <name>four</name>
-      <name>five</name>
-      <name>six</name>
     </names>
     <popupTime>250</popupTime>
   </desktops>
@@ -231,21 +228,6 @@
     <keybind key="W-F3">
       <action name="Desktop">
         <desktop>3</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-F4">
-      <action name="Desktop">
-        <desktop>4</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-F5">
-      <action name="Desktop">
-        <desktop>5</desktop>
-      </action>
-    </keybind>
-    <keybind key="W-F6">
-      <action name="Desktop">
-        <desktop>6</desktop>
       </action>
     </keybind>
     <keybind key="W-Left">
@@ -567,8 +549,10 @@
       </mousebind>
     </context>
     <context name="Root">
-      <mousebind button="Button8" action="Press">
-        <action name="DesktopNext"/>
+      <mousebind button="Button10" action="Press">
+        <action name="ShowMenu">
+          <menu>client-list-combined-menu</menu>
+        </action>
       </mousebind>
       <!-- Menus -->
       <mousebind button="Middle" action="Press">
@@ -594,6 +578,13 @@
       </mousebind>
       <mousebind button="A-Down" action="Press">
         <action name="DesktopNext"/>
+      </mousebind>
+    </context>
+    <context name="Frame">
+      <mousebind button="Button10" action="Press">
+        <action name="ShowMenu">
+          <menu>client-list-combined-menu</menu>
+        </action>
       </mousebind>
     </context>
     <screenEdgeWarpTime>0</screenEdgeWarpTime>
