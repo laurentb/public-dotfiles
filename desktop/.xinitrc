@@ -37,6 +37,8 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 # Qt5 theme through KDE
 ## export KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true
 
+kdeinit5 +kded5 &
+
 # Chromium options
 [ -f /etc/chromium/pepper-flash ] && . /etc/chromium/pepper-flash
 export CHROMIUM_USER_FLAGS="${CHROMIUM_FLAGS} ${CHROMIUM_USER_FLAGS} --disable-sync --disable-manager-for-sync-signin --disallow-autofill-sync-credential --disallow-autofill-sync-credential-for-reauth --remember-cert-error-decisions=7257600 --disable-metrics --disable-metrics-reporting"
