@@ -41,7 +41,7 @@ kdeinit5 +kded5 &
 
 # Chromium options
 [ -f /etc/chromium/pepper-flash ] && . /etc/chromium/pepper-flash
-export CHROMIUM_USER_FLAGS="${CHROMIUM_FLAGS} ${CHROMIUM_USER_FLAGS} --disable-sync --disable-manager-for-sync-signin --disallow-autofill-sync-credential --disallow-autofill-sync-credential-for-reauth --remember-cert-error-decisions=7257600 --disable-metrics --disable-metrics-reporting"
+export CHROMIUM_USER_FLAGS="${CHROMIUM_FLAGS} ${CHROMIUM_USER_FLAGS} --disable-sync --disable-manager-for-sync-signin --disallow-autofill-sync-credential --disallow-autofill-sync-credential-for-reauth --remember-cert-error-decisions=7257600 --disable-metrics --disable-metrics-reporting --disable-smooth-scrolling"
 
 # force to use a keyring
 type -p gnome-keyring && export CHROMIUM_USER_FLAGS="$CHROMIUM_USER_FLAGS --password-store=gnome"
