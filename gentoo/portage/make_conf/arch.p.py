@@ -21,7 +21,7 @@ with open("/proc/cpuinfo") as f:
 
 
 available_use_flags = ("avx", "axv2", "ssse3", "xop", "aes",
-                       "popcnt",
+                       "popcnt", "f16c",
                        "mmx", "mmxext",
                        "3dnow", "3dnowext",
                        "fma3", "fma4",
