@@ -205,3 +205,4 @@ gnome-base/librsvg abi_x86_32
 dev-qt/qtcore:4 abi_x86_32
 media-sound/cdparanoia abi_x86_32
 dev-libs/libusb-compat abi_x86_32
+dev-libs/libpcre abi_x86_32
