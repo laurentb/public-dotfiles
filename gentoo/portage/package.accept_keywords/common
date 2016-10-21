@@ -41,8 +41,8 @@ dev-python/unicode-nazi
 
 dev-python/flakeplus
 
-# pytest with xdist
 dev-python/pytest-xdist
+<dev-python/pytest-cov-2.3.0
 
 dev-python/sh
 dev-python/unipath
