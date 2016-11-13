@@ -75,3 +75,7 @@ app-text/hyde
 app-admin/pass
 
 dev-util/vmtouch
+
+net-misc/youtube-dl
+
+dev-python/ftfy

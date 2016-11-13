@@ -1,5 +1,6 @@
 app-misc/screen
 sys-apps/man-db
+sys-apps/progress
 at
 bash-completion
 dash
