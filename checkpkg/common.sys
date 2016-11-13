@@ -12,6 +12,7 @@ lsof
 mdadm
 mlocate
 nethogs
+netifrc
 sysstat
 tiptop
 vmtouch
