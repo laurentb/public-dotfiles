@@ -79,6 +79,7 @@ kde-base/kdebase-startkde -wallpapers
 kde-base/libplasmaclock -kdepim
 kde-plasma/systemsettings classic
 kde-plasma/plasma-workspace -geolocation
+virtual/notification-daemon -kde
 
 # required by some gnome packages
 net-dns/avahi gtk3
