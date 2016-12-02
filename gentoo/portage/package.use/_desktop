@@ -86,6 +86,8 @@ net-dns/avahi gtk3
 
 app-office/calligra -calligra_features_plan -calligra_features_kexi -kdepim
 app-office/libreoffice libreoffice_extensions_pdfimport
+dev-libs/liborcus python_single_target_python3_4 -python_single_target_python2_7
+dev-libs/libixion python_single_target_python3_4 -python_single_target_python2_7
 
 # either gstreamer or pulseaudio
 net-misc/spice-gtk -gstreamer
