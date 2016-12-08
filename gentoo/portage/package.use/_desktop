@@ -76,7 +76,6 @@ kde-apps/kdebase-runtime-meta -crash-reporter minimal
 kde-apps/kdecore-meta -wallpapers minimal
 kde-apps/solid-runtime -bluetooth
 kde-base/kdebase-startkde -wallpapers
-kde-base/libplasmaclock -kdepim
 kde-plasma/systemsettings classic
 kde-plasma/plasma-workspace -geolocation
 virtual/notification-daemon -kde
@@ -84,8 +83,8 @@ virtual/notification-daemon -kde
 # required by some gnome packages
 net-dns/avahi gtk3
 
-app-office/calligra -calligra_features_plan -calligra_features_kexi -kdepim
-app-office/libreoffice libreoffice_extensions_pdfimport
+app-office/calligra -calligra_features_plan -calligra_features_kexi -pim
+app-office/libreoffice pdfimport
 dev-libs/liborcus python_single_target_python3_4 -python_single_target_python2_7
 dev-libs/libixion python_single_target_python3_4 -python_single_target_python2_7
 
