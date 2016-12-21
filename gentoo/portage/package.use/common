@@ -54,4 +54,6 @@ dev-python/pyyaml libyaml
 
 sys-libs/readline utils
 
-net-misc/iputils arping
+net-misc/iputils
+
+media-libs/libcaca -ruby
