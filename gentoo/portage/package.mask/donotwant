@@ -21,3 +21,6 @@ kde-apps/kdebase-meta:5
 kde-plasma/plasma-meta
 kde-plasma/plasma-workspace
 kde-plasma/plasma-desktop
+
+# This forces a pyflakes downgrade
+=dev-python/flake8-2.5*
