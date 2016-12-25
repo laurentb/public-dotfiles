@@ -12,9 +12,8 @@ x11-themes/sound-theme-freedesktop
 
 virtual/jdk
 
-kde-base/baloo
 kde-frameworks/baloo
-app-office/akonadi-server
+kde-apps/akonadi
 
 # KDE 5 undesirables
 kde-apps/kdebase-meta:5

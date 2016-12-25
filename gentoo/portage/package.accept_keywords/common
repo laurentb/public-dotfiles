@@ -11,14 +11,9 @@ dev-vcs/git-publish-branch
 
 dev-vcs/git-goggles
 
-sys-apps/fr-bepo-keymap
-
 app-arch/duff
 
 app-text/restview
-<dev-python/readme-0.6
-
-dev-python/xhtml2pdf
 
 www-apps/assnet
 
@@ -33,7 +28,6 @@ www-client/weboob
 <net-misc/httpie-0.10
 
 sys-apps/jsonpipe
-net-misc/googlecl
 
 dev-python/xunitparser
 
@@ -41,7 +35,6 @@ dev-python/unicode-nazi
 
 dev-python/flakeplus
 
-dev-python/pytest-xdist
 <dev-python/pytest-cov-2.3.0
 
 # https://bugs.gentoo.org/592948
@@ -57,8 +50,6 @@ dev-python/calabash
 dev-python/chut
 dev-python/ConfigObject
 
-app-misc/terminal-colors
-
 sys-fs/dfc
 
 # isort
@@ -71,8 +62,6 @@ dev-python/typogrify
 dev-python/fswrap
 app-text/hyde
 <dev-python/markdown-2.6.4
-
-app-admin/pass
 
 dev-util/vmtouch
 
