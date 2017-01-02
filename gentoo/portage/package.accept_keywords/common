@@ -25,7 +25,7 @@ dev-vcs/tmpclone
 
 www-client/weboob
 
-<net-misc/httpie-0.10
+<net-misc/httpie-0.9.9
 
 sys-apps/jsonpipe
 
