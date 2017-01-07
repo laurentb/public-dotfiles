@@ -57,7 +57,7 @@ dev-python/isort
 
 # hyde
 dev-python/commando
-<dev-python/smartypants-1.9
+dev-python/smartypants
 dev-python/typogrify
 dev-python/fswrap
 app-text/hyde
