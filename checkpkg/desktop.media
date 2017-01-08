@@ -6,6 +6,7 @@ media-video/mpv
 alsa-plugins
 alsa-utils
 dnuos
+ladspa-bs2b
 mpdscribble
 ncmpc
 ncmpcpp
