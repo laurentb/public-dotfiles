@@ -58,6 +58,10 @@ media-sound/pulseaudio realtime equalizer -libsamplerate
 dev-python/PyQt4 declarative multimedia xmlpatterns script designer
 dev-qt/qtgui:4 gtkstyle
 
+# weboob
+dev-python/PyQt5 multimedia
+dev-qt/qtmultimedia widgets
+
 # calibre deps
 app-text/poppler qt5
 dev-python/PyQt5 webkit
