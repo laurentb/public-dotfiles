@@ -57,3 +57,5 @@ sys-libs/readline utils
 media-libs/libcaca -ruby
 
 app-misc/ca-certificates cacert
+
+sys-firmware/intel-microcode monolithic
