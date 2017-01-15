@@ -20,7 +20,7 @@ with open("/proc/cpuinfo") as f:
     jobs = len(procs)
 
 
-available_use_flags = ("avx", "axv2", "ssse3", "xop", "aes",
+available_use_flags = ("avx", "avx2", "ssse3", "xop", "aes",
                        "popcnt", "f16c",
                        "mmx", "mmxext",
                        "3dnow", "3dnowext",
