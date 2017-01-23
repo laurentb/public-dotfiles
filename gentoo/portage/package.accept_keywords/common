@@ -61,7 +61,6 @@ dev-python/smartypants
 dev-python/typogrify
 dev-python/fswrap
 app-text/hyde
-<dev-python/markdown-2.6.4
 
 dev-util/vmtouch
 
