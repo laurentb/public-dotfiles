@@ -17,6 +17,7 @@ sys-process/time
 bogosort
 convmv
 dfc
+fdupes
 jot
 mmv
 moreutils
