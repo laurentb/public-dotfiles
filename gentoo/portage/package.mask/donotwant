@@ -23,3 +23,5 @@ kde-plasma/plasma-desktop
 
 # This forces a pyflakes downgrade
 =dev-python/flake8-2.5*
+
+>dev-lang/php-6.0.0
