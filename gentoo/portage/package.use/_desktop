@@ -11,6 +11,8 @@ media-fonts/terminus-font distinct-l
 
 net-p2p/amule daemon remote stats
 
+x11-libs/wxGTK -gnome
+
 app-admin/conky mpd
 
 media-sound/mpd lame -mikmod -ffmpeg -aac
