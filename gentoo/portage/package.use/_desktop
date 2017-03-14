@@ -18,7 +18,7 @@ app-admin/conky mpd
 media-sound/mpd lame -mikmod -ffmpeg -aac
 media-sound/sox encode
 media-video/vlc matroska rtsp stream kate libass
-app-cdr/k3b -mp3 -sox
+kde-apps/k3b -mp3 -sox
 
 media-plugins/alsa-plugins -ffmpeg -speex -libsamplerate
 
