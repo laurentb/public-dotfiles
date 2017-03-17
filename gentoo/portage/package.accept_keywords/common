@@ -66,4 +66,4 @@ dev-util/vmtouch
 
 net-misc/youtube-dl
 
-dev-python/ftfy
+<dev-python/ftfy-5.0.0
