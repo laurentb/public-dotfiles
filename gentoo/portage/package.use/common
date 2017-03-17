@@ -47,7 +47,7 @@ dev-libs/nss utils
 # required by udev[hwdb]
 sys-apps/pciutils -zlib
 
-net-misc/openvpn iproute2
+net-vpn/openvpn iproute2
 
 www-client/weboob fast-libs
 dev-python/pyyaml libyaml
