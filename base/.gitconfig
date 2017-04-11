@@ -40,3 +40,5 @@
 [branch]
 	autosetuprebase = always
 # vim: set noexpandtab:
+[rebase]
+	autoStash = true
