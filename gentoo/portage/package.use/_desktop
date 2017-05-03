@@ -16,7 +16,6 @@ x11-libs/wxGTK -gnome
 app-admin/conky mpd
 
 media-sound/mpd lame -mikmod -ffmpeg -aac
-media-sound/sox encode
 media-video/vlc matroska rtsp stream kate libass
 kde-apps/k3b -mp3 -sox
 
@@ -52,8 +51,6 @@ x11-base/xorg-server xnest xvfb
 x11-misc/xscreensaver -opengl
 
 x11-misc/shutter drawing
-
-media-libs/libtheora encode
 
 media-sound/pulseaudio realtime equalizer -libsamplerate
 
