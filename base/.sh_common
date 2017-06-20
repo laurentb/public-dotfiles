@@ -42,6 +42,7 @@ fi
 alias grep='grep --color=auto'
 alias egrep='grep -E --color=auto'
 alias fgrep='grep -F --color=auto'
+alias ip='ip -color'
 
 alias ll='ls -lh'
 alias la='ls -A'
