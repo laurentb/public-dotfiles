@@ -11,7 +11,7 @@ media-fonts/terminus-font distinct-l
 
 net-p2p/amule daemon remote stats
 
-x11-libs/wxGTK -gnome
+x11-libs/wxGTK -gnome -webkit
 
 app-admin/conky mpd
 
