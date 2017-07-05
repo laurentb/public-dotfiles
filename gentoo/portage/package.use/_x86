@@ -212,3 +212,5 @@ x11-proto/scrnsaverproto abi_x86_32
 x11-libs/libXScrnSaver abi_x86_32
 media-sound/lame abi_x86_32
 media-libs/libwebp abi_x86_32
+net-dns/libidn2 abi_x86_32
+dev-libs/libunistring abi_x86_32
