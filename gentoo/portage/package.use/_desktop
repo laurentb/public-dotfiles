@@ -90,6 +90,8 @@ app-office/calligra -calligra_features_plan -calligra_features_kexi -pim
 app-office/libreoffice pdfimport
 dev-libs/liborcus python_single_target_python3_4 -python_single_target_python2_7
 dev-libs/libixion python_single_target_python3_4 -python_single_target_python2_7
+media-gfx/pstoedit plotutils
+dev-qt/qtgui:5 -gles2
 
 # either gstreamer or pulseaudio
 net-misc/spice-gtk -gstreamer
