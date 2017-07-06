@@ -13,7 +13,7 @@ dev-vcs/git-goggles
 
 app-arch/duff
 
-app-text/restview
+<app-text/restview-2.7.0
 
 www-apps/assnet
 
