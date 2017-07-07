@@ -64,6 +64,7 @@ cflags = cflags.strip()
 
 lspci = subprocess.check_output(['lspci', '-k'])
 cards = ['vesa', 'dummy', 'none']
+llvm = ['X86', 'BPF']
 use_cards = []
 if ': i915' in lspci:
     cards.append('intel')
@@ -71,6 +72,7 @@ if ': radeon' in lspci:
     cards.append('radeon')
     cards.append('radeonsi')
     cards.append('amdgpu')
+    llvm.append('AMDGPU')
 if ': nouveau' in lspci:
     cards.append('nouveau')
 
@@ -91,10 +93,12 @@ ARCH_FLAGS="$cflags"
 SHORT_ARCH_FLAGS="$short_cflags"
 ARCH_JOBS="$jobs"
 VIDEO_CARDS="$cards"
+LLVM_TARGETS="$llvm"
 USE_VIDEO_CARDS="$use_cards"
 """).render(flags=" ".join(use_flags),
             cflags=cflags,
             short_cflags=short_cflags,
             jobs=jobs,
             cards=" ".join(cards),
+            llvm=" ".join(llvm),
             use_cards=" ".join(use_cards))
