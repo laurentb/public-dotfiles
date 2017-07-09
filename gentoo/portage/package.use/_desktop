@@ -75,18 +75,20 @@ app-mobilephone/gnokii -usb sms
 kde-apps/kate -addons
 kde-apps/kdebase-data -wallpapers
 kde-apps/kdebase-meta -wallpapers -display-manager minimal
-kde-apps/kdebase-runtime-meta -crash-reporter minimal
+kde-apps/kdebase-runtime-meta -crash-reporter minimal kwallet
 kde-apps/kdecore-meta -wallpapers minimal
 kde-apps/solid-runtime -bluetooth
 kde-plasma/kdebase-startkde -wallpapers
 kde-plasma/systemsettings classic
 kde-plasma/plasma-workspace -geolocation
 virtual/notification-daemon -kde
+dev-qt/qtwebchannel qml
+dev-qt/qtwebengine widgets
 
 # required by some gnome packages
 net-dns/avahi gtk3
 
-app-office/calligra -calligra_features_plan -calligra_features_kexi -pim
+app-office/calligra -calligra_features_plan okular
 app-office/libreoffice pdfimport
 dev-libs/liborcus python_single_target_python3_4 -python_single_target_python2_7
 dev-libs/libixion python_single_target_python3_4 -python_single_target_python2_7
