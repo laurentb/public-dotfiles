@@ -77,8 +77,6 @@ kde-apps/kdebase-data -wallpapers
 kde-apps/kdebase-meta -wallpapers -display-manager minimal
 kde-apps/kdebase-runtime-meta -crash-reporter minimal kwallet
 kde-apps/kdecore-meta -wallpapers minimal
-kde-apps/solid-runtime -bluetooth
-kde-plasma/kdebase-startkde -wallpapers
 kde-plasma/systemsettings classic
 kde-plasma/plasma-workspace -geolocation
 virtual/notification-daemon -kde

@@ -160,7 +160,6 @@ media-libs/taglib abi_x86_32
 media-libs/soxr abi_x86_32
 media-libs/opus abi_x86_32
 media-libs/imlib2 abi_x86_32
-media-plugins/gst-plugins-ffmpeg abi_x86_32
 media-plugins/gst-plugins-vorbis abi_x86_32
 media-libs/libv4l abi_x86_32
 media-libs/libdca abi_x86_32

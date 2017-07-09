@@ -35,8 +35,6 @@ dev-python/unicode-nazi
 
 dev-python/flakeplus
 
-<dev-python/pytest-cov-2.3.0
-
 dev-python/sh
 dev-python/unipath
 dev-python/vulture
@@ -46,9 +44,6 @@ dev-python/chut
 dev-python/ConfigObject
 
 sys-fs/dfc
-
-# isort
-dev-python/isort
 
 # hyde
 dev-python/commando
