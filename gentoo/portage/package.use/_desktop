@@ -106,9 +106,6 @@ app-crypt/pinentry clipboard
 
 x11-misc/gpaste -gnome
 
-# prefer opengl
-media-libs/gst-plugins-bad:1.0 -egl -gles2
-
 # it's either qt4 or gtk
 net-analyzer/wireshark -gtk -gtk2 -gtk3
 
