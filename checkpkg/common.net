@@ -1,4 +1,5 @@
 net-misc/ipcalc
+net-misc/ipv6calc
 arping
 bind-tools
 curl
