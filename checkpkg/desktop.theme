@@ -2,6 +2,7 @@ kde-plasma/breeze
 kde-plasma/breeze-gtk
 kde-plasma/oxygen
 x11-themes/adwaita-icon-theme
+x11-themes/gnome-icon-theme
 x11-themes/gnome-icon-theme-symbolic
 x11-themes/gnome-themes-standard
 x11-themes/gtk-engines
