@@ -37,7 +37,8 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 # Qt5 theme through KDE
 ## export KDE_SESSION_VERSION=5 KDE_FULL_SESSION=true
 
-kdeinit5 +kded5 &
+type -p kdeinit4 && kdeinit4 +kded4 &
+type -p kdeinit5 && kdeinit5 +kded5 &
 
 # Chromium options
 [ -f /etc/chromium/pepper-flash ] && . /etc/chromium/pepper-flash
