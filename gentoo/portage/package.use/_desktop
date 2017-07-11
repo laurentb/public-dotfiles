@@ -1,6 +1,6 @@
 sys-fs/udev extras
 
-media-libs/mesa g3dvl osmesa xa xorg gbm gles2
+media-libs/mesa g3dvl osmesa xa xorg gbm gles2 vulkan
 x11-apps/mesa-progs egl gles2
 x11-libs/libdrm libkms
 
