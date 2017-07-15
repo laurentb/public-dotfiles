@@ -11,7 +11,7 @@ media-libs/libjpeg-turbo abi_x86_32
 x11-libs/libXxf86vm abi_x86_32
 x11-proto/videoproto abi_x86_32
 dev-libs/libtasn1 abi_x86_32
-sys-fs/udev abi_x86_32
+sys-fs/eudev abi_x86_32
 x11-proto/compositeproto abi_x86_32
 media-libs/openal abi_x86_32
 virtual/libintl abi_x86_32

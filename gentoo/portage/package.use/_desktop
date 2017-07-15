@@ -1,4 +1,4 @@
-sys-fs/udev extras
+sys-fs/eudev extras
 
 media-libs/mesa g3dvl osmesa xa xorg gbm gles2 vulkan
 x11-apps/mesa-progs egl gles2
