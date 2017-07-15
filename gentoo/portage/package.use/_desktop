@@ -4,7 +4,7 @@ media-libs/mesa g3dvl osmesa xa xorg gbm gles2 vulkan
 x11-apps/mesa-progs egl gles2
 x11-libs/libdrm libkms
 
-media-libs/freetype infinality
+media-libs/freetype harfbuzz
 
 media-fonts/source-pro cjk
 media-fonts/corefonts tahoma
