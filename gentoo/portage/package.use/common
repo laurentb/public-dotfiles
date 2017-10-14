@@ -63,3 +63,5 @@ sys-firmware/intel-microcode monolithic
 app-crypt/gnupg -smartcard
 
 net-misc/iputils -arping
+
+dev-python/twine blake2

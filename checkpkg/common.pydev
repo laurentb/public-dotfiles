@@ -19,5 +19,6 @@ dev-python/pytest-cov
 dev-python/pytest-xdist
 dev-python/python-dateutil
 dev-python/sphinx
+dev-python/twine
 dev-python/unicode-nazi
 dev-python/virtualenv
