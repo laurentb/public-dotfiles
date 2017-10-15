@@ -22,7 +22,7 @@ kde-apps/k3b -mp3 -sox
 
 media-plugins/alsa-plugins -ffmpeg -speex -libsamplerate
 
-media-video/mpv lua libguess libmpv
+media-video/mpv lua libmpv
 media-video/ffmpeg openssl threads rtmp
 virtual/ffmpeg threads
 
@@ -76,7 +76,6 @@ app-mobilephone/gnokii -usb sms
 kde-apps/kate -addons
 kde-apps/kdebase-data -wallpapers
 kde-apps/kdebase-meta -wallpapers -display-manager minimal
-kde-apps/kdebase-runtime-meta -crash-reporter minimal kwallet
 kde-apps/kdecore-meta -wallpapers minimal
 kde-plasma/systemsettings classic
 kde-plasma/plasma-workspace -geolocation
