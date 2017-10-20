@@ -17,3 +17,10 @@ x11-misc/shutter
 <media-gfx/cropgui-0.3
 
 app-misc/mat::laurentb
+
+<app-text/restview-2.8.0
+=dev-python/html5lib-0.999999999
+<dev-python/bleach-2.2.0
+dev-python/readme_renderer
+dev-python/webencodings
+
