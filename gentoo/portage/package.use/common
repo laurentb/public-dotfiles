@@ -65,3 +65,5 @@ app-crypt/gnupg -smartcard
 net-misc/iputils -arping
 
 dev-python/twine blake2
+
+app-backup/dar gcrypt

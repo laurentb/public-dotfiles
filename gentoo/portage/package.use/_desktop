@@ -100,7 +100,8 @@ app-emulation/libvirt qemu virt-network
 
 app-arch/p7zip -kde
 
-app-crypt/qca gpg qt5
+app-crypt/qca gpg gcrypt qt5
+app-crypt/gpgme qt5
 
 app-crypt/pinentry clipboard
 
