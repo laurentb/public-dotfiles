@@ -34,5 +34,6 @@ x-scheme-handler/ftp=userapp-Firefox-KQDX4V.desktop
 x-scheme-handler/http=userapp-Firefox-KQDX4V.desktop
 x-scheme-handler/https=userapp-Firefox-KQDX4V.desktop
 x-scheme-handler/mailto=userapp-Thunderbird-9GVF5V.desktop
+inode/directory=org.kde.dolphin.desktop
 
 [Removed Associations]
