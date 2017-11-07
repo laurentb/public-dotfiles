@@ -82,6 +82,7 @@ kde-plasma/plasma-workspace -geolocation
 virtual/notification-daemon -kde
 dev-qt/qtwebchannel qml
 dev-qt/qtwebengine widgets
+kde-frameworks/kdelibs:4 -opengl
 
 # required by some gnome packages
 net-dns/avahi gtk3
