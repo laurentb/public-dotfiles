@@ -58,6 +58,5 @@ net-misc/youtube-dl
 
 # twine
 dev-python/twine
-dev-python/pyblake2
 =dev-python/tqdm-4.11.0
 =dev-python/requests-toolbelt-0.8.0
