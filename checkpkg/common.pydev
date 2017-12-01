@@ -6,6 +6,7 @@ dev-python/feedparser
 dev-python/flake8
 dev-python/flakeplus
 dev-python/ftfy
+dev-python/future
 dev-python/html2text
 dev-python/ipython
 dev-python/isort
