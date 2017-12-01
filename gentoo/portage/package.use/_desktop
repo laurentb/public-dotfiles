@@ -63,7 +63,6 @@ dev-python/PyQt5 multimedia
 dev-qt/qtmultimedia widgets
 
 # calibre deps
-app-text/poppler qt5
 dev-python/PyQt5 webkit
 dev-libs/libpcre pcre16
 dev-qt/qtwebkit:5 printsupport
@@ -102,8 +101,7 @@ app-emulation/libvirt qemu virt-network
 
 app-arch/p7zip -kde
 
-app-crypt/qca gpg gcrypt qt5
-app-crypt/gpgme qt5
+app-crypt/qca gpg gcrypt
 
 app-crypt/pinentry clipboard
 
@@ -115,12 +113,5 @@ net-analyzer/wireshark -gtk -gtk2 -gtk3
 # broken crap (webkit-gtk)
 net-libs/libproxy -webkit
 media-gfx/gimp -webkit
-
-# various qt5
-media-libs/phonon-vlc qt5
-sys-auth/polkit-qt qt5
-media-libs/phonon qt5
-dev-libs/libdbusmenu-qt qt5
-media-libs/phonon-gstreamer qt5
 
 media-gfx/fbida -X
