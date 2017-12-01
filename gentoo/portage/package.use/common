@@ -1,13 +1,12 @@
 # avoid depencies
 app-portage/cfg-update -gnome
+net-analyzer/vnstat -gd
 
 app-editors/vim vim-pager cscope
 
 net-dns/avahi mdnsresponder-compat
 
 net-misc/openssh ldns
-
-net-fs/cifs-utils -acl
 
 dev-vcs/mercurial gpg
 dev-vcs/subversion -dso
@@ -24,8 +23,6 @@ app-text/hunspell l10n_fr l10n_en
 
 app-arch/dtrx 7z cpio rar
 
-net-analyzer/vnstat -gd
-
 net-analyzer/nmap ncat ndiff nping
 
 dev-python/bpython urwid
@@ -35,7 +32,7 @@ dev-python/nose coverage
 dev-db/sqlite secure-delete unlock-notify
 
 net-p2p/mktorrent threads
-net-p2p/rtorrent color xmlrpc
+net-p2p/rtorrent xmlrpc
 
 sys-kernel/genkernel crypt cryptsetup
 sys-fs/udisks cryptsetup
