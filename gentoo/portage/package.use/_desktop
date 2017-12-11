@@ -86,8 +86,6 @@ net-dns/avahi gtk3
 
 app-office/calligra -calligra_features_plan okular
 app-office/libreoffice pdfimport
-dev-libs/liborcus python_single_target_python3_5 -python_single_target_python2_7
-dev-libs/libixion python_single_target_python3_5 -python_single_target_python2_7
 media-gfx/pstoedit plotutils
 dev-libs/xmlsec nss gcrypt
 
