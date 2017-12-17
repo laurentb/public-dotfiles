@@ -215,3 +215,4 @@ media-libs/libwebp abi_x86_32
 net-dns/libidn2 abi_x86_32
 dev-libs/libunistring abi_x86_32
 x11-libs/libXmu abi_x86_32
+media-plugins/gst-plugins-mpg123 abi_x86_32
