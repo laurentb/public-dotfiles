@@ -9,9 +9,14 @@ echo 0 > /sys/devices/system/cpu/cpufreq/ondemand/ignore_nice_load
 # Centiseconds (1sec = 100), default=500
 echo 3000 > /proc/sys/vm/dirty_writeback_centisecs
 
+if [ -f /etc/dotfiles/tags/laptop ]; then
+    LPMP="medium_power"
+else
+    LPMP="max_performance"
+fi
 for OPTION in /sys/class/scsi_host/host*/link_power_management_policy
 do
-    echo min_power > ${OPTION}
+    echo ${LPMP} > ${OPTION}
 done
 
 for OPTION in /sys/devices/virtual/block/md*/md/stripe_cache_size
