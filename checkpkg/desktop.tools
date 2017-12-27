@@ -1,11 +1,10 @@
 x11-plugins/lal
 conky
+cropgui
+fbida
 fslint
 gajim
 gconf-editor
-gmrun
-cropgui
-fbida
 geeqie
 gnome-specimen
 gucharmap
@@ -14,6 +13,7 @@ msmtp
 profile-cleaner
 regexxer
 restview
+rofi
 rsibreak
 rxvt-unicode
 scrot

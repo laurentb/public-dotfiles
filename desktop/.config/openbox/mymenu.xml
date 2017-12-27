@@ -96,7 +96,7 @@
   <separator />
   <menu id="client-list-combined-menu" />
   <item label="Run...">
-    <action name="Execute"><execute>gmrun</execute></action>
+    <action name="Execute"><execute>rofi -combi-modi run,drun -show combi -modi combi,window</execute></action>
   </item>
 
 </menu>

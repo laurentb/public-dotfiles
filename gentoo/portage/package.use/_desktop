@@ -115,3 +115,5 @@ media-gfx/fbida -X
 # https://bugs.gentoo.org/457934
 # I would rather fix my filenames
 app-arch/unzip -natspec
+
+x11-misc/rofi windowmode

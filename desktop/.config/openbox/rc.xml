@@ -250,6 +250,9 @@
         <menu>client-list-combined-menu</menu>
       </action>
     </keybind>
+    <keybind key="W-r">
+        <action name="Execute"><execute>rofi -combi-modi run,drun -show combi -modi combi,window</execute></action>
+    </keybind>
   </keyboard>
   <mouse>
     <dragThreshold>10</dragThreshold>
