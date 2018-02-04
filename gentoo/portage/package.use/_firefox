@@ -1,3 +1,2 @@
-www-client/firefox system-sqlite pgo
-
+www-client/firefox system-sqlite
 mail-client/thunderbird system-sqlite
