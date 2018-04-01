@@ -68,3 +68,6 @@ dev-libs/libixion python_single_target_python3_5
 dev-libs/liborcus python_single_target_python3_5
 dev-libs/volume_key python_single_target_python3_5
 sys-libs/libblockdev python_single_target_python3_5
+
+# not default on all profiles
+dev-libs/libpcre2 jit
