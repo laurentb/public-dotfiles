@@ -12,14 +12,17 @@ dev-python/ipython
 dev-python/isort
 dev-python/nose
 dev-python/pep8
+dev-python/ptpython
 dev-python/pychecker
 dev-python/pyflakes
+dev-python/pygments
 dev-python/pylint
 dev-python/pytest
 dev-python/pytest-cov
 dev-python/pytest-xdist
 dev-python/python-dateutil
 dev-python/sphinx
+dev-python/tqdm
 dev-python/twine
 dev-python/unicode-nazi
 dev-python/virtualenv
