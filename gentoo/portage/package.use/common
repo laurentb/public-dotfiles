@@ -54,6 +54,7 @@ sys-libs/readline utils
 media-libs/libcaca -ruby
 
 app-misc/ca-certificates cacert
+dev-libs/nss cacert
 
 app-crypt/gnupg -smartcard
 
