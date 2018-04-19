@@ -66,8 +66,10 @@ lspci = subprocess.check_output(['lspci', '-k'])
 cards = ['vesa', 'dummy', 'none']
 llvm = ['X86', 'BPF']
 use_cards = []
-if ': i915' in lspci:
+if ': i915' in lspci or ': i965' in lspci:
     cards.append('intel')
+    cards.append('i915')
+    cards.append('i965')
 if ': radeon' in lspci:
     cards.append('radeon')
     cards.append('radeonsi')
