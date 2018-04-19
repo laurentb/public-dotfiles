@@ -1,9 +1,9 @@
 app-misc/screen
+app-shells/dash
 sys-apps/man-db
 sys-apps/progress
 at
 bash-completion
-dash
 fcron
 gentoo-zsh-completions
 logrotate
