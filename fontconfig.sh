@@ -1,4 +1,4 @@
 #!/bin/bash -eu
 cd $(dirname $0)
-eselect --brief modules|grep -q '^fontconfig$' && ./fontconfig.py
+eselect fontconfig version > /dev/null 2>&1 && ./fontconfig.py
 exit 0
