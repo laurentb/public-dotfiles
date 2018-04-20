@@ -41,8 +41,6 @@ dev-python/calabash
 dev-python/chut
 dev-python/ConfigObject
 
-sys-fs/dfc
-
 # hyde
 dev-python/commando
 dev-python/smartypants
