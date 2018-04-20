@@ -1,0 +1,4 @@
+sys-power/acpi
+sys-power/acpitool
+laptop-mode-tools
+xfce4-power-manager
