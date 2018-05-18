@@ -64,6 +64,8 @@ dev-python/twine blake2
 
 app-backup/dar gcrypt
 
+dev-python/ipython -qt5 -smp
+
 # Python 3 only while still having a default to Python 2
 dev-libs/libixion python_single_target_python3_5
 dev-libs/liborcus python_single_target_python3_5
