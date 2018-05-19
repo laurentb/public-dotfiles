@@ -12,7 +12,6 @@ URxvt*font: xft:Droid Sans Mono Dotted:pixelsize=18,\
     xft:Monospace:pixelsize=18,\
     xft:DejaVu Sans Mono:pixelsize=18,\
     xft:Symbola:pixelsize=18
-URxvt*depth: 32
 URxvt*scrollBar: false
 URxvt*scrollstyle: plain
 
@@ -39,7 +38,6 @@ URxvt*color13: #ec93d3
 URxvt*color14: #93e0e3
 URxvt*color15: #ffffff
 
-!URxvt*depth: 32
 URxvt*buffered: true
 URxvt*foreground: #dcdccc
 URxvt*background: #3a3a3a
