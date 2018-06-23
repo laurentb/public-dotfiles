@@ -68,10 +68,10 @@ app-backup/dar gcrypt
 dev-python/ipython -qt5 -smp
 
 # Python 3 only while still having a default to Python 2
-dev-libs/libixion python_single_target_python3_5
-dev-libs/liborcus python_single_target_python3_5
-dev-libs/volume_key python_single_target_python3_5
-sys-libs/libblockdev python_single_target_python3_5
+dev-libs/libixion python_single_target_python3_6
+dev-libs/liborcus python_single_target_python3_6
+dev-libs/volume_key python_single_target_python3_6
+sys-libs/libblockdev python_single_target_python3_6
 
 # not default on all profiles
 dev-libs/libpcre2 jit
