@@ -6,7 +6,7 @@ app-editors/vim vim-pager cscope
 
 net-dns/avahi mdnsresponder-compat
 
-net-misc/openssh ldns
+net-misc/openssh ldns hpn
 
 dev-vcs/mercurial gpg
 dev-vcs/subversion -dso
