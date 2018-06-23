@@ -36,6 +36,7 @@ net-p2p/rtorrent xmlrpc
 
 sys-kernel/genkernel crypt cryptsetup
 sys-fs/udisks cryptsetup
+sys-apps/util-linux static-libs
 
 media-libs/libpng apng
 
