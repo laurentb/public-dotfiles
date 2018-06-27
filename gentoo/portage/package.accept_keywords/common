@@ -56,7 +56,7 @@ net-misc/youtube-dl
 
 # twine
 <dev-python/twine-1.12
-<dev-python/tqdm-4.20.0
+<dev-python/tqdm-4.24.0
 <dev-python/requests-toolbelt-0.9.0
 <dev-python/pkginfo-1.5.0
 
