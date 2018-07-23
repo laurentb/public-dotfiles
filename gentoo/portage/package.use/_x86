@@ -126,6 +126,7 @@ media-plugins/gst-plugins-libav abi_x86_32
 media-plugins/gst-plugins-pulse abi_x86_32
 media-plugins/gst-plugins-meta abi_x86_32
 media-plugins/gst-plugins-flac abi_x86_32
+media-plugins/gst-plugins-gtk abi_x86_32
 media-libs/gst-plugins-base abi_x86_32
 media-plugins/gst-plugins-vpx abi_x86_32
 x11-libs/libXft abi_x86_32
