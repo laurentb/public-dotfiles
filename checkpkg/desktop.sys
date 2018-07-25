@@ -1,3 +1,10 @@
+dhcpcd
+dosfstools
+exfat-utils
+fuse-exfat
+fuseiso
 ifplugd
 netplug
-dhcpcd
+ntfs3g
+simple-mtpfs
+udftools
