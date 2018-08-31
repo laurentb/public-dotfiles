@@ -93,6 +93,8 @@ app-office/libreoffice pdfimport
 media-gfx/pstoedit plotutils
 dev-libs/xmlsec nss gcrypt
 
+media-gfx/krita python_single_target_python3_6
+
 # either gstreamer or pulseaudio
 net-misc/spice-gtk -gstreamer
 
