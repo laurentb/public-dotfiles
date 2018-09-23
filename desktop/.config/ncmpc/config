@@ -1,6 +1,17 @@
 list-format = "[[%artist% :: ]&[%album% ]&[{%track%} ]&[%title%]]|[%file%]"
 status-format = "[[%artist% :: ]&[%album% ]&[{%track%} ]&[%title%]]|[%file%]"
-color background = none
 set-xterm-title = no
-enable-colors = yes
+auto-center = yes
+scroll-offset = 5
 
+enable-colors = yes
+color background = none
+color title = brightblue
+color title-bold = yellow
+color line = brightblue
+color line-flags = yellow
+color progressbar = brightblue
+color status-state = yellow
+color status-song = brightblue
+color status-time = yellow,bold
+color alert = brightred
