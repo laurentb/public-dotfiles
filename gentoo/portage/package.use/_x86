@@ -221,3 +221,7 @@ x11-libs/libXmu abi_x86_32
 media-plugins/gst-plugins-mpg123 abi_x86_32
 media-libs/libsamplerate abi_x86_32
 dev-libs/fribidi abi_x86_32
+dev-libs/libsodium abi_x86_32
+net-libs/libpcap abi_x86_32
+dev-libs/libnl abi_x86_32
+net-wireless/bluez abi_x86_32

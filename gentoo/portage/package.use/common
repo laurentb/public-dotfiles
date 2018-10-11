@@ -2,9 +2,11 @@
 app-portage/cfg-update -gnome
 net-analyzer/vnstat -gd
 
-app-editors/vim vim-pager cscope
+app-editors/vim vim-pager cscope terminal
 
 net-dns/avahi mdnsresponder-compat
+
+dev-util/strace elfutils
 
 net-misc/openssh ldns hpn
 
@@ -25,11 +27,9 @@ app-arch/dtrx 7z cpio rar
 
 net-analyzer/nmap ncat ndiff nping
 
-dev-python/bpython urwid
-
 dev-python/nose coverage
 
-dev-db/sqlite secure-delete unlock-notify
+dev-db/sqlite secure-delete
 
 net-p2p/mktorrent threads
 net-p2p/rtorrent xmlrpc
@@ -46,6 +46,9 @@ dev-libs/nss utils
 sys-apps/pciutils -zlib
 
 net-vpn/openvpn iproute2
+sys-apps/iproute2 elf
+net-libs/libnftnl json
+net-dns/unbound ecdsa gost
 
 www-client/weboob fast-libs
 dev-python/pyyaml libyaml

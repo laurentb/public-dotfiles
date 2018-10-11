@@ -22,7 +22,7 @@ kde-apps/k3b -mp3 -sox
 
 media-plugins/alsa-plugins -ffmpeg -speex -libsamplerate
 
-media-video/mpv lua libmpv
+media-video/mpv lua libmpv cplugins
 media-video/ffmpeg openssl threads rtmp
 virtual/ffmpeg threads
 
