@@ -61,6 +61,8 @@ xscreensaver &
 
 (sleep 4 && nice lal) &
 
+(sleep 5 && nice redshift-gtk) &
+
 type -p wicd-gtk && /etc/init.d/wicd status && (sleep 3 && nice wicd-gtk --tray) &
 type -p xfce4-power-manager && (sleep 4 && nice xfce4-power-manager) &
 
