@@ -19,7 +19,6 @@ kde-apps/akonadi
 # KDE 5 undesirables
 kde-apps/kdebase-meta:5
 kde-plasma/plasma-meta
-kde-plasma/plasma-workspace
 kde-plasma/plasma-desktop
 
 >dev-lang/php-6.0.0

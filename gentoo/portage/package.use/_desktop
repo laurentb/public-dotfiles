@@ -1,8 +1,9 @@
 sys-fs/eudev extras
 
-media-libs/mesa g3dvl osmesa xa xorg gbm gles2 vulkan
+media-libs/mesa g3dvl osmesa xa xorg gbm gles2 vulkan wayland
 x11-apps/mesa-progs egl gles2
 x11-libs/libdrm libkms
+media-libs/libsdl2 gles
 
 media-libs/freetype harfbuzz
 
@@ -84,6 +85,7 @@ virtual/notification-daemon -kde
 dev-qt/qtwebchannel qml
 dev-qt/qtwebengine widgets
 kde-frameworks/kdelibs:4 -opengl
+kde-plasma/plasma-workspace -semantic-desktop
 
 # required by some gnome packages
 net-dns/avahi gtk3
