@@ -27,8 +27,6 @@ media-video/mpv lua libmpv cplugins
 media-video/ffmpeg openssl threads rtmp
 virtual/ffmpeg threads
 
-kde-plasma/ksysguard lm_sensors
-
 media-sound/ncmpc help-screen artist-screen key-screen lyrics-screen search-screen song-screen chat-screen outputs-screen -mouse
 media-sound/ncmpcpp outputs
 
