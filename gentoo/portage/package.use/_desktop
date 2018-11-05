@@ -46,7 +46,7 @@ net-print/gutenprint foomaticdb
 
 media-libs/libcanberra -sound
 
-x11-base/xorg-server xnest xvfb
+x11-base/xorg-server xnest xvfb suid
 
 x11-misc/xscreensaver -opengl
 
