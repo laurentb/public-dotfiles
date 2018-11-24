@@ -11,7 +11,7 @@ dev-util/strace elfutils
 net-misc/openssh ldns hpn
 
 dev-vcs/mercurial gpg
-dev-vcs/subversion -dso
+dev-vcs/subversion -dso -ruby
 app-portage/layman git mercurial subversion
 dev-vcs/git subversion
 
