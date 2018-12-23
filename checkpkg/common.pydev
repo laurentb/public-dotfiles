@@ -26,3 +26,4 @@ dev-python/tqdm
 dev-python/twine
 dev-python/unicode-nazi
 dev-python/virtualenv
+dev-python/wheel

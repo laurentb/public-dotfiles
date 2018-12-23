@@ -11,6 +11,7 @@ openbox
 qt5ct
 read-edid
 slock
+vdpauinfo
 wmctrl
 xbindkeys
 xclock

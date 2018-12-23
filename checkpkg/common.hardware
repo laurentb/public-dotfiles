@@ -1,3 +1,6 @@
+acpi
+acpitool
+cpuid
 cpupower
 dmidecode
 ethtool
@@ -6,6 +9,7 @@ hdparm
 lm_sensors
 lshw
 mcelog
+nvme-cli
 pciutils
 powertop
 sdparm

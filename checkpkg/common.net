@@ -13,10 +13,12 @@ lftp
 links
 lynx
 mailutils
+mosh
 mtr
 netcat
 nmap
 telnet-bsd
+testssl
 traceroute
 w3m
 weboob
