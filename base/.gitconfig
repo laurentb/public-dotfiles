@@ -1,3 +1,4 @@
+# vim: set noexpandtab:
 [color]
 	branch = auto
 	diff = auto
@@ -39,6 +40,25 @@
 	path = .gitconfig.sendemail
 [branch]
 	autosetuprebase = always
-# vim: set noexpandtab:
+	sort=-committerdate
 [rebase]
 	autoStash = true
+[am]
+	threeWay = true
+[pull]
+	rebase = preserve
+[log]
+	showSignature = true
+	mailmap = true
+[diff]
+	mnemonicPrefix = true
+	renames = true
+	submodule = log
+[fetch]
+	recurseSubmodules = check
+[tag]
+	sort = version:refname
+[grep]
+	extendedRegexp = true
+[merge]
+	ff = only
