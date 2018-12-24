@@ -4,6 +4,7 @@ app-misc/color
 app-misc/hilite
 app-misc/mc
 app-misc/rl
+app-misc/symlinks
 app-text/dos2unix
 app-text/tree
 sys-apps/ack
