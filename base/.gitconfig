@@ -28,6 +28,7 @@
 	pager = cat
 [push]
 	default = upstream
+	recurseSubmodules = check
 [gitgoggles]
 	fetch = false
 [diff "gpg"]
@@ -54,8 +55,6 @@
 	mnemonicPrefix = true
 	renames = true
 	submodule = log
-[fetch]
-	recurseSubmodules = check
 [tag]
 	sort = version:refname
 [grep]
