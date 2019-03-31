@@ -125,3 +125,5 @@ app-arch/unzip -natspec
 x11-misc/rofi windowmode
 
 net-libs/nodejs inspector
+
+www-client/chromium -closure-compile
