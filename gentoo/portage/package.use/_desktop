@@ -88,7 +88,7 @@ kde-plasma/plasma-workspace -semantic-desktop
 # required by some gnome packages
 net-dns/avahi gtk3
 
-app-office/calligra -calligra_features_plan okular
+app-office/calligra calligra_features_stage okular
 app-office/libreoffice pdfimport
 media-gfx/pstoedit plotutils
 dev-libs/xmlsec nss gcrypt
