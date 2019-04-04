@@ -3,7 +3,7 @@ sys-fs/eudev extras
 media-libs/mesa g3dvl osmesa xa xorg gbm gles2 vulkan
 x11-apps/mesa-progs egl gles2
 x11-libs/libdrm libkms
-media-libs/libsdl2 gles
+media-libs/libsdl2 gles haptic
 
 media-libs/freetype harfbuzz
 
