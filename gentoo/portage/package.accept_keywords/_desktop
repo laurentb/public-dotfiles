@@ -14,8 +14,6 @@ app-admin/profile-cleaner
 
 x11-misc/shutter
 
-<media-gfx/cropgui-0.3
-
 app-misc/mat::laurentb
 
 <app-text/restview-2.8.0
@@ -24,8 +22,9 @@ app-misc/mat::laurentb
 dev-python/readme_renderer
 dev-python/webencodings
 
-<net-news/newsboat-2.12
-
 <net-im/gajim-0.17.0
-<dev-python/python-gnupg-0.5.0
 <dev-python/python-nbxmpp-0.7.0
+
+media-sound/aucdtect
+media-sound/dr14tmeter
+media-sound/redoflacs

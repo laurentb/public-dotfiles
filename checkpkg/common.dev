@@ -15,6 +15,7 @@ git-publish-branch
 git-wtf
 mercurial
 overlint
+repoman
 strace
 subversion
 vim

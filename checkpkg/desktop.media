@@ -7,8 +7,11 @@ media-video/ffmpeg
 media-video/mpv
 alsa-plugins
 alsa-utils
+android-tools
 dnuos
+dr14tmeter
 ladspa-bs2b
+mediainfo
 mpdscribble
 ncmpc
 ncmpcpp
@@ -17,6 +20,8 @@ paprefs
 pavucontrol
 pavumeter
 puddletag
+python-mpd
+redoflacs
 sonata
 vorbis-tools
 vorbisgain
