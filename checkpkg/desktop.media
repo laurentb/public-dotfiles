@@ -5,6 +5,7 @@ media-sound/mpd
 media-sound/sox
 media-video/ffmpeg
 media-video/mpv
+media-video/vlc
 alsa-plugins
 alsa-utils
 android-tools
