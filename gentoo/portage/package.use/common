@@ -42,6 +42,8 @@ media-libs/libpng apng
 
 dev-libs/nss utils
 
+mail-mta/msmtp daemon
+
 # required by udev[hwdb]
 sys-apps/pciutils -zlib
 
