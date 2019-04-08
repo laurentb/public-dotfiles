@@ -27,17 +27,17 @@ media-video/mpv lua libmpv cplugins
 media-video/ffmpeg openssl threads rtmp
 virtual/ffmpeg threads
 
-media-sound/ncmpc help-screen artist-screen key-screen lyrics-screen search-screen song-screen chat-screen outputs-screen -mouse
+media-sound/ncmpc help-screen library-screen key-screen lyrics-screen search-screen song-screen chat-screen outputs-screen -mouse
 media-sound/ncmpcpp outputs
 
-x11-terms/rxvt-unicode -vanilla 256-color fading-colors font-styles wcwidth unicode3 alt-font-width iso14755
+x11-terms/rxvt-unicode 256-color fading-colors font-styles unicode3 iso14755
 
 x11-wm/openbox xdg
 
 kde-apps/okular ebook
 
-net-im/gajim -gnome srv trayicon
-app-dicts/verbiste -gnome
+net-im/gajim remote keyring -spell python_single_target_python3_6
+dev-libs/gobject-introspection python_single_target_python3_6 -python_single_target_python2_7
 
 media-sound/audacity vamp soundtouch midi
 
@@ -95,9 +95,6 @@ media-gfx/pstoedit plotutils
 dev-libs/xmlsec nss gcrypt
 
 media-gfx/krita python_single_target_python3_6
-
-# either gstreamer or pulseaudio
-net-misc/spice-gtk -gstreamer
 
 app-emulation/qemu spice usbredir -accessibility
 app-emulation/libvirt qemu virt-network
