@@ -17,6 +17,7 @@ mosh
 mtr
 netcat
 nmap
+pythonwhois
 telnet-bsd
 testssl
 traceroute

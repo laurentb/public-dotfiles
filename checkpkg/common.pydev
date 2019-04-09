@@ -7,6 +7,7 @@ dev-python/flake8
 dev-python/flakeplus
 dev-python/ftfy
 dev-python/future
+dev-python/geopy
 dev-python/html2text
 dev-python/ipython
 dev-python/isort
@@ -14,6 +15,7 @@ dev-python/nose
 dev-python/pep8
 dev-python/ptpython
 dev-python/pychecker
+dev-python/pycryptodome
 dev-python/pyflakes
 dev-python/pygments
 dev-python/pylint
@@ -21,6 +23,7 @@ dev-python/pytest
 dev-python/pytest-cov
 dev-python/pytest-xdist
 dev-python/python-dateutil
+dev-python/python-jose
 dev-python/sphinx
 dev-python/tqdm
 dev-python/twine
