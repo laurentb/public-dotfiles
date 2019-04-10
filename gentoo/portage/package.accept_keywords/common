@@ -6,9 +6,6 @@ app-arch/dtrx
 
 media-sound/dnuos
 
-dev-vcs/git-wtf
-dev-vcs/git-publish-branch
-
 dev-vcs/git-goggles
 
 app-arch/duff
