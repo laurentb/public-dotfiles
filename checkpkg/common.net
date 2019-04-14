@@ -5,7 +5,6 @@ bind-tools
 curl
 fping
 ftp
-gnu-netcat
 httpie
 ldns-utils
 lft
@@ -15,8 +14,8 @@ lynx
 mailutils
 mosh
 mtr
-netcat
 nmap
+openbsd-netcat
 pythonwhois
 telnet-bsd
 testssl
