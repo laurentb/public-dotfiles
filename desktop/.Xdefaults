@@ -7,13 +7,15 @@ Xft.hintstyle:  hintslight
 Xft.lcdfilter:  lcddefault
 Xft.rgba:       rgb
 
-URxvt*font: xft:Droid Sans Mono Dotted:pixelsize=18,\
+URxvt.font: xft:Droid Sans Mono Dotted:pixelsize=18,\
     xft:Droid Sans Mono:pixelsize=18,\
     xft:Monospace:pixelsize=18,\
     xft:DejaVu Sans Mono:pixelsize=18,\
     xft:Symbola:pixelsize=18
-URxvt*scrollBar: false
-URxvt*scrollstyle: plain
+URxvt.scrollBar: false
+URxvt.scrollstyle: plain
+URxvt.saveLines: 0
+URxvt.letterSpace: -1
 
 ! Color codes:
 ! 0: black, 1: red, 2: green, 3: yellow,
@@ -21,58 +23,58 @@ URxvt*scrollstyle: plain
 ! n + 8 = bold n
 
 ! Zenburn
-URxvt*color0:  #1E2320
-URxvt*color1:  #705050
-URxvt*color2:  #60b48a
-URxvt*color3:  #dfaf8f
-URxvt*color4:  #506070
-URxvt*color5:  #dc8cc3
-URxvt*color6:  #8cd0d3
-URxvt*color7:  #dcdccc
-URxvt*color8:  #709080
-URxvt*color9:  #dca3a3
-URxvt*color10: #c3bf9f
-URxvt*color11: #f0dfaf
-URxvt*color12: #94bff3
-URxvt*color13: #ec93d3
-URxvt*color14: #93e0e3
-URxvt*color15: #ffffff
+URxvt.color0:  #1E2320
+URxvt.color1:  #705050
+URxvt.color2:  #60b48a
+URxvt.color3:  #dfaf8f
+URxvt.color4:  #506070
+URxvt.color5:  #dc8cc3
+URxvt.color6:  #8cd0d3
+URxvt.color7:  #dcdccc
+URxvt.color8:  #709080
+URxvt.color9:  #dca3a3
+URxvt.color10: #c3bf9f
+URxvt.color11: #f0dfaf
+URxvt.color12: #94bff3
+URxvt.color13: #ec93d3
+URxvt.color14: #93e0e3
+URxvt.color15: #ffffff
 
-URxvt*buffered: true
-URxvt*foreground: #dcdccc
-URxvt*background: #3a3a3a
+URxvt.buffered: true
+URxvt.foreground: #dcdccc
+URxvt.background: #3a3a3a
 
 ! change the default color of bold
-URxvt*colorBD: #94bff3
+URxvt.colorBD: #94bff3
 
-URxvt*geometry: 80x24
+URxvt.geometry: 80x24
 
-URxvt*title: terminal
+URxvt.title: terminal
 
-URxvt*visualBell: false
-URxvt*urgentOnBell: true
+URxvt.visualBell: false
+URxvt.urgentOnBell: true
 
-URxvt*pointerBlank: true
-URxvt*pointerBlankDelay: 10
+URxvt.pointerBlank: true
+URxvt.pointerBlankDelay: 10
 
 ! I use screen instead
-URxvt*saveLines: 0
+URxvt.saveLines: 0
 
-URxvt*internalBorder: 0
-URxvt*externalBorder: 0
+URxvt.internalBorder: 0
+URxvt.externalBorder: 0
 
-URxvt*loginShell: true
+URxvt.loginShell: true
 
 ! C-z
 URxvt.keysym.Menu: \032
 
 Xcursor.theme: OpenZone_Black
 
-lal*font: Droid Sans Mono Dotted
-lal*bold: false
-lal*fontsize: 16
-lal*color: #3a3a3a
-lal*width: 42
-lal*format: %H%M
+lal.font: Droid Sans Mono Dotted
+lal.bold: false
+lal.fontsize: 16
+lal.color: #3a3a3a
+lal.width: 42
+lal.format: %H%M
 
 URxvt.print-pipe: cat > $(mktemp -p ~/tmp urxvt.XXXXXX)
