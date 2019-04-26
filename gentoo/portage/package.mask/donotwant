@@ -22,3 +22,6 @@ kde-plasma/plasma-meta
 kde-plasma/plasma-desktop
 
 >dev-lang/php-6.0.0
+
+# Python 3 only
+>dev-python/keyring-18.0.0
