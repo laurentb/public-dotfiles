@@ -125,3 +125,6 @@ x11-misc/rofi windowmode
 net-libs/nodejs inspector
 
 www-client/chromium -closure-compile
+
+dev-lang/go gccgo system-bootstrap
+sys-devel/gcc go
