@@ -16,14 +16,8 @@ x11-misc/shutter
 
 app-misc/mat::laurentb
 
-<app-text/restview-2.8.0
-=dev-python/html5lib-0.999999999
-<dev-python/bleach-2.2.0
+<app-text/restview-2.9.0
 dev-python/readme_renderer
-dev-python/webencodings
-
-<net-im/gajim-0.17.0
-<dev-python/python-nbxmpp-0.7.0
 
 media-sound/aucdtect
 media-sound/dr14tmeter
