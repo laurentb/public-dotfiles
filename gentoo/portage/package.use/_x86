@@ -235,3 +235,8 @@ sys-libs/cracklib abi_x86_32
 sys-devel/flex abi_x86_32
 virtual/pam abi_x86_32
 sys-libs/db abi_x86_32
+dev-libs/serd abi_x86_32
+media-libs/lv2 abi_x86_32
+dev-libs/sord abi_x86_32
+media-libs/sratom abi_x86_32
+media-libs/lilv abi_x86_32

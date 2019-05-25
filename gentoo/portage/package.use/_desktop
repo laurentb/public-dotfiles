@@ -24,7 +24,7 @@ kde-apps/k3b -mp3 -sox
 media-plugins/alsa-plugins -ffmpeg -speex -libsamplerate
 
 media-video/mpv lua libmpv cplugins
-media-video/ffmpeg openssl threads rtmp
+media-video/ffmpeg openssl threads rtmp libxml2
 virtual/ffmpeg threads
 
 media-sound/ncmpc help-screen library-screen key-screen lyrics-screen search-screen song-screen chat-screen outputs-screen -mouse
