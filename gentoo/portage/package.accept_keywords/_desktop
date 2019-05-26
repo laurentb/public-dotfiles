@@ -22,3 +22,6 @@ dev-python/readme_renderer
 media-sound/aucdtect
 media-sound/dr14tmeter
 media-sound/redoflacs
+
+# https://bugs.gentoo.org/686454
+=media-libs/gegl-0.2.0-r6
