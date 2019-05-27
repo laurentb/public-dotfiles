@@ -128,3 +128,5 @@ www-client/chromium -closure-compile
 
 dev-lang/go system-bootstrap
 sys-devel/gcc go
+
+net-misc/tigervnc server
