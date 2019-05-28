@@ -51,7 +51,7 @@ dev-util/vmtouch
 
 net-misc/youtube-dl
 
-<dev-python/ftfy-5.0.0
+dev-python/ftfy
 
 # twine
 <dev-python/twine-1.12
