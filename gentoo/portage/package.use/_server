@@ -1,4 +1,4 @@
-dev-lang/php bcmath calendar cgi curlwrappers exif flatfile fpm gd gmp imap inifile intl mhash mysql mysqli mysqlnd pcntl pdo sharedmem sqlite soap sockets sysvipc tidy wddx xmlrpc xslt zip xmlreader xmlwriter
+dev-lang/php bcmath calendar cli cgi curlwrappers exif flatfile fpm gd gmp imap inifile intl mhash mysql mysqli mysqlnd pcntl pdo sharedmem sqlite soap sockets sysvipc tidy wddx xmlrpc xslt zip xmlreader xmlwriter
 app-eselect/eselect-php fpm
 
 www-servers/lighttpd fam libev fastcgi php -webdav
