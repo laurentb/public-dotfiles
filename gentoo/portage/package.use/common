@@ -84,3 +84,6 @@ app-text/asciidoc python_single_target_python3_6
 
 # not default on all profiles
 dev-libs/libpcre2 jit
+
+dev-lang/go system-bootstrap
+sys-devel/gcc go
