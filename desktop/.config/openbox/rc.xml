@@ -584,9 +584,16 @@
       </mousebind>
     </context>
     <context name="Frame">
-      <mousebind button="Button10" action="Press">
+      <mousebind button="Button8" action="Press">
         <action name="ShowMenu">
           <menu>client-list-combined-menu</menu>
+        </action>
+      </mousebind>
+      <mousebind button="Button9" action="Press">
+        <action name="NextWindow">
+          <allDesktops>no</allDesktops>
+          <linear>yes</linear>
+          <interactive>no</interactive>
         </action>
       </mousebind>
     </context>
