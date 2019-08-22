@@ -16,6 +16,8 @@ media-fonts/ja-ipafonts
 media-fonts/liberation-fonts
 media-fonts/libertine
 media-fonts/noto
+media-fonts/noto-cjk
+media-fonts/noto-emoji
 media-fonts/nunito
 media-fonts/powerline-symbols
 media-fonts/roboto

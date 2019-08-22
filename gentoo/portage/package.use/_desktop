@@ -10,6 +10,7 @@ media-libs/freetype harfbuzz
 media-fonts/source-pro cjk
 media-fonts/corefonts tahoma
 media-fonts/terminus-font distinct-l
+media-fonts/noto cjk
 
 net-p2p/amule daemon remote stats
 
