@@ -8,3 +8,4 @@
 --type-set=jinja=.j2
 --type-set=mako=.mako,.mak
 --type-set=doc=.rst,.md,.txt
+--smart-case
