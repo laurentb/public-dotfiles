@@ -60,3 +60,5 @@ dev-python/ftfy
 <dev-python/dnspython-1.17
 
 dev-python/pythonwhois
+
+sys-fs/duperemove

@@ -5,12 +5,14 @@ app-arch/duff
 app-arch/par2cmdline
 app-backup/dar
 app-crypt/gnupg
+app-crypt/rhash
 cryptsetup
 dnotify
 dtrx
 keychain
 lrzip
 lrzip
+lzip
 p7zip
 pbzip2
 zopfli

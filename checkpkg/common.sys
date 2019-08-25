@@ -4,6 +4,7 @@ sys-block/di
 sys-block/parted
 btrfs-progs
 bwm-ng
+duperemove
 genkernel
 gptfdisk
 haveged
