@@ -1,4 +1,4 @@
-app-emulation/wine-vanilla -scanner -v4l -cups -vaapi openal
+app-emulation/wine-vanilla -scanner -v4l -cups -vaapi -realtime openal
 app-emulation/wine-gecko abi_x86_32
 
 dev-libs/elfutils abi_x86_32

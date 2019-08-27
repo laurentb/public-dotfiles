@@ -53,7 +53,7 @@ x11-misc/xscreensaver -opengl
 
 x11-misc/shutter drawing
 
-media-sound/pulseaudio realtime equalizer -libsamplerate
+media-sound/pulseaudio equalizer -libsamplerate
 
 dev-python/PyQt4 declarative multimedia xmlpatterns script designer
 dev-qt/qtgui:4 gtkstyle
@@ -131,3 +131,5 @@ net-misc/tigervnc server
 
 # use only one GUI
 net-p2p/transmission -qt5
+
+net-misc/networkmanager -gnutls -modemmanager -bluetooth -ppp

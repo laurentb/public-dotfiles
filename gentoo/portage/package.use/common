@@ -87,3 +87,6 @@ dev-libs/libpcre2 jit
 
 dev-lang/go system-bootstrap
 sys-devel/gcc go
+
+app-emulation/docker -device-mapper -btrfs seccomp
+app-emulation/containerd -btrfs
