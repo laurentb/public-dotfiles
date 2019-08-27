@@ -11,6 +11,8 @@ dev-python/geopy
 dev-python/html2text
 dev-python/ipython
 dev-python/isort
+dev-python/jinja
+dev-python/mako
 dev-python/natsort
 dev-python/nose
 dev-python/pep8
@@ -33,3 +35,5 @@ dev-python/unidecode
 dev-python/virtualenv
 dev-python/vulture
 dev-python/wheel
+dev-python/Babel
+dev-python/termcolor

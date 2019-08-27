@@ -5,6 +5,7 @@ sys-block/parted
 btrfs-progs
 bwm-ng
 duperemove
+eudev
 genkernel
 gptfdisk
 haveged
@@ -15,6 +16,7 @@ mdadm
 mlocate
 nethogs
 netifrc
+schedtool
 sysstat
 tiptop
 vmtouch

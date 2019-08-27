@@ -1,9 +1,12 @@
+bluez
+bluez-firmware
 dhcpcd
 dosfstools
 exfat-utils
 fuse-exfat
 fuseiso
 ifplugd
+memtest86+
 netplug
 ntfs3g
 simple-mtpfs
