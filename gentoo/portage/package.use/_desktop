@@ -91,7 +91,7 @@ kde-plasma/plasma-workspace -semantic-desktop
 net-dns/avahi gtk3
 
 app-office/calligra calligra_features_stage okular
-app-office/libreoffice pdfimport
+app-office/libreoffice pdfimport googledrive
 media-gfx/pstoedit plotutils
 dev-libs/xmlsec nss gcrypt
 
@@ -133,3 +133,6 @@ net-misc/tigervnc server
 net-p2p/transmission -qt5
 
 net-misc/networkmanager -gnutls -modemmanager -bluetooth -ppp
+
+www-client/firefox system-sqlite hwaccel geckodriver
+mail-client/thunderbird system-sqlite
