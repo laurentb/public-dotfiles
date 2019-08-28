@@ -240,3 +240,7 @@ media-libs/lv2 abi_x86_32
 dev-libs/sord abi_x86_32
 media-libs/sratom abi_x86_32
 media-libs/lilv abi_x86_32
+virtual/opencl abi_x86_32
+dev-libs/ocl-icd abi_x86_32
+media-libs/vulkan-loader abi_x86_32
+sys-devel/clang abi_x86_32
