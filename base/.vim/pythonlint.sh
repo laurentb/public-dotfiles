@@ -1,4 +1,7 @@
-#!/bin/bash -ue
+#!/bin/bash -u
+EPYTHON=$(eselect python show --python3)
+[ -n "${EPYTHON}" ] && export EPYTHON
+set -e
 # fail on pyflakes errors
 flake8 --select=E9,F "$@"
 # if no pyflakes errors, run isort + pep8
