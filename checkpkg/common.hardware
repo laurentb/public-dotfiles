@@ -6,7 +6,7 @@ dmidecode
 ethtool
 hddtemp
 hdparm
-lm_sensors
+lm-sensors
 lshw
 mcelog
 nvme-cli

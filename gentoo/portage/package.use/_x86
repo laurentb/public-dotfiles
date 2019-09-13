@@ -227,7 +227,7 @@ dev-libs/libnl abi_x86_32
 net-wireless/bluez abi_x86_32
 dev-libs/wayland abi_x86_32
 x11-libs/libxkbcommon abi_x86_32
-sys-apps/lm_sensors abi_x86_32
+sys-apps/lm-sensors abi_x86_32
 media-libs/graphene abi_x86_32
 app-arch/zstd abi_x86_32
 sys-libs/pam abi_x86_32
