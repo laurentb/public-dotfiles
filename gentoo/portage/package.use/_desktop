@@ -134,3 +134,6 @@ net-misc/networkmanager -gnutls -modemmanager -bluetooth -ppp
 
 www-client/firefox system-sqlite hwaccel geckodriver
 mail-client/thunderbird system-sqlite
+
+dev-python/PyQt4 -webkit -phonon -declarative -designer
+dev-qt/qtcore:4 -icu -ssl
