@@ -17,6 +17,7 @@ mtr
 nmap
 openbsd-netcat
 pythonwhois
+socat
 telnet-bsd
 testssl
 traceroute
