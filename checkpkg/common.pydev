@@ -37,3 +37,4 @@ dev-python/vulture
 dev-python/wheel
 dev-python/Babel
 dev-python/termcolor
+dev-python/webob
