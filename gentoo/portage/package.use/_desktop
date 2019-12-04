@@ -39,6 +39,7 @@ kde-apps/okular ebook
 
 net-im/gajim remote keyring -spell python_single_target_python3_6
 media-gfx/krita python_single_target_python3_6
+kde-frameworks/ki18n python_single_target_python3_6
 
 media-sound/audacity vamp soundtouch midi
 
@@ -78,7 +79,7 @@ kde-apps/dolphin -thumbnail
 kde-apps/kate -addons
 kde-apps/kdebase-data -wallpapers
 kde-apps/kdebase-meta -wallpapers -display-manager minimal
-kde-apps/kdecore-meta -wallpapers minimal
+kde-apps/kdecore-meta -wallpapers -thumbnail minimal
 kde-plasma/systemsettings classic
 kde-plasma/plasma-workspace -geolocation
 virtual/notification-daemon -kde
