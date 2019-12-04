@@ -114,6 +114,9 @@ net-analyzer/wireshark -gtk -gtk2 -gtk3
 net-libs/libproxy -webkit
 media-gfx/gimp -webkit
 
+# requires older versions
+media-gfx/inkscape -imagemagick
+
 media-gfx/fbida -X
 
 # https://bugs.gentoo.org/457934
