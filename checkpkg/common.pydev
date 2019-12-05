@@ -15,7 +15,6 @@ dev-python/jinja
 dev-python/mako
 dev-python/natsort
 dev-python/nose
-dev-python/pep8
 dev-python/ptpython
 dev-python/pychecker
 dev-python/pycryptodome
