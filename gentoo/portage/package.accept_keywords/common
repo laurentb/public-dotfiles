@@ -30,8 +30,6 @@ dev-python/xunitparser
 
 dev-python/unicode-nazi
 
-dev-python/flakeplus
-
 dev-python/sh
 dev-python/unipath
 dev-python/vulture

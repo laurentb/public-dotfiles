@@ -4,7 +4,6 @@ dev-python/coverage
 dev-python/fabric
 dev-python/feedparser
 dev-python/flake8
-dev-python/flakeplus
 dev-python/ftfy
 dev-python/future
 dev-python/geopy
@@ -16,7 +15,6 @@ dev-python/mako
 dev-python/natsort
 dev-python/nose
 dev-python/ptpython
-dev-python/pychecker
 dev-python/pycryptodome
 dev-python/pyflakes
 dev-python/pygments
