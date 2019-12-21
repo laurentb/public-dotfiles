@@ -2,6 +2,7 @@ app-admin/lib_users
 net-analyzer/slurm
 sys-block/di
 sys-block/parted
+sys-boot/grub
 btrfs-progs
 bwm-ng
 duperemove
