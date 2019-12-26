@@ -5,11 +5,15 @@ user_interface = "alternative"
 
 song_columns_list_format = "(4)[blue]{n} (31)[yellow]{a} (29)[cyan]{b} (30)[red]{t} (6)[blue]{l}"
 alternative_header_first_line_format = "$2$aqqu$/a {%N} $b{%t}|{%f}$/b $atqq$/a$9"
+progressbar_look = "·· "
+playlist_shorten_total_times = "yes"
 
 mouse_support = "no"
 
 autocenter_mode = "yes"
 
-progressbar_look = "·· "
-
 titles_visibility = "no"
+
+allow_for_physical_item_deletion = "no"
+jump_to_now_playing_song_at_start = "yes"
+enable_window_title = "no"
