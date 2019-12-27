@@ -92,3 +92,5 @@ sys-devel/gcc go
 
 app-emulation/docker -device-mapper -btrfs seccomp
 app-emulation/containerd -btrfs
+
+sys-boot/grub -themes -truetype -nls
