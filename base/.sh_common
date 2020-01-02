@@ -2,7 +2,7 @@
 
 [ -f ~/.sh_vars ] && . ~/.sh_vars
 
-if type -p keychain > /dev/null; then
+if hash keychain 2>/dev/null; then
     [ -d ~/.ssh ] && eval "$(keychain --inherit any --eval -Q -q --agents ssh)"
     [ -d ~/.gnupg/private-keys-v1.d ] && find ~/.gnupg/private-keys-v1.d -mindepth 1 | read && eval "$(keychain --eval -Q -q --agents gpg)"
     # only ask for passphrase when needed
@@ -28,7 +28,7 @@ alias rmdir='rmdir -v'
 alias mkdir='mkdir -pv'
 alias chmod='chmod -c'
 alias chown='chown -c'
-[ -x '/usr/bin/dtrx' ] && alias dtrx='dtrx -v'
+hash dtrx 2>/dev/null && alias dtrx='dtrx -v'
 
 # colors
 if [ -x /usr/bin/dircolors ]; then
@@ -46,11 +46,11 @@ alias la='ls -A'
 alias lla='ls -lAh'
 
 # not using vimpager by default since it doesn't handle streaming input
-[ -x '/usr/bin/most' ] && export PAGER='/usr/bin/most'
-[ -x '/usr/bin/vimmanpager' ] && export MANPAGER='/usr/bin/vimmanpager'
+hash most 2>/dev/null && export PAGER='most'
+hash vimmanpager 2>/dev/null && export MANPAGER='vimmanpager'
 
-if [ -x '/usr/bin/vim' ]; then
-    export EDITOR='/usr/bin/vim'
+if hash vim 2>/dev/null; then
+    export EDITOR='vim'
     # for systems where vi is not vim
     alias vi=vim
 fi
