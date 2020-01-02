@@ -2,9 +2,9 @@
 
 [ -f ~/.sh_vars ] && . ~/.sh_vars
 
-if [ -x /usr/bin/keychain ]; then
-    [ -d ~/.ssh ] && eval "$(/usr/bin/keychain --eval -Q -q --agents ssh)"
-    [ -d ~/.gnupg ] && eval "$(/usr/bin/keychain --eval -Q -q --agents gpg)"
+if type -p keychain > /dev/null; then
+    [ -d ~/.ssh ] && eval "$(keychain --inherit any --eval -Q -q --agents ssh)"
+    [ -d ~/.gnupg/private-keys-v1.d ] && find ~/.gnupg/private-keys-v1.d -mindepth 1 | read && eval "$(keychain --eval -Q -q --agents gpg)"
     # only ask for passphrase when needed
     alias ssh="${HOME}/.sshwrap"
     alias mosh="mosh --ssh=${HOME}/.sshwrap"
@@ -14,8 +14,8 @@ fi
 
 # disable flow control
 if tty -s ; then
-stty -ixon
-stty -ixoff
+    stty -ixon
+    stty -ixoff
 fi
 
 # safety/verbosity aliases
