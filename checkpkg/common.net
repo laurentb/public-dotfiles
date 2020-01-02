@@ -1,3 +1,4 @@
+net-ftp/ftp
 net-misc/ipcalc
 net-misc/ipv6calc
 aria2
@@ -5,7 +6,6 @@ arping
 bind-tools
 curl
 fping
-ftp
 httpie
 ldns-utils
 lft
