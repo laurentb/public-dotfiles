@@ -1,10 +1,15 @@
 #!/bin/sh
-for OPTION in /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
-do
-    echo ondemand > ${OPTION}
+shopt -s nullglob
+
+for CPUFREQ in /sys/devices/system/cpu/cpu*/cpufreq; do
+    if grep -vq "intel_pstate" ${CPUFREQ}/scaling_driver; then
+        echo "ondemand" > ${CPUFREQ}/scaling_governor
+    fi
 done
 
-echo 0 > /sys/devices/system/cpu/cpufreq/ondemand/ignore_nice_load
+if [ -e /sys/devices/system/cpu/cpufreq/ondemand/ignore_nice_load ]; then
+    echo 0 > /sys/devices/system/cpu/cpufreq/ondemand/ignore_nice_load
+fi
 
 # Centiseconds (1sec = 100), default=500
 echo 3000 > /proc/sys/vm/dirty_writeback_centisecs
@@ -14,18 +19,17 @@ if [ -f /etc/dotfiles/tags/laptop ]; then
 else
     LPMP="max_performance"
 fi
-for OPTION in /sys/class/scsi_host/host*/link_power_management_policy
-do
+for OPTION in /sys/class/scsi_host/host*/link_power_management_policy; do
     echo ${LPMP} > ${OPTION}
 done
 
-for OPTION in /sys/devices/virtual/block/md*/md/stripe_cache_size
-do
-    echo 4096 > ${OPTION}
+for MDSTRIPE in /sys/devices/virtual/block/md*/md/stripe_cache_size; do
+    echo 4096 > ${MDSTRIPE}
 done
 
 if [ -f /etc/dotfiles/tags/desktop ]; then
-    for SCHD in /sys/block/sd?/queue/scheduler; do
+    # NVME stays with default scheduler
+    for SCHD in /sys/block/sd*/queue/scheduler; do
         echo "bfq" > ${SCHD}
     done
 fi
