@@ -1,7 +1,9 @@
 #!/bin/sh
 shopt -s nullglob
 
+# https://wiki.gentoo.org/wiki/Power_management/Processor
 for CPUFREQ in /sys/devices/system/cpu/cpu*/cpufreq; do
+    # The intel driver is better and has its own meanings for governors
     if grep -vq "intel_pstate" ${CPUFREQ}/scaling_driver; then
         echo "ondemand" > ${CPUFREQ}/scaling_governor
     fi
@@ -27,6 +29,9 @@ for MDSTRIPE in /sys/devices/virtual/block/md*/md/stripe_cache_size; do
     echo 4096 > ${MDSTRIPE}
 done
 
+# TODO use udev rules instead
+# TODO only for HDDs?
+# https://wiki.archlinux.org/index.php/Improving_performance
 if [ -f /etc/dotfiles/tags/desktop ]; then
     # NVME stays with default scheduler
     for SCHD in /sys/block/sd*/queue/scheduler; do
