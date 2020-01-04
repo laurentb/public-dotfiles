@@ -24,8 +24,6 @@ dev-python/python-jose
 
 <net-misc/httpie-1.1
 
-sys-apps/jsonpipe
-
 dev-python/xunitparser
 
 dev-python/unicode-nazi
@@ -33,7 +31,6 @@ dev-python/unicode-nazi
 dev-python/sh
 dev-python/unipath
 dev-python/vulture
-dev-python/calabash
 
 dev-python/chut
 dev-python/ConfigObject

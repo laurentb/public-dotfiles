@@ -1,4 +1,5 @@
 app-admin/lib_users
+app-admin/restart-services
 net-analyzer/slurm
 sys-block/di
 sys-block/parted
