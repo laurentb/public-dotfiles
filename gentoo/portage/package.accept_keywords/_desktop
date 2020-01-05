@@ -16,12 +16,9 @@ x11-misc/shutter
 
 app-misc/mat::laurentb
 
-<app-text/restview-2.9.0
+app-text/restview
 dev-python/readme_renderer
 
 media-sound/aucdtect
 media-sound/dr14tmeter
 media-sound/redoflacs
-
-# https://bugs.gentoo.org/704720
-=media-libs/shaderc-2019.0-r1

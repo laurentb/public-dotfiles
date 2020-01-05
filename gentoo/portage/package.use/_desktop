@@ -21,6 +21,7 @@ app-admin/conky mpd
 media-sound/mpd lame -mikmod -ffmpeg -aac
 media-video/vlc matroska rtsp stream kate libass
 kde-apps/k3b -mp3 -sox
+dev-python/python-mpd -twisted
 
 media-plugins/alsa-plugins -ffmpeg -speex -libsamplerate
 
