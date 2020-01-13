@@ -96,3 +96,5 @@ app-emulation/containerd -btrfs
 sys-boot/grub -themes -truetype -nls
 
 app-misc/jq oniguruma
+
+sys-fs/quota -netlink
