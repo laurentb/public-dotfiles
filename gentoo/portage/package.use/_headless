@@ -1,8 +1,6 @@
 net-im/pidgin -gtk -gstreamer -startup-notification -xscreensaver -zeroconf
 
-dev-python/pillow -scanner
-
+dev-python/pillow -scanner jpeg webp
 media-libs/libcaca imlib
-media-libs/imlib2 gif jpeg png -X -shm
-
-media-gfx/imagemagick jpeg png
+media-libs/imlib2 gif jpeg png webp -X -shm
+media-gfx/imagemagick jpeg png webp
