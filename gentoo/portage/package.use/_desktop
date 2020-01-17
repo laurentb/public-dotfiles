@@ -42,6 +42,8 @@ net-im/gajim remote keyring -spell python_single_target_python3_6
 media-gfx/krita python_single_target_python3_6
 kde-frameworks/ki18n python_single_target_python3_6
 dev-util/itstool python_single_target_python3_6
+app-office/libreoffice python_single_target_python3_6
+media-libs/lv2 python_single_target_python3_6
 
 media-sound/audacity vamp soundtouch midi
 
