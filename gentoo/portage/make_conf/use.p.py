@@ -24,4 +24,4 @@ INPUT_DEVICES="$inpdevs"
 NUT_DRIVERS="usbhid-ups"
 SANE_BACKENDS=""
 CAMERAS="ptp2"
-""").render(use=" ".join(use), inpdevs=" ".join(inpdevs))
+""").render(use=" ".join(sorted(use)), inpdevs=" ".join(sorted(inpdevs)))
