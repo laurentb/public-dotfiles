@@ -1,12 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
-# -*- coding: utf-8 -*-
-
-import sys
-import os
 import argparse
+import os
 import re
-from ConfigParser import ConfigParser
+import sys
+from configparser import ConfigParser
 
 FF_PATH = os.path.expanduser('~/.mozilla/firefox')
 UP_REGEX = re.compile(r'^user_pref\("(?P<key>[^"]+)", (?P<value>.+)\);$')
@@ -40,12 +38,12 @@ def diff(a, b):
     removed = dict()
     added = dict()
     changed = dict()
-    for key, value in a.iteritems():
+    for key, value in a.items():
         if key not in b:
             removed[key] = value
         elif b[key] != value:
             changed[key] = b[key]
-    for key, value in b.iteritems():
+    for key, value in b.items():
         if key not in a:
             added[key] = value
     return removed, added, changed
@@ -59,15 +57,15 @@ def pentadactylrc(removed, added, changed):
                 return svalue
         return value
 
-    print '" reset to default deleted values'
-    for key, value in removed.iteritems():
-        print 'set! %s&' % key
-    print '" added'
-    for key, value in added.iteritems():
-        print 'set! %s=%s' % (key, stripval(value))
-    print '" changed'
-    for key, value in changed.iteritems():
-        print 'set! %s=%s' % (key, stripval(value))
+    print('" reset to default deleted values')
+    for key, value in removed.items():
+        print('set! %s&' % key)
+    print('" added')
+    for key, value in added.items():
+        print('set! %s=%s' % (key, stripval(value)))
+    print('" changed')
+    for key, value in changed.items():
+        print('set! %s=%s' % (key, stripval(value)))
 
 
 def main(argv):
@@ -78,21 +76,22 @@ def main(argv):
 
     parser = argparse.ArgumentParser(description="Live diff Firefox settings.")
     parser.add_argument('-p', '--profile', nargs=1,
-        required=default_profile is None,
-        default=default_profile, choices=profiles.values(),
-        help="Profile name")
+                        required=default_profile is None,
+                        default=default_profile, choices=profiles.values(),
+                        help="Profile name")
 
     args = parser.parse_args(argv[1:])
 
-    print "Watching settings of %s." % args.profile
+    print("Watching settings of %s." % args.profile)
     oldprefs = read_prefs(args.profile)
-    raw_input('Press enter when ready to show the differences.')
+    input('Press enter when ready to show the differences.')
     newprefs = read_prefs(args.profile)
 
     removed, added, changed = diff(oldprefs, newprefs)
 
     # TODO Add support for other outputs
     pentadactylrc(removed, added, changed)
+
 
 if __name__ == '__main__':
     sys.exit(main(sys.argv))
