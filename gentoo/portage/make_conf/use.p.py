@@ -18,10 +18,18 @@ if "laptop" in options.tags:
 
 use = ["${%s}" % flag for flag in collections]
 
+
+def _sortkey(k):
+    if 'DESK' in k or 'LAPTOP' in k:
+        return '9' + k
+    else:
+        return '1' + k
+
+
 text("""# $warning
 USE="$use"
 INPUT_DEVICES="$inpdevs"
 NUT_DRIVERS="usbhid-ups"
 SANE_BACKENDS=""
 CAMERAS="ptp2"
-""").render(use=" ".join(sorted(use)), inpdevs=" ".join(sorted(inpdevs)))
+""").render(use=" ".join(sorted(use, key=_sortkey)), inpdevs=" ".join(sorted(inpdevs)))
