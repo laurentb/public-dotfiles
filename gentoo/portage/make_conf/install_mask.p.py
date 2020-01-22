@@ -1,5 +1,3 @@
-from __future__ import print_function
-
 KNOWN_LOCALES = [
     'aa',
     'ach',

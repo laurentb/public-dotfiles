@@ -1,5 +1,3 @@
-from __future__ import print_function
-
 import subprocess
 from textwrap import dedent
 
@@ -10,7 +8,7 @@ except subprocess.CalledProcessError:
     has_ruby = False
 
 if has_ruby:
-    rubies = subprocess.check_output(['eselect', '--brief', 'ruby', 'list'])
+    rubies = subprocess.check_output(['eselect', '--brief', 'ruby', 'list']).decode('utf-8')
     rubies = [ruby.split('(')[0].strip() for ruby in rubies.splitlines()]
     assert len(rubies)
 

@@ -1,5 +1,3 @@
-from __future__ import print_function
-
 import re
 import subprocess
 
@@ -36,7 +34,7 @@ if 'sse' in use_flags:
 gccv = subprocess.Popen(['gcc', '-march=native', '-E', '-v', '-'],
         stdin=subprocess.PIPE,
         stdout=subprocess.PIPE,
-        stderr=subprocess.PIPE).communicate('')[1]  # capture stderr
+        stderr=subprocess.PIPE).communicate('')[1].decode('utf-8')  # capture stderr
 gccv = [flags for flags in gccv.splitlines() if ' -v - ' in flags]
 assert len(gccv) == 1
 
@@ -62,7 +60,7 @@ short_cflags = re.sub(' -mno-[^ ]+', '', short_cflags).strip()
 cflags = cflags.strip()
 
 
-lspci = subprocess.check_output(['lspci', '-k'])
+lspci = subprocess.check_output(['lspci', '-k']).decode('utf-8')
 cards = ['vesa', 'dummy', 'none']
 llvm = ['X86', 'BPF']
 use_cards = []

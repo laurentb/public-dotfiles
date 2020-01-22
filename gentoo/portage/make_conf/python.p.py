@@ -1,12 +1,10 @@
-from __future__ import print_function
-
 import subprocess
 
-pythons = subprocess.check_output(['eselect', '--brief', 'python', 'list'])
+pythons = subprocess.check_output(['eselect', '--brief', 'python', 'list']).decode('utf-8')
 pythons = [python.replace('.', '_') for python in pythons.splitlines()]
 assert len(pythons)
 
-python = subprocess.check_output(['eselect', '--brief', 'python', 'show'])
+python = subprocess.check_output(['eselect', '--brief', 'python', 'show']).decode('utf-8')
 python = python.replace('.', '_').strip()
 assert python
 

@@ -1,8 +1,9 @@
-#!/usr/bin/env python
-from confman import ConfigSource
-import sync_options as options
-
+#!/usr/bin/env python3
 from os import path
+
+import sync_options as options
+from confman import ConfigSource
+
 base_path = path.join(path.dirname(__file__), '..')
 
 
