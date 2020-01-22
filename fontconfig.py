@@ -1,8 +1,8 @@
-#!/usr/bin/env python
-from __future__ import with_statement
-from os import path, popen, system
+#!/usr/bin/env python3
 import re
 import sys
+from os import path
+from subprocess import check_call, check_output
 
 interactive = sys.stdin.isatty()
 BRIGHT = '\x1b[1m' if interactive else ''
@@ -10,12 +10,12 @@ NORMAL = '\x1b[22m' if interactive else ''
 
 config_file = path.join(path.dirname(__file__), "fontconfig.wanted")
 
-REGEXP = re.compile('^ +\[\d+\] +(?P<name>[^ ]+)\.conf(?P<enabled> \*)?$')
-NUMRE = re.compile('\d+-(?P<name>[^ ]+)')
+REGEXP = re.compile(r'^ +\[\d+\] +(?P<name>[^ ]+)\.conf(?P<enabled> \*)?$')
+NUMRE = re.compile(r'\d+-(?P<name>[^ ]+)')
 
 eselect = [REGEXP.match(line)
            for line
-           in popen("eselect fontconfig list").read().strip().splitlines()
+           in check_output("eselect fontconfig list", shell=True).decode('utf-8').strip().splitlines()
            if REGEXP.match(line)]
 
 available_fonts = [line.groupdict()['name']
@@ -40,6 +40,7 @@ def full(wanted_font):
             if NUMRE.match(font) and NUMRE.match(font).groupdict()['name'] == wanted_font:
                 yield font
 
+
 wanted_fonts = set()
 for fonts in raw_wanted_fonts:
     for font in full(fonts):
@@ -48,8 +49,8 @@ for fonts in raw_wanted_fonts:
 for font in available_fonts:
     if font in wanted_fonts \
             and font not in active_fonts:
-        print "%s+%s%s" % (BRIGHT, NORMAL, font),
-        system("eselect fontconfig enable %s.conf" % font)
+        print("%s+%s%s" % (BRIGHT, NORMAL, font))
+        check_call("eselect fontconfig enable %s.conf" % font, shell=True)
     if font not in wanted_fonts \
             and font in active_fonts:
-        print "%s-%s%s" % (BRIGHT, NORMAL, font),
+        print("%s-%s%s" % (BRIGHT, NORMAL, font))
