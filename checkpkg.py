@@ -1,8 +1,7 @@
-#!/usr/bin/env python
-from glob import glob
+#!/usr/bin/env python3
 import os
 import sys
-
+from glob import glob
 
 TAGS = sorted(os.listdir("/etc/dotfiles/tags"))
 TAGS.insert(0, 'common')
@@ -17,7 +16,7 @@ def shorten(pkg):
 def needed(pkgs):
     for pkg in pkgs:
         if pkg not in INSTALLED \
-        and shorten(pkg) not in INSTALLED_SHORT:
+           and shorten(pkg) not in INSTALLED_SHORT:
             yield pkg
 
 
@@ -42,18 +41,19 @@ INSTALLED_SHORT = set([shorten(pkg) for pkg in INSTALLED])
 WANTED = set()
 
 for tag in TAGS:
-    print "# Tag: %s" % tag
-    config_files = [os.path.basename(c) for c in \
-        glob(os.path.join(BASEDIR, '%s.*' % tag))]
+    print("# Tag: %s" % tag)
+    config_files = [os.path.basename(c)
+                    for c
+                    in glob(os.path.join(BASEDIR, '%s.*' % tag))]
     for config_file in config_files:
         pkgs = wanted(config_file)
         WANTED.update(pkgs)
         needed_pkgs = list(needed(pkgs))
         if needed_pkgs:
             group = config_file.split('.')[1]
-            print "## Group: %s" % group
-            print cmd(needed_pkgs)
+            print("## Group: %s" % group)
+            print(cmd(needed_pkgs))
 
 pkgs = [shorten(pkg) for pkg in INSTALLED if bonus(pkg)]
 if '-b' in sys.argv[1:]:
-    print 'Bonus packages: %s' % ' '.join(sorted(pkgs))
+    print('Bonus packages: %s' % ' '.join(sorted(pkgs)))
