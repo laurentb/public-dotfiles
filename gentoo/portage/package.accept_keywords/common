@@ -48,12 +48,6 @@ net-misc/youtube-dl
 
 dev-python/ftfy
 
-# twine
-<dev-python/twine-1.12
-<dev-python/pkginfo-1.5.0
-
-<dev-python/dnspython-1.17
-
 dev-python/pythonwhois
 
 sys-fs/duperemove
