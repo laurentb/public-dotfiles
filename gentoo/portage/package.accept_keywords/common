@@ -54,6 +54,4 @@ sys-fs/duperemove
 
 <dev-python/autopep8-1.5
 
-<sys-kernel/genkernel-4.1.0
-
 <sys-fs/bcache-tools-9999
