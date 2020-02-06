@@ -83,6 +83,8 @@ sys-apps/usbutils -python_single_target_python2_7 python_single_target_python3_6
 sys-fs/btrfs-progs python_single_target_python3_6
 sys-libs/libblockdev -python_single_target_python2_7 python_single_target_python3_6
 app-eselect/eselect-repository python_single_target_python3_6
+net-analyzer/fail2ban python_single_target_python3_6
+app-misc/pax-utils python_single_target_python3_6
 
 # not default on all profiles
 dev-libs/libpcre2 jit
