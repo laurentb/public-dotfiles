@@ -89,6 +89,8 @@ sys-devel/gdb python_single_target_python3_6
 app-office/unoconv python_single_target_python3_6
 sci-calculators/units python_single_target_python3_6
 media-gfx/fontforge python_single_target_python3_6
+net-irc/weechat python_single_target_python3_6
+net-im/pidgin python_single_target_python3_6
 
 # not default on all profiles
 dev-libs/libpcre2 jit
