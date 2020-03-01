@@ -69,7 +69,7 @@ if ': i915' in lspci or ': i965' in lspci:
     cards.append('i915')
     cards.append('i965')
     use_cards.append('vulkan')
-if ': radeon' in lspci:
+if ': radeon' in lspci or ': amdgpu' in lspci:
     cards.append('radeon')
     cards.append('radeonsi')
     cards.append('amdgpu')
