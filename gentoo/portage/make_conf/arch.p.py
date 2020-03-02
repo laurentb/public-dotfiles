@@ -2,28 +2,31 @@ import re
 import subprocess
 
 # References:
-# https://bitbucket.org/mgorny/cpuinfo2cpuflags
+# https://github.com/mgorny/cpuid2cpuflags
 # https://github.com/hartwork/resolve-march-native
 
-with open("/proc/cpuinfo") as f:
+with open('/proc/cpuinfo') as f:
     cpuinfo = f.read()
-    flags = re.search("^flags\s+:\s+(.+)$", cpuinfo, re.MULTILINE).groups()[0].split(" ")
-    # See /usr/portage/profiles/desc/cpu_flags_x86.desc
+    flags = re.search(r'^flags\s+:\s+(.+)$', cpuinfo, re.MULTILINE).groups()[0].split(" ")
+    # See /var/db/repos/gentoo/profiles/desc/cpu_flags_x86.desc
     flags = ['sse3' if flag == 'pni' else flag for flag in flags]
     flags = ['fma3' if flag == 'fma' else flag for flag in flags]
     flags = ['popcnt' if flag == 'abm' else flag for flag in flags]
     flags = ['padlock' if flag == 'phe' else flag for flag in flags]
+    flags = ['pclmul' if flag == 'pclmulqdq' else flag for flag in flags]
+    flags = ['sha' if flag == 'sha_ni' else flag for flag in flags]
 
-    procs = re.findall("^processor\s+:\s+(\d+)$", cpuinfo, re.MULTILINE)
+    procs = re.findall(r'^processor\s+:\s+(\d+)$', cpuinfo, re.MULTILINE)
     jobs = len(procs)
 
 
-available_use_flags = ("avx", "avx2", "ssse3", "xop", "aes",
-                       "popcnt", "f16c",
-                       "mmx", "mmxext",
-                       "3dnow", "3dnowext",
-                       "fma3", "fma4",
-                       "sse", "sse2", "sse3", "sse4a", "sse4_1", "sse4_2")
+available_use_flags = ('avx', 'avx2', 'avx512f', 'ssse3',
+                       'xop', 'aes', 'sha',
+                       'pclmul', 'popcnt', 'f16c',
+                       'mmx', 'mmxext',
+                       '3dnow', '3dnowext',
+                       'fma3', 'fma4',
+                       'sse', 'sse2', 'sse3', 'sse4a', 'sse4_1', 'sse4_2')
 
 use_flags = set([flag for flag in available_use_flags if flag in flags])
 # mmxext/mmx2 is a subset of SSE (blame AMD marketing)
@@ -40,22 +43,22 @@ assert len(gccv) == 1
 
 # Remove everything before -march.
 # It usually has -D_FORTIFY_SOURCE=2 which is implied by -O2 in Gentoo.
-cflags, count = re.subn('^.+-march=', '-march=', gccv[0], 1)
+cflags, count = re.subn(r'^.+-march=', '-march=', gccv[0], 1)
 assert count == 1
 
 # Remove everything after -mtune
 # It is implied by -march, and everything after is either nothing or
 # default Gentoo Hardened stuff.
-cflags, count = re.subn('-mtune=.+$', '', cflags, 1)
+cflags, count = re.subn(r'-mtune=.+$', '', cflags, 1)
 assert count == 1
 
 # Remove --param arguments.
 # They don't seem that useful (sets exact CPU cache sizes).
 # This prevents badly written build systems, like Chromium's,
 # from failing.
-short_cflags = re.sub(' --param [^ ]+', '', cflags).strip()
+short_cflags = re.sub(r' --param [^ ]+', '', cflags).strip()
 # Remove -mno arguments, they confuse some packages.
-short_cflags = re.sub(' -mno-[^ ]+', '', short_cflags).strip()
+short_cflags = re.sub(r' -mno-[^ ]+', '', short_cflags).strip()
 
 cflags = cflags.strip()
 
