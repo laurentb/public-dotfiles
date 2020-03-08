@@ -245,3 +245,4 @@ dev-libs/ocl-icd abi_x86_32
 media-libs/vulkan-loader abi_x86_32
 sys-devel/clang abi_x86_32
 virtual/libcrypt abi_x86_32
+media-libs/libglvnd abi_x86_32
