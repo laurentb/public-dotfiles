@@ -28,7 +28,6 @@ dev-python/unicode-nazi
 
 dev-python/sh
 dev-python/unipath
-dev-python/vulture
 
 dev-python/chut
 dev-python/ConfigObject

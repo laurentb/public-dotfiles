@@ -6,7 +6,6 @@ dev-python/feedparser
 dev-python/flake8
 dev-python/ftfy
 dev-python/future
-dev-python/geopy
 dev-python/html2text
 dev-python/ipython
 dev-python/isort
@@ -30,7 +29,6 @@ dev-python/twine
 dev-python/unicode-nazi
 dev-python/unidecode
 dev-python/virtualenv
-dev-python/vulture
 dev-python/wheel
 dev-python/Babel
 dev-python/termcolor
