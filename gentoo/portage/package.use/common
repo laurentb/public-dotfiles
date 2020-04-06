@@ -93,9 +93,7 @@ net-irc/weechat python_single_target_python3_6
 net-im/pidgin python_single_target_python3_6
 net-dns/unbound python_single_target_python3_6
 media-gfx/zbar python_single_target_python3_6
-
-# not default on all profiles
-dev-libs/libpcre2 jit
+app-editors/vim python_single_target_python3_6
 
 dev-lang/go system-bootstrap
 sys-devel/gcc go
@@ -108,3 +106,8 @@ sys-boot/grub -themes -truetype -nls
 app-misc/jq oniguruma
 
 sys-fs/quota -netlink
+
+# jit is not default on all profiles
+# pcre16 is required by calibre, qtcore
+dev-libs/libpcre jit pcre16
+dev-libs/libpcre2 jit pcre16
