@@ -70,5 +70,4 @@ hash xfce4-power-manager 2>/dev/null && (sleep 4 && nice xfce4-power-manager) &
 
 # check /usr/libexec/openbox-xdg-autostart --list for more stuff we should launch
 
-hash ck-launch-session 2>/dev/null && exec ck-launch-session openbox
 exec openbox
