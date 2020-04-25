@@ -115,3 +115,6 @@ sys-libs/libunwind -lzma
 # pcre16 is required by calibre, qtcore
 dev-libs/libpcre jit pcre16
 dev-libs/libpcre2 jit pcre16
+
+# conflict with dev-python/brotlipy
+app-arch/brotli -python
