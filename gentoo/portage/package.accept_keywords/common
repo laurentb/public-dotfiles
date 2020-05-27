@@ -53,3 +53,7 @@ sys-fs/duperemove
 
 <dev-python/ipython-7.6
 dev-python/backcall
+
+media-sound/aucdtect
+media-sound/dr14tmeter
+media-sound/redoflacs
