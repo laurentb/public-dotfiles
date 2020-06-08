@@ -26,7 +26,7 @@ dev-python/python-mpd -twisted
 media-plugins/alsa-plugins -ffmpeg -speex -libsamplerate
 
 media-video/mpv lua libmpv cplugins
-media-video/ffmpeg openssl threads rtmp libxml2
+media-video/ffmpeg openssl threads rtmp libxml2 ssh
 virtual/ffmpeg threads
 
 media-sound/ncmpc help-screen library-screen key-screen lyrics-screen search-screen song-screen chat-screen outputs-screen -mouse
